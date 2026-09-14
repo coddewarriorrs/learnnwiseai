@@ -40,7 +40,7 @@ export default function AdminUsersPage() {
         {loading ? (
           <div className="p-12 text-center text-slate-400 text-sm">Loading users...</div>
         ) : (
-          <div className="p-6 rounded-2xl bg-[#162235] border border-slate-800 shadow-xl overflow-x-auto">
+          <div className="p-6 rounded-2xl bg-[#131E32] border border-slate-800 shadow-xl overflow-x-auto">
             <h3 className="text-sm font-bold text-white mb-4">Registered Accounts</h3>
             <table className="w-full text-left text-xs">
               <thead>

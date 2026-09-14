@@ -68,7 +68,7 @@ export default function AdminDashboardPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Link
             href="/admin/syllabus"
-            className="p-6 rounded-2xl bg-[#162235] border border-slate-800 hover:border-teal-500/40 transition-all block group"
+            className="p-6 rounded-2xl bg-[#131E32] border border-slate-800 hover:border-teal-500/40 transition-all block group"
           >
             <BrainCircuit className="h-8 w-8 text-teal-400 mb-3 group-hover:scale-105 transition-transform" />
             <h3 className="text-base font-bold text-white mb-1">Curriculum &amp; DAG Hierarchy</h3>
@@ -77,7 +77,7 @@ export default function AdminDashboardPage() {
 
           <Link
             href="/admin/users"
-            className="p-6 rounded-2xl bg-[#162235] border border-slate-800 hover:border-teal-500/40 transition-all block group"
+            className="p-6 rounded-2xl bg-[#131E32] border border-slate-800 hover:border-teal-500/40 transition-all block group"
           >
             <Users className="h-8 w-8 text-cyan-400 mb-3 group-hover:scale-105 transition-transform" />
             <h3 className="text-base font-bold text-white mb-1">User Directory</h3>
@@ -86,7 +86,7 @@ export default function AdminDashboardPage() {
 
           <Link
             href="/admin/classes"
-            className="p-6 rounded-2xl bg-[#162235] border border-slate-800 hover:border-teal-500/40 transition-all block group"
+            className="p-6 rounded-2xl bg-[#131E32] border border-slate-800 hover:border-teal-500/40 transition-all block group"
           >
             <BookOpen className="h-8 w-8 text-amber-400 mb-3 group-hover:scale-105 transition-transform" />
             <h3 className="text-base font-bold text-white mb-1">Class Cohorts</h3>

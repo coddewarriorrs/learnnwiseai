@@ -22,15 +22,15 @@ export default function AdminAnalyticsPage() {
 
       <div className="p-6 max-w-6xl mx-auto space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-5 rounded-2xl bg-[#162235] border border-slate-800">
+          <div className="p-5 rounded-2xl bg-[#131E32] border border-slate-800">
             <span className="text-xs text-slate-400 font-semibold uppercase">Platform Average Mastery</span>
             <p className="text-3xl font-extrabold text-teal-400 mt-1">{data?.metrics?.platform_average_mastery || 72.5}%</p>
           </div>
-          <div className="p-5 rounded-2xl bg-[#162235] border border-slate-800">
+          <div className="p-5 rounded-2xl bg-[#131E32] border border-slate-800">
             <span className="text-xs text-slate-400 font-semibold uppercase">Curriculum Coverage</span>
             <p className="text-3xl font-extrabold text-white mt-1">{data?.metrics?.total_curriculum_nodes || 0} Nodes</p>
           </div>
-          <div className="p-5 rounded-2xl bg-[#162235] border border-slate-800">
+          <div className="p-5 rounded-2xl bg-[#131E32] border border-slate-800">
             <span className="text-xs text-slate-400 font-semibold uppercase">Evaluated Questions</span>
             <p className="text-3xl font-extrabold text-white mt-1">{data?.metrics?.total_questions || 0} Items</p>
           </div>

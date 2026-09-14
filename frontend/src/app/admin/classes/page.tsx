@@ -26,7 +26,7 @@ export default function AdminClassesPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {classes.map((c) => (
-              <div key={c.id} className="p-6 rounded-2xl bg-[#162235] border border-slate-800 space-y-3">
+              <div key={c.id} className="p-6 rounded-2xl bg-[#131E32] border border-slate-800 space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border bg-slate-800 text-teal-300 border-slate-700">
                     Grade {c.grade} • {c.board}

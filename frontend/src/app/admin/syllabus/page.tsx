@@ -92,11 +92,11 @@ export default function AdminSyllabusPage() {
         {loading ? (
           <div className="p-12 text-center text-slate-400 text-sm">Loading syllabus tree...</div>
         ) : tree.length === 0 ? (
-          <div className="p-12 rounded-2xl bg-[#162235] border border-slate-800 text-center text-slate-400 text-sm">
+          <div className="p-12 rounded-2xl bg-[#131E32] border border-slate-800 text-center text-slate-400 text-sm">
             No curriculum nodes defined.
           </div>
         ) : (
-          <div className="p-6 rounded-2xl bg-[#162235] border border-slate-800 space-y-3">
+          <div className="p-6 rounded-2xl bg-[#131E32] border border-slate-800 space-y-3">
             {tree.map((node) => renderNode(node))}
           </div>
         )}
@@ -104,7 +104,7 @@ export default function AdminSyllabusPage() {
         {/* Modal */}
         {importModal && (
           <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-[#162235] border border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4">
+            <div className="bg-[#131E32] border border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4">
               <div className="flex justify-between items-center">
                 <h3 className="text-base font-bold text-white">Import Curriculum Nodes</h3>
                 <button onClick={() => setImportModal(false)} className="text-slate-400 hover:text-white">✕</button>
