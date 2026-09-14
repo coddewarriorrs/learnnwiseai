@@ -1,0 +1,2341 @@
+{
+  "class_number": 10,
+  "class_level": "Class 10",
+  "title": "Class 10",
+  "code": "CLASS-10",
+  "class_code": "CLASS-10",
+  "academic_year": "2026-27",
+  "board": "CBSE",
+  "description": "CBSE Class 10 Complete Syllabus for Academic Year 2026-27",
+  "order_index": 10,
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "title": "Mathematics",
+      "code": "MATH-10",
+      "is_integrated_science": false,
+      "description": "CBSE Class 10 Mathematics rationalized syllabus for AY 2026-27",
+      "order_index": 1,
+      "units": [
+        {
+          "unit_number": 1,
+          "title": "Number Systems",
+          "name": "Number Systems",
+          "code": "U-M10-01",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 1,
+          "chapters": [
+            {
+              "chapter_number": 1,
+              "number": 1,
+              "title": "Real Numbers",
+              "name": "Real Numbers",
+              "code": "CH-M10-01",
+              "domain": "Mathematics",
+              "description": "Fundamental Theorem of Arithmetic, irrational numbers proofs and applications.",
+              "order_index": 1,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Fundamental Theorem of Arithmetic",
+                  "name": "Fundamental Theorem of Arithmetic",
+                  "code": "TOP-M10-01-01",
+                  "domain": "Mathematics",
+                  "description": "Fundamental Theorem of Arithmetic",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Prime Factorisation Method for HCF and LCM",
+                      "name": "Prime Factorisation Method for HCF and LCM",
+                      "code": "SUB-M10-01-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Relation Between HCF, LCM and Product of Two Numbers",
+                      "name": "Relation Between HCF, LCM and Product of Two Numbers",
+                      "code": "SUB-M10-01-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Compute HCF and LCM of positive integers using prime factorisation theorem.",
+                      "code": "TOP-M10-01-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Verify and apply HCF(a, b) * LCM(a, b) = a * b to solve word problems.",
+                      "code": "TOP-M10-01-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "If the HCF of 65 and 117 is expressible in the form 65m - 117, find the value of m.",
+                      "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                      ],
+                      "correct_answer": "2",
+                      "explanation": "Prime factorisation: 65 = 5 * 13, 117 = 3^2 * 13. HCF(65, 117) = 13. Given 65m - 117 = 13 => 65m = 130 => m = 2."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "If the HCF of 65 and 117 is expressible in the form 65m - 117, find the value of m.",
+                      "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                      ],
+                      "correct_answer": "2",
+                      "explanation": "Prime factorisation: 65 = 5 * 13, 117 = 3^2 * 13. HCF(65, 117) = 13. Given 65m - 117 = 13 => 65m = 130 => m = 2."
+                    }
+                  ]
+                },
+                {
+                  "topic_number": 2,
+                  "title": "Revisiting Irrational Numbers",
+                  "name": "Revisiting Irrational Numbers",
+                  "code": "TOP-M10-01-02",
+                  "domain": "Mathematics",
+                  "description": "Revisiting Irrational Numbers",
+                  "prerequisites": [],
+                  "order_index": 2,
+                  "subtopics": [
+                    {
+                      "title": "Proof of Irrationality for Root 2, Root 3, Root 5",
+                      "name": "Proof of Irrationality for Root 2, Root 3, Root 5",
+                      "code": "SUB-M10-01-02-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Irrationality of Sum and Product of Rational and Irrational Numbers",
+                      "name": "Irrationality of Sum and Product of Rational and Irrational Numbers",
+                      "code": "SUB-M10-01-02-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Construct formal contradiction proofs demonstrating that root p is irrational for any prime p.",
+                      "code": "TOP-M10-01-02-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Demonstrate that 3 + 2*root(5) and 1/root(2) are irrational.",
+                      "code": "TOP-M10-01-02-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Which of the following numbers is an irrational number?",
+                      "options": [
+                        "3.1416",
+                        "22/7",
+                        "sqrt(7)",
+                        "sqrt(16)"
+                      ],
+                      "correct_answer": "sqrt(7)",
+                      "explanation": "Square root of any prime number, such as 7, is irrational because its decimal expansion is non-terminating and non-recurring."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Which of the following numbers is an irrational number?",
+                      "options": [
+                        "3.1416",
+                        "22/7",
+                        "sqrt(7)",
+                        "sqrt(16)"
+                      ],
+                      "correct_answer": "sqrt(7)",
+                      "explanation": "Square root of any prime number, such as 7, is irrational because its decimal expansion is non-terminating and non-recurring."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "Algebra",
+          "name": "Algebra",
+          "code": "U-M10-02",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 2,
+          "chapters": [
+            {
+              "chapter_number": 2,
+              "number": 2,
+              "title": "Polynomials",
+              "name": "Polynomials",
+              "code": "CH-M10-02",
+              "domain": "Mathematics",
+              "description": "Geometrical meaning of zeroes of a polynomial, relationship between zeroes and coefficients of quadratic polynomials.",
+              "order_index": 2,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Zeroes and Coefficients of Quadratic Polynomials",
+                  "name": "Zeroes and Coefficients of Quadratic Polynomials",
+                  "code": "TOP-M10-02-01",
+                  "domain": "Mathematics",
+                  "description": "Zeroes and Coefficients of Quadratic Polynomials",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Geometric Meaning of Zeroes of Polynomials",
+                      "name": "Geometric Meaning of Zeroes of Polynomials",
+                      "code": "SUB-M10-02-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Relationship between Zeroes and Coefficients of a Quadratic Polynomial",
+                      "name": "Relationship between Zeroes and Coefficients of a Quadratic Polynomial",
+                      "code": "SUB-M10-02-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Interpret x-intercepts of quadratic graphs as real zeroes.",
+                      "code": "TOP-M10-02-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Formulate quadratic polynomials given the sum and product of zeroes.",
+                      "code": "TOP-M10-02-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Find a quadratic polynomial whose zeroes are 2 and -3.",
+                      "options": [
+                        "x^2 + x - 6",
+                        "x^2 - x - 6",
+                        "x^2 + 5x + 6",
+                        "x^2 - 5x + 6"
+                      ],
+                      "correct_answer": "x^2 + x - 6",
+                      "explanation": "Sum of zeroes = 2 + (-3) = -1. Product = 2 * (-3) = -6. Polynomial = x^2 - (sum)x + product = x^2 - (-1)x + (-6) = x^2 + x - 6."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Find a quadratic polynomial whose zeroes are 2 and -3.",
+                      "options": [
+                        "x^2 + x - 6",
+                        "x^2 - x - 6",
+                        "x^2 + 5x + 6",
+                        "x^2 - 5x + 6"
+                      ],
+                      "correct_answer": "x^2 + x - 6",
+                      "explanation": "Sum of zeroes = 2 + (-3) = -1. Product = 2 * (-3) = -6. Polynomial = x^2 - (sum)x + product = x^2 - (-1)x + (-6) = x^2 + x - 6."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 3,
+              "number": 3,
+              "title": "Pair of Linear Equations in Two Variables",
+              "name": "Pair of Linear Equations in Two Variables",
+              "code": "CH-M10-03",
+              "domain": "Mathematics",
+              "description": "Graphical and algebraic methods (substitution and elimination) of solving linear systems.",
+              "order_index": 3,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Methods of Solving Linear Equations",
+                  "name": "Methods of Solving Linear Equations",
+                  "code": "TOP-M10-03-01",
+                  "domain": "Mathematics",
+                  "description": "Methods of Solving Linear Equations",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Graphical Method and Consistency Conditions",
+                      "name": "Graphical Method and Consistency Conditions",
+                      "code": "SUB-M10-03-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Substitution Method",
+                      "name": "Substitution Method",
+                      "code": "SUB-M10-03-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Elimination Method",
+                      "name": "Elimination Method",
+                      "code": "SUB-M10-03-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Determine consistency, inconsistency, and infinitely many solutions using ratio comparisons a1/a2, b1/b2, c1/c2.",
+                      "code": "TOP-M10-03-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Solve simultaneous equations using algebraic substitution and elimination techniques.",
+                      "code": "TOP-M10-03-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "For what value of k will the equations 2x + 3y = 7 and (k-1)x + (k+2)y = 3k have infinitely many solutions?",
+                      "options": [
+                        "k = 5",
+                        "k = 7",
+                        "k = 3",
+                        "k = 2"
+                      ],
+                      "correct_answer": "k = 7",
+                      "explanation": "For infinitely many solutions: 2/(k-1) = 3/(k+2) = 7/(3k). From 2/(k-1) = 3/(k+2) => 2k + 4 = 3k - 3 => k = 7. Also 3/9 = 7/21 = 1/3, satisfying both."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "For what value of k will the equations 2x + 3y = 7 and (k-1)x + (k+2)y = 3k have infinitely many solutions?",
+                      "options": [
+                        "k = 5",
+                        "k = 7",
+                        "k = 3",
+                        "k = 2"
+                      ],
+                      "correct_answer": "k = 7",
+                      "explanation": "For infinitely many solutions: 2/(k-1) = 3/(k+2) = 7/(3k). From 2/(k-1) = 3/(k+2) => 2k + 4 = 3k - 3 => k = 7. Also 3/9 = 7/21 = 1/3, satisfying both."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 4,
+              "number": 4,
+              "title": "Quadratic Equations",
+              "name": "Quadratic Equations",
+              "code": "CH-M10-04",
+              "domain": "Mathematics",
+              "description": "Standard form, solution by factorisation and quadratic formula, nature of roots.",
+              "order_index": 4,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Solutions and Discriminant",
+                  "name": "Solutions and Discriminant",
+                  "code": "TOP-M10-04-01",
+                  "domain": "Mathematics",
+                  "description": "Solutions and Discriminant",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Factorisation Method",
+                      "name": "Factorisation Method",
+                      "code": "SUB-M10-04-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Quadratic Formula and Nature of Roots",
+                      "name": "Quadratic Formula and Nature of Roots",
+                      "code": "SUB-M10-04-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate discriminant D = b^2 - 4ac and determine if roots are real and distinct, real and equal, or non-real.",
+                      "code": "TOP-M10-04-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Solve applied real-world word problems using the quadratic formula.",
+                      "code": "TOP-M10-04-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "If the quadratic equation 2x^2 - kx + 2 = 0 has real and equal roots, find the value of k.",
+                      "options": [
+                        "k = +- 4",
+                        "k = +- 2",
+                        "k = +- 8",
+                        "k = +- 1"
+                      ],
+                      "correct_answer": "k = +- 4",
+                      "explanation": "For real and equal roots, discriminant D = b^2 - 4ac = 0 => (-k)^2 - 4(2)(2) = 0 => k^2 = 16 => k = +- 4."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "If the quadratic equation 2x^2 - kx + 2 = 0 has real and equal roots, find the value of k.",
+                      "options": [
+                        "k = +- 4",
+                        "k = +- 2",
+                        "k = +- 8",
+                        "k = +- 1"
+                      ],
+                      "correct_answer": "k = +- 4",
+                      "explanation": "For real and equal roots, discriminant D = b^2 - 4ac = 0 => (-k)^2 - 4(2)(2) = 0 => k^2 = 16 => k = +- 4."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 5,
+              "number": 5,
+              "title": "Arithmetic Progressions",
+              "name": "Arithmetic Progressions",
+              "code": "CH-M10-05",
+              "domain": "Mathematics",
+              "description": "nth term of AP, sum of first n terms of an AP, real life applications.",
+              "order_index": 5,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "nth Term and Sum of AP",
+                  "name": "nth Term and Sum of AP",
+                  "code": "TOP-M10-05-01",
+                  "domain": "Mathematics",
+                  "description": "nth Term and Sum of AP",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "General Term an = a + (n-1)d",
+                      "name": "General Term an = a + (n-1)d",
+                      "code": "SUB-M10-05-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Sum of First n Terms Sn = n/2 [2a + (n-1)d]",
+                      "name": "Sum of First n Terms Sn = n/2 [2a + (n-1)d]",
+                      "code": "SUB-M10-05-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Derive and compute the nth term of any arithmetic sequence.",
+                      "code": "TOP-M10-05-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Calculate sum of arithmetic progressions in finance, construction, and nature applications.",
+                      "code": "TOP-M10-05-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Find the 20th term of the AP: 2, 7, 12, ...",
+                      "options": [
+                        "95",
+                        "97",
+                        "102",
+                        "107"
+                      ],
+                      "correct_answer": "97",
+                      "explanation": "Here a = 2, d = 7 - 2 = 5. The 20th term is a20 = a + 19d = 2 + 19(5) = 2 + 95 = 97."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Find the 20th term of the AP: 2, 7, 12, ...",
+                      "options": [
+                        "95",
+                        "97",
+                        "102",
+                        "107"
+                      ],
+                      "correct_answer": "97",
+                      "explanation": "Here a = 2, d = 7 - 2 = 5. The 20th term is a20 = a + 19d = 2 + 19(5) = 2 + 95 = 97."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "Coordinate Geometry",
+          "name": "Coordinate Geometry",
+          "code": "U-M10-03",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 3,
+          "chapters": [
+            {
+              "chapter_number": 7,
+              "number": 7,
+              "title": "Coordinate Geometry",
+              "name": "Coordinate Geometry",
+              "code": "CH-M10-07",
+              "domain": "Mathematics",
+              "description": "Distance formula, section formula (internal division), collinearity and geometric shapes.",
+              "order_index": 7,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Distance and Section Formulae",
+                  "name": "Distance and Section Formulae",
+                  "code": "TOP-M10-07-01",
+                  "domain": "Mathematics",
+                  "description": "Distance and Section Formulae",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Distance Between Two Points",
+                      "name": "Distance Between Two Points",
+                      "code": "SUB-M10-07-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Section Formula for Internal Division",
+                      "name": "Section Formula for Internal Division",
+                      "code": "SUB-M10-07-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Midpoint Formula",
+                      "name": "Midpoint Formula",
+                      "code": "SUB-M10-07-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate Euclidean distance between points in the Cartesian plane.",
+                      "code": "TOP-M10-07-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Determine coordinates of internal dividing points and centroids using section ratios.",
+                      "code": "TOP-M10-07-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Find the distance between points P(2, 3) and Q(4, 1).",
+                      "options": [
+                        "2 sqrt(2)",
+                        "sqrt(2)",
+                        "4",
+                        "2"
+                      ],
+                      "correct_answer": "2 sqrt(2)",
+                      "explanation": "Distance d = sqrt((4-2)^2 + (1-3)^2) = sqrt(2^2 + (-2)^2) = sqrt(4 + 4) = sqrt(8) = 2 sqrt(2)."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Find the distance between points P(2, 3) and Q(4, 1).",
+                      "options": [
+                        "2 sqrt(2)",
+                        "sqrt(2)",
+                        "4",
+                        "2"
+                      ],
+                      "correct_answer": "2 sqrt(2)",
+                      "explanation": "Distance d = sqrt((4-2)^2 + (1-3)^2) = sqrt(2^2 + (-2)^2) = sqrt(4 + 4) = sqrt(8) = 2 sqrt(2)."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 4,
+          "title": "Geometry",
+          "name": "Geometry",
+          "code": "U-M10-04",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 4,
+          "chapters": [
+            {
+              "chapter_number": 6,
+              "number": 6,
+              "title": "Triangles",
+              "name": "Triangles",
+              "code": "CH-M10-06",
+              "domain": "Mathematics",
+              "description": "Basic Proportionality Theorem (Thales) and criteria for similarity of triangles (AAA, SSS, SAS).",
+              "order_index": 6,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Similarity Criteria and Basic Proportionality Theorem",
+                  "name": "Similarity Criteria and Basic Proportionality Theorem",
+                  "code": "TOP-M10-06-01",
+                  "domain": "Mathematics",
+                  "description": "Similarity Criteria and Basic Proportionality Theorem",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Basic Proportionality Theorem (Thales Theorem) and Converse",
+                      "name": "Basic Proportionality Theorem (Thales Theorem) and Converse",
+                      "code": "SUB-M10-06-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "AAA, SSS, and SAS Criteria of Similarity",
+                      "name": "AAA, SSS, and SAS Criteria of Similarity",
+                      "code": "SUB-M10-06-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Prove Thales theorem and apply it to solve geometric proportions.",
+                      "code": "TOP-M10-06-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Apply similarity criteria to establish geometric properties and calculate missing lengths.",
+                      "code": "TOP-M10-06-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "In triangle ABC, DE || BC such that AD = 1.5 cm, DB = 3 cm, and AE = 1 cm. Find EC.",
+                      "options": [
+                        "2 cm",
+                        "3 cm",
+                        "1.5 cm",
+                        "2.5 cm"
+                      ],
+                      "correct_answer": "2 cm",
+                      "explanation": "By Basic Proportionality Theorem, AD/DB = AE/EC => 1.5/3 = 1/EC => 1/2 = 1/EC => EC = 2 cm."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "In triangle ABC, DE || BC such that AD = 1.5 cm, DB = 3 cm, and AE = 1 cm. Find EC.",
+                      "options": [
+                        "2 cm",
+                        "3 cm",
+                        "1.5 cm",
+                        "2.5 cm"
+                      ],
+                      "correct_answer": "2 cm",
+                      "explanation": "By Basic Proportionality Theorem, AD/DB = AE/EC => 1.5/3 = 1/EC => 1/2 = 1/EC => EC = 2 cm."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 10,
+              "number": 10,
+              "title": "Circles",
+              "name": "Circles",
+              "code": "CH-M10-10",
+              "domain": "Mathematics",
+              "description": "Tangent to a circle, point of contact, theorem: tangents from an external point are equal.",
+              "order_index": 10,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Tangents and Geometric Properties",
+                  "name": "Tangents and Geometric Properties",
+                  "code": "TOP-M10-10-01",
+                  "domain": "Mathematics",
+                  "description": "Tangents and Geometric Properties",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Tangent Perpendicular to Radius at Point of Contact",
+                      "name": "Tangent Perpendicular to Radius at Point of Contact",
+                      "code": "SUB-M10-10-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Lengths of Tangents from External Point",
+                      "name": "Lengths of Tangents from External Point",
+                      "code": "SUB-M10-10-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Prove that the tangent at any point is perpendicular to the radius through the point of contact.",
+                      "code": "TOP-M10-10-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Prove and apply equality of lengths of tangents drawn from an external point.",
+                      "code": "TOP-M10-10-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "If tangents PA and PB from a point P to a circle with centre O are inclined to each other at angle of 80 degrees, then angle POA is equal to:",
+                      "options": [
+                        "50 degrees",
+                        "60 degrees",
+                        "70 degrees",
+                        "80 degrees"
+                      ],
+                      "correct_answer": "50 degrees",
+                      "explanation": "Angle APB = 80 deg. In quadrilateral OAPB, angle AOB = 180 - 80 = 100 deg. In triangles POA and POB, OP bisects angle AOB, so angle POA = 100 / 2 = 50 degrees."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "If tangents PA and PB from a point P to a circle with centre O are inclined to each other at angle of 80 degrees, then angle POA is equal to:",
+                      "options": [
+                        "50 degrees",
+                        "60 degrees",
+                        "70 degrees",
+                        "80 degrees"
+                      ],
+                      "correct_answer": "50 degrees",
+                      "explanation": "Angle APB = 80 deg. In quadrilateral OAPB, angle AOB = 180 - 80 = 100 deg. In triangles POA and POB, OP bisects angle AOB, so angle POA = 100 / 2 = 50 degrees."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 5,
+          "title": "Trigonometry",
+          "name": "Trigonometry",
+          "code": "U-M10-05",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 5,
+          "chapters": [
+            {
+              "chapter_number": 8,
+              "number": 8,
+              "title": "Introduction to Trigonometry",
+              "name": "Introduction to Trigonometry",
+              "code": "CH-M10-08",
+              "domain": "Mathematics",
+              "description": "Trigonometric ratios of acute angles, values of trigonometric ratios of 0, 30, 45, 60 and 90 degrees, trigonometric identities.",
+              "order_index": 8,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Ratios and Pythagorean Identities",
+                  "name": "Ratios and Pythagorean Identities",
+                  "code": "TOP-M10-08-01",
+                  "domain": "Mathematics",
+                  "description": "Ratios and Pythagorean Identities",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Trigonometric Ratios in Right Triangles",
+                      "name": "Trigonometric Ratios in Right Triangles",
+                      "code": "SUB-M10-08-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Trigonometric Ratios of Specific Angles (0, 30, 45, 60, 90)",
+                      "name": "Trigonometric Ratios of Specific Angles (0, 30, 45, 60, 90)",
+                      "code": "SUB-M10-08-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Fundamental Identity sin^2 theta + cos^2 theta = 1",
+                      "name": "Fundamental Identity sin^2 theta + cos^2 theta = 1",
+                      "code": "SUB-M10-08-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Evaluate sine, cosine, tangent, cotangent, secant, and cosecant for specific angles.",
+                      "code": "TOP-M10-08-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Prove trigonometric identities using fundamental Pythagorean relations.",
+                      "code": "TOP-M10-08-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "If sin theta = 1/2, what is the value of 3 cos theta - 4 cos^3 theta?",
+                      "options": [
+                        "0",
+                        "1",
+                        "1/2",
+                        "-1"
+                      ],
+                      "correct_answer": "0",
+                      "explanation": "If sin theta = 1/2, then theta = 30 deg. cos 30 = sqrt(3)/2. 3(sqrt(3)/2) - 4(sqrt(3)/2)^3 = (3 sqrt(3))/2 - 4(3 sqrt(3)/8) = 0."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "If sin theta = 1/2, what is the value of 3 cos theta - 4 cos^3 theta?",
+                      "options": [
+                        "0",
+                        "1",
+                        "1/2",
+                        "-1"
+                      ],
+                      "correct_answer": "0",
+                      "explanation": "If sin theta = 1/2, then theta = 30 deg. cos 30 = sqrt(3)/2. 3(sqrt(3)/2) - 4(sqrt(3)/2)^3 = (3 sqrt(3))/2 - 4(3 sqrt(3)/8) = 0."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 9,
+              "number": 9,
+              "title": "Some Applications of Trigonometry",
+              "name": "Some Applications of Trigonometry",
+              "code": "CH-M10-09",
+              "domain": "Mathematics",
+              "description": "Heights and distances: angle of elevation, angle of depression, simple problems involving not more than two right triangles.",
+              "order_index": 9,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Heights and Distances",
+                  "name": "Heights and Distances",
+                  "code": "TOP-M10-09-01",
+                  "domain": "Mathematics",
+                  "description": "Heights and Distances",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Line of Sight, Angle of Elevation and Depression",
+                      "name": "Line of Sight, Angle of Elevation and Depression",
+                      "code": "SUB-M10-09-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Solving Two-Triangle Heights and Distances Problems",
+                      "name": "Solving Two-Triangle Heights and Distances Problems",
+                      "code": "SUB-M10-09-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Distinguish between angles of elevation and depression from observer viewpoints.",
+                      "code": "TOP-M10-09-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Calculate inaccessible heights of towers, trees, and buildings using trigonometric ratios.",
+                      "code": "TOP-M10-09-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "A vertical pole of length 6 m casts a shadow 4 m long on the ground and at the same time a tower casts a shadow 28 m long. Find the height of the tower.",
+                      "options": [
+                        "42 m",
+                        "40 m",
+                        "38 m",
+                        "48 m"
+                      ],
+                      "correct_answer": "42 m",
+                      "explanation": "At the same time, the sun's angle of elevation is the same: tan theta = 6/4 = Height/28 => Height = (6/4) * 28 = 42 m."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "A vertical pole of length 6 m casts a shadow 4 m long on the ground and at the same time a tower casts a shadow 28 m long. Find the height of the tower.",
+                      "options": [
+                        "42 m",
+                        "40 m",
+                        "38 m",
+                        "48 m"
+                      ],
+                      "correct_answer": "42 m",
+                      "explanation": "At the same time, the sun's angle of elevation is the same: tan theta = 6/4 = Height/28 => Height = (6/4) * 28 = 42 m."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 6,
+          "title": "Mensuration",
+          "name": "Mensuration",
+          "code": "U-M10-06",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 6,
+          "chapters": [
+            {
+              "chapter_number": 11,
+              "number": 11,
+              "title": "Areas Related to Circles",
+              "name": "Areas Related to Circles",
+              "code": "CH-M10-11",
+              "domain": "Mathematics",
+              "description": "Area of sectors and segments of a circle, problems based on central angles of 60, 90, and 120 degrees.",
+              "order_index": 11,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Sectors and Segments of Circles",
+                  "name": "Sectors and Segments of Circles",
+                  "code": "TOP-M10-11-01",
+                  "domain": "Mathematics",
+                  "description": "Sectors and Segments of Circles",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Area of Sector of Angle theta: (theta/360) * pi * r^2",
+                      "name": "Area of Sector of Angle theta: (theta/360) * pi * r^2",
+                      "code": "SUB-M10-11-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Area of Minor and Major Segments",
+                      "name": "Area of Minor and Major Segments",
+                      "code": "SUB-M10-11-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate area of sectors and arc lengths using central angle formulas.",
+                      "code": "TOP-M10-11-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Determine area of segments by subtracting triangle areas from corresponding sectors.",
+                      "code": "TOP-M10-11-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Find the area of a sector of a circle with radius 6 cm if angle of the sector is 60 degrees. (Take pi = 22/7)",
+                      "options": [
+                        "132/7 cm^2",
+                        "120/7 cm^2",
+                        "144/7 cm^2",
+                        "88/7 cm^2"
+                      ],
+                      "correct_answer": "132/7 cm^2",
+                      "explanation": "Area = (theta/360) * pi * r^2 = (60/360) * (22/7) * 6^2 = (1/6) * (22/7) * 36 = 132/7 cm^2."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Find the area of a sector of a circle with radius 6 cm if angle of the sector is 60 degrees. (Take pi = 22/7)",
+                      "options": [
+                        "132/7 cm^2",
+                        "120/7 cm^2",
+                        "144/7 cm^2",
+                        "88/7 cm^2"
+                      ],
+                      "correct_answer": "132/7 cm^2",
+                      "explanation": "Area = (theta/360) * pi * r^2 = (60/360) * (22/7) * 6^2 = (1/6) * (22/7) * 36 = 132/7 cm^2."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 12,
+              "number": 12,
+              "title": "Surface Areas and Volumes",
+              "name": "Surface Areas and Volumes",
+              "code": "CH-M10-12",
+              "domain": "Mathematics",
+              "description": "Surface areas and volumes of combinations of any two solids: cubes, cuboids, spheres, hemispheres and right circular cylinders/cones.",
+              "order_index": 12,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Combinations of Solids",
+                  "name": "Combinations of Solids",
+                  "code": "TOP-M10-12-01",
+                  "domain": "Mathematics",
+                  "description": "Combinations of Solids",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Surface Area of Combined Solids",
+                      "name": "Surface Area of Combined Solids",
+                      "code": "SUB-M10-12-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Volume of Combined Solids",
+                      "name": "Volume of Combined Solids",
+                      "code": "SUB-M10-12-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate total surface area of composite solids like toy models (cone mounted on hemisphere).",
+                      "code": "TOP-M10-12-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Compute internal volume and capacity of complex storage vessels.",
+                      "code": "TOP-M10-12-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "2 cubes each of volume 64 cm^3 are joined end to end. Find the surface area of the resulting cuboid.",
+                      "options": [
+                        "160 cm^2",
+                        "128 cm^2",
+                        "180 cm^2",
+                        "144 cm^2"
+                      ],
+                      "correct_answer": "160 cm^2",
+                      "explanation": "Side of each cube = (64)^(1/3) = 4 cm. Resulting cuboid has l = 8 cm, b = 4 cm, h = 4 cm. Surface area = 2(lb + bh + hl) = 2(8*4 + 4*4 + 4*8) = 2(32 + 16 + 32) = 2(80) = 160 cm^2."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "2 cubes each of volume 64 cm^3 are joined end to end. Find the surface area of the resulting cuboid.",
+                      "options": [
+                        "160 cm^2",
+                        "128 cm^2",
+                        "180 cm^2",
+                        "144 cm^2"
+                      ],
+                      "correct_answer": "160 cm^2",
+                      "explanation": "Side of each cube = (64)^(1/3) = 4 cm. Resulting cuboid has l = 8 cm, b = 4 cm, h = 4 cm. Surface area = 2(lb + bh + hl) = 2(8*4 + 4*4 + 4*8) = 2(32 + 16 + 32) = 2(80) = 160 cm^2."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 7,
+          "title": "Statistics and Probability",
+          "name": "Statistics and Probability",
+          "code": "U-M10-07",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 7,
+          "chapters": [
+            {
+              "chapter_number": 13,
+              "number": 13,
+              "title": "Statistics",
+              "name": "Statistics",
+              "code": "CH-M10-13",
+              "domain": "Mathematics",
+              "description": "Mean, median and mode of grouped data (bimodal situations to be avoided).",
+              "order_index": 13,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Measures of Central Tendency for Grouped Data",
+                  "name": "Measures of Central Tendency for Grouped Data",
+                  "code": "TOP-M10-13-01",
+                  "domain": "Mathematics",
+                  "description": "Measures of Central Tendency for Grouped Data",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Direct and Assumed Mean Methods",
+                      "name": "Direct and Assumed Mean Methods",
+                      "code": "SUB-M10-13-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Mode of Grouped Data",
+                      "name": "Mode of Grouped Data",
+                      "code": "SUB-M10-13-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Median of Grouped Data and Empirical Relationship",
+                      "name": "Median of Grouped Data and Empirical Relationship",
+                      "code": "SUB-M10-13-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate mean of frequency distribution using direct and assumed mean methods.",
+                      "code": "TOP-M10-13-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Compute mode and median using grouping formulas and verify Mode = 3 Median - 2 Mean.",
+                      "code": "TOP-M10-13-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "For a given distribution, if Mode = 24 and Mean = 60, find the Median using the empirical formula.",
+                      "options": [
+                        "48",
+                        "52",
+                        "45",
+                        "50"
+                      ],
+                      "correct_answer": "48",
+                      "explanation": "Empirical formula: Mode = 3 Median - 2 Mean => 24 = 3(Median) - 2(60) => 24 + 120 = 3 Median => 144 = 3 Median => Median = 48."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "For a given distribution, if Mode = 24 and Mean = 60, find the Median using the empirical formula.",
+                      "options": [
+                        "48",
+                        "52",
+                        "45",
+                        "50"
+                      ],
+                      "correct_answer": "48",
+                      "explanation": "Empirical formula: Mode = 3 Median - 2 Mean => 24 = 3(Median) - 2(60) => 24 + 120 = 3 Median => 144 = 3 Median => Median = 48."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 14,
+              "number": 14,
+              "title": "Probability",
+              "name": "Probability",
+              "code": "CH-M10-14",
+              "domain": "Mathematics",
+              "description": "Classical definition of probability, simple problems on finding probability of an event.",
+              "order_index": 14,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Classical Probability and Outcomes",
+                  "name": "Classical Probability and Outcomes",
+                  "code": "TOP-M10-14-01",
+                  "domain": "Mathematics",
+                  "description": "Classical Probability and Outcomes",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Equally Likely Outcomes and Theoretical Probability",
+                      "name": "Equally Likely Outcomes and Theoretical Probability",
+                      "code": "SUB-M10-14-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Complementary Events and Impossible/Sure Events",
+                      "name": "Complementary Events and Impossible/Sure Events",
+                      "code": "SUB-M10-14-01-02",
+                      "order_index": 2
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Determine probability of events involving coins, dice, and standard packs of 52 playing cards.",
+                      "code": "TOP-M10-14-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Apply relation P(E) + P(not E) = 1 to solve complementary probability problems.",
+                      "code": "TOP-M10-14-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "One card is drawn from a well-shuffled deck of 52 cards. What is the probability of getting a king of red colour?",
+                      "options": [
+                        "1/26",
+                        "1/13",
+                        "1/52",
+                        "2/13"
+                      ],
+                      "correct_answer": "1/26",
+                      "explanation": "In a standard deck of 52 cards, there are 2 red kings (King of Hearts, King of Diamonds). Probability = 2/52 = 1/26."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "One card is drawn from a well-shuffled deck of 52 cards. What is the probability of getting a king of red colour?",
+                      "options": [
+                        "1/26",
+                        "1/13",
+                        "1/52",
+                        "2/13"
+                      ],
+                      "correct_answer": "1/26",
+                      "explanation": "In a standard deck of 52 cards, there are 2 red kings (King of Hearts, King of Diamonds). Probability = 2/52 = 1/26."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "title": "Science",
+      "code": "SCI-10",
+      "is_integrated_science": true,
+      "description": "CBSE Class 10 Integrated Science rationalized syllabus for AY 2026-27 with internal domains (Chemistry, Biology, Physics)",
+      "order_index": 2,
+      "units": [
+        {
+          "unit_number": 1,
+          "title": "Chemical Substances - Nature and Behaviour",
+          "name": "Chemical Substances - Nature and Behaviour",
+          "code": "U-S10-01",
+          "domain": "Chemistry",
+          "weightage_marks": 20,
+          "order_index": 1,
+          "chapters": [
+            {
+              "chapter_number": 1,
+              "number": 1,
+              "title": "Chemical Reactions and Equations",
+              "name": "Chemical Reactions and Equations",
+              "code": "CH-S10-01",
+              "domain": "Chemistry",
+              "description": "Chemical equations, balanced chemical equations, types of chemical reactions: combination, decomposition, displacement, double displacement, precipitation, neutralization, oxidation and reduction.",
+              "order_index": 1,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Chemical Equations and Types of Reactions",
+                  "name": "Chemical Equations and Types of Reactions",
+                  "code": "TOP-S10-01-01",
+                  "domain": "Chemistry",
+                  "description": "Chemical Equations and Types of Reactions",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Writing and Balancing Chemical Equations",
+                      "name": "Writing and Balancing Chemical Equations",
+                      "code": "SUB-S10-01-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Combination and Decomposition Reactions",
+                      "name": "Combination and Decomposition Reactions",
+                      "code": "SUB-S10-01-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Displacement and Double Displacement Reactions",
+                      "name": "Displacement and Double Displacement Reactions",
+                      "code": "SUB-S10-01-01-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Oxidation, Reduction, Rancidity and Corrosion",
+                      "name": "Oxidation, Reduction, Rancidity and Corrosion",
+                      "code": "SUB-S10-01-01-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Balance chemical equations by equating atom counts on reactant and product sides.",
+                      "code": "TOP-S10-01-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Identify types of reactions and recognize redox pairs in everyday phenomena.",
+                      "code": "TOP-S10-01-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "When copper powder is heated in a china dish, its surface turns black due to the formation of:",
+                      "options": [
+                        "Copper(II) oxide",
+                        "Copper(I) oxide",
+                        "Copper sulphate",
+                        "Copper carbonate"
+                      ],
+                      "correct_answer": "Copper(II) oxide",
+                      "explanation": "Copper reacts with oxygen on heating to form black Copper(II) oxide: 2Cu + O2 -> 2CuO."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "When copper powder is heated in a china dish, its surface turns black due to the formation of:",
+                      "options": [
+                        "Copper(II) oxide",
+                        "Copper(I) oxide",
+                        "Copper sulphate",
+                        "Copper carbonate"
+                      ],
+                      "correct_answer": "Copper(II) oxide",
+                      "explanation": "Copper reacts with oxygen on heating to form black Copper(II) oxide: 2Cu + O2 -> 2CuO."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 2,
+              "number": 2,
+              "title": "Acids, Bases and Salts",
+              "name": "Acids, Bases and Salts",
+              "code": "CH-S10-02",
+              "domain": "Chemistry",
+              "description": "Definitions in terms of H+ and OH- ions, chemical properties, pH scale, importance in daily life, preparation of sodium hydroxide, bleaching powder, baking soda, washing soda and Plaster of Paris.",
+              "order_index": 2,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "pH and Important Chemical Salts",
+                  "name": "pH and Important Chemical Salts",
+                  "code": "TOP-S10-02-01",
+                  "domain": "Chemistry",
+                  "description": "pH and Important Chemical Salts",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Indicators and Chemical Properties of Acids and Bases",
+                      "name": "Indicators and Chemical Properties of Acids and Bases",
+                      "code": "SUB-S10-02-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "pH Scale and Daily Life Applications",
+                      "name": "pH Scale and Daily Life Applications",
+                      "code": "SUB-S10-02-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Manufacture and Uses of Common Salts (NaOH, Bleaching Powder, NaHCO3, Na2CO3, POP)",
+                      "name": "Manufacture and Uses of Common Salts (NaOH, Bleaching Powder, NaHCO3, Na2CO3, POP)",
+                      "code": "SUB-S10-02-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Explain pH scale and measure acidity or basicity using universal indicator.",
+                      "code": "TOP-S10-02-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Describe production of chlor-alkali products and crystallization water in gypsum/POP.",
+                      "code": "TOP-S10-02-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "What is the chemical formula of Plaster of Paris?",
+                      "options": [
+                        "CaSO4 . 1/2 H2O",
+                        "CaSO4 . 2 H2O",
+                        "CaSO4 . H2O",
+                        "CaSO4 . 5 H2O"
+                      ],
+                      "correct_answer": "CaSO4 . 1/2 H2O",
+                      "explanation": "Plaster of Paris is calcium sulphate hemihydrate, CaSO4 . 1/2 H2O, obtained by heating gypsum at 373 K."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "What is the chemical formula of Plaster of Paris?",
+                      "options": [
+                        "CaSO4 . 1/2 H2O",
+                        "CaSO4 . 2 H2O",
+                        "CaSO4 . H2O",
+                        "CaSO4 . 5 H2O"
+                      ],
+                      "correct_answer": "CaSO4 . 1/2 H2O",
+                      "explanation": "Plaster of Paris is calcium sulphate hemihydrate, CaSO4 . 1/2 H2O, obtained by heating gypsum at 373 K."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 3,
+              "number": 3,
+              "title": "Metals and Non-metals",
+              "name": "Metals and Non-metals",
+              "code": "CH-S10-03",
+              "domain": "Chemistry",
+              "description": "Properties of metals and non-metals, reactivity series, formation and properties of ionic compounds, basic metallurgical processes, corrosion and its prevention.",
+              "order_index": 3,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Reactivity Series, Metallurgy and Ionic Compounds",
+                  "name": "Reactivity Series, Metallurgy and Ionic Compounds",
+                  "code": "TOP-S10-03-01",
+                  "domain": "Chemistry",
+                  "description": "Reactivity Series, Metallurgy and Ionic Compounds",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Physical and Chemical Properties of Metals and Non-metals",
+                      "name": "Physical and Chemical Properties of Metals and Non-metals",
+                      "code": "SUB-S10-03-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Reactivity Series and Displacement Tendencies",
+                      "name": "Reactivity Series and Displacement Tendencies",
+                      "code": "SUB-S10-03-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Formation and Properties of Ionic Bonds",
+                      "name": "Formation and Properties of Ionic Bonds",
+                      "code": "SUB-S10-03-01-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Extraction of Metals (Roasting, Calcination, Refining)",
+                      "name": "Extraction of Metals (Roasting, Calcination, Refining)",
+                      "code": "SUB-S10-03-01-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Predict single displacement outcomes using the reactivity series of metals.",
+                      "code": "TOP-S10-03-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Diagram electron transfer in forming NaCl and MgCl2, and detail metallurgical steps.",
+                      "code": "TOP-S10-03-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Which of the following metals occurs in native state in nature?",
+                      "options": [
+                        "Gold",
+                        "Sodium",
+                        "Zinc",
+                        "Iron"
+                      ],
+                      "correct_answer": "Gold",
+                      "explanation": "Gold is at the bottom of the reactivity series and is extremely unreactive, so it is found in the free or native state in nature."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Which of the following metals occurs in native state in nature?",
+                      "options": [
+                        "Gold",
+                        "Sodium",
+                        "Zinc",
+                        "Iron"
+                      ],
+                      "correct_answer": "Gold",
+                      "explanation": "Gold is at the bottom of the reactivity series and is extremely unreactive, so it is found in the free or native state in nature."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 4,
+              "number": 4,
+              "title": "Carbon and its Compounds",
+              "name": "Carbon and its Compounds",
+              "code": "CH-S10-04",
+              "domain": "Chemistry",
+              "description": "Covalent bonding in carbon, versatile nature of carbon, homologous series, nomenclature of functional groups, chemical properties (combustion, oxidation, addition, substitution), ethanol and ethanoic acid, soaps and detergents.",
+              "order_index": 4,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Covalent Bonding and Functional Compounds",
+                  "name": "Covalent Bonding and Functional Compounds",
+                  "code": "TOP-S10-04-01",
+                  "domain": "Chemistry",
+                  "description": "Covalent Bonding and Functional Compounds",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Covalent Bonding and Allotropes of Carbon",
+                      "name": "Covalent Bonding and Allotropes of Carbon",
+                      "code": "SUB-S10-04-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Homologous Series and IUPAC Nomenclature of Simple Compounds",
+                      "name": "Homologous Series and IUPAC Nomenclature of Simple Compounds",
+                      "code": "SUB-S10-04-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Reactions of Ethanol and Ethanoic Acid",
+                      "name": "Reactions of Ethanol and Ethanoic Acid",
+                      "code": "SUB-S10-04-01-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Cleansing Action of Soaps and Micelle Formation",
+                      "name": "Cleansing Action of Soaps and Micelle Formation",
+                      "code": "SUB-S10-04-01-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Explain why carbon forms versatile covalent bonds via tetravalency and catenation.",
+                      "code": "TOP-S10-04-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Diagram micelle structure and write saponification and esterification reactions.",
+                      "code": "TOP-S10-04-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Esterification reaction is the reaction between:",
+                      "options": [
+                        "An alcohol and a carboxylic acid",
+                        "An alcohol and an aldehyde",
+                        "A ketone and an acid",
+                        "An alkane and a base"
+                      ],
+                      "correct_answer": "An alcohol and a carboxylic acid",
+                      "explanation": "Esters are sweet-smelling substances formed by the reaction of an alcohol (e.g. ethanol) with a carboxylic acid (e.g. ethanoic acid) in presence of an acid catalyst."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Esterification reaction is the reaction between:",
+                      "options": [
+                        "An alcohol and a carboxylic acid",
+                        "An alcohol and an aldehyde",
+                        "A ketone and an acid",
+                        "An alkane and a base"
+                      ],
+                      "correct_answer": "An alcohol and a carboxylic acid",
+                      "explanation": "Esters are sweet-smelling substances formed by the reaction of an alcohol (e.g. ethanol) with a carboxylic acid (e.g. ethanoic acid) in presence of an acid catalyst."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "World of Living",
+          "name": "World of Living",
+          "code": "U-S10-02",
+          "domain": "Biology",
+          "weightage_marks": 20,
+          "order_index": 2,
+          "chapters": [
+            {
+              "chapter_number": 5,
+              "number": 5,
+              "title": "Life Processes",
+              "name": "Life Processes",
+              "code": "CH-S10-05",
+              "domain": "Biology",
+              "description": "'Living Being'; Basic concept of nutrition, respiration, transport and excretion in plants and animals.",
+              "order_index": 5,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Nutrition, Respiration, Circulation and Excretion",
+                  "name": "Nutrition, Respiration, Circulation and Excretion",
+                  "code": "TOP-S10-05-01",
+                  "domain": "Biology",
+                  "description": "Nutrition, Respiration, Circulation and Excretion",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Autotrophic and Heterotrophic Nutrition in Plants and Humans",
+                      "name": "Autotrophic and Heterotrophic Nutrition in Plants and Humans",
+                      "code": "SUB-S10-05-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Aerobic vs Anaerobic Respiration and Human Respiratory System",
+                      "name": "Aerobic vs Anaerobic Respiration and Human Respiratory System",
+                      "code": "SUB-S10-05-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Double Circulation in Human Heart and Plant Vascular Transport",
+                      "name": "Double Circulation in Human Heart and Plant Vascular Transport",
+                      "code": "SUB-S10-05-01-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Nephron Structure and Urine Formation in Humans",
+                      "name": "Nephron Structure and Urine Formation in Humans",
+                      "code": "SUB-S10-05-01-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Describe human digestive, respiratory, circulatory, and excretory organ anatomy and physiology.",
+                      "code": "TOP-S10-05-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Trace pathway of blood in double circulation and explain nephron filtration and selective reabsorption.",
+                      "code": "TOP-S10-05-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Which chamber of the human heart pumps oxygenated blood to the rest of the body through the aorta?",
+                      "options": [
+                        "Left ventricle",
+                        "Right ventricle",
+                        "Left atrium",
+                        "Right atrium"
+                      ],
+                      "correct_answer": "Left ventricle",
+                      "explanation": "The left ventricle has thick muscular walls to pump oxygen-rich blood into the aorta for distribution across systemic circulation."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Which chamber of the human heart pumps oxygenated blood to the rest of the body through the aorta?",
+                      "options": [
+                        "Left ventricle",
+                        "Right ventricle",
+                        "Left atrium",
+                        "Right atrium"
+                      ],
+                      "correct_answer": "Left ventricle",
+                      "explanation": "The left ventricle has thick muscular walls to pump oxygen-rich blood into the aorta for distribution across systemic circulation."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 6,
+              "number": 6,
+              "title": "Control and Coordination",
+              "name": "Control and Coordination",
+              "code": "CH-S10-06",
+              "domain": "Biology",
+              "description": "Tropic movements in plants, introduction to plant hormones, control and coordination in animals: nervous system, voluntary, involuntary and reflex action, chemical coordination: animal hormones.",
+              "order_index": 6,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Nervous and Endocrine Systems",
+                  "name": "Nervous and Endocrine Systems",
+                  "code": "TOP-S10-06-01",
+                  "domain": "Biology",
+                  "description": "Nervous and Endocrine Systems",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Structure of Neuron and Reflex Arc Mechanism",
+                      "name": "Structure of Neuron and Reflex Arc Mechanism",
+                      "code": "SUB-S10-06-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Human Brain Anatomy and Functions (Forebrain, Midbrain, Hindbrain)",
+                      "name": "Human Brain Anatomy and Functions (Forebrain, Midbrain, Hindbrain)",
+                      "code": "SUB-S10-06-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Plant Hormones and Tropic Movements (Phototropism, Geotropism)",
+                      "name": "Plant Hormones and Tropic Movements (Phototropism, Geotropism)",
+                      "code": "SUB-S10-06-01-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Endocrine Glands and Human Hormones (Insulin, Thyroxine, Adrenaline)",
+                      "name": "Endocrine Glands and Human Hormones (Insulin, Thyroxine, Adrenaline)",
+                      "code": "SUB-S10-06-01-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Diagram synapse transmission and reflex arcs protecting the body.",
+                      "code": "TOP-S10-06-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Identify endocrine glands and match their secretions with feedback mechanisms.",
+                      "code": "TOP-S10-06-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Which plant hormone promotes cell division and is present in high concentration in fruits and seeds?",
+                      "options": [
+                        "Cytokinin",
+                        "Auxin",
+                        "Gibberellin",
+                        "Abscisic acid"
+                      ],
+                      "correct_answer": "Cytokinin",
+                      "explanation": "Cytokinins promote cell division and are naturally present in areas of rapid cell division, such as in fruits and seeds."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Which plant hormone promotes cell division and is present in high concentration in fruits and seeds?",
+                      "options": [
+                        "Cytokinin",
+                        "Auxin",
+                        "Gibberellin",
+                        "Abscisic acid"
+                      ],
+                      "correct_answer": "Cytokinin",
+                      "explanation": "Cytokinins promote cell division and are naturally present in areas of rapid cell division, such as in fruits and seeds."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 7,
+              "number": 7,
+              "title": "How do Organisms Reproduce?",
+              "name": "How do Organisms Reproduce?",
+              "code": "CH-S10-07",
+              "domain": "Biology",
+              "description": "Reproduction in animals and plants (asexual and sexual), reproductive health - need and methods of family planning, safe sex vs HIV/AIDS, child bearing and women's health.",
+              "order_index": 7,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Asexual and Sexual Reproduction and Health",
+                  "name": "Asexual and Sexual Reproduction and Health",
+                  "code": "TOP-S10-07-01",
+                  "domain": "Biology",
+                  "description": "Asexual and Sexual Reproduction and Health",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Modes of Asexual Reproduction (Fission, Fragmentation, Regeneration, Budding, Spores)",
+                      "name": "Modes of Asexual Reproduction (Fission, Fragmentation, Regeneration, Budding, Spores)",
+                      "code": "SUB-S10-07-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Sexual Reproduction in Flowering Plants (Pollination and Double Fertilization)",
+                      "name": "Sexual Reproduction in Flowering Plants (Pollination and Double Fertilization)",
+                      "code": "SUB-S10-07-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Human Male and Female Reproductive Systems and Menstrual Cycle",
+                      "name": "Human Male and Female Reproductive Systems and Menstrual Cycle",
+                      "code": "SUB-S10-07-01-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Contraceptive Methods and Reproductive Health Awareness",
+                      "name": "Contraceptive Methods and Reproductive Health Awareness",
+                      "code": "SUB-S10-07-01-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Diagram male and female reproductive systems and summarize gamete transport.",
+                      "code": "TOP-S10-07-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Categorize contraceptive methods (barrier, chemical, surgical, IUCD) and their mechanisms.",
+                      "code": "TOP-S10-07-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "The anther contains:",
+                      "options": [
+                        "Pollen grains",
+                        "Sepals",
+                        "Ovules",
+                        "Carpel"
+                      ],
+                      "correct_answer": "Pollen grains",
+                      "explanation": "The anther is the male reproductive organ of a flower containing pollen grains that produce male gametes."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "The anther contains:",
+                      "options": [
+                        "Pollen grains",
+                        "Sepals",
+                        "Ovules",
+                        "Carpel"
+                      ],
+                      "correct_answer": "Pollen grains",
+                      "explanation": "The anther is the male reproductive organ of a flower containing pollen grains that produce male gametes."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 8,
+              "number": 8,
+              "title": "Heredity",
+              "name": "Heredity",
+              "code": "CH-S10-08",
+              "domain": "Biology",
+              "description": "Heredity; Mendel's contribution - Laws for inheritance of traits: Sex determination: brief introduction.",
+              "order_index": 8,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Mendelian Inheritance and Sex Determination",
+                  "name": "Mendelian Inheritance and Sex Determination",
+                  "code": "TOP-S10-08-01",
+                  "domain": "Biology",
+                  "description": "Mendelian Inheritance and Sex Determination",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Mendel's Monohybrid and Dihybrid Crosses",
+                      "name": "Mendel's Monohybrid and Dihybrid Crosses",
+                      "code": "SUB-S10-08-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Laws of Segregation and Independent Assortment",
+                      "name": "Laws of Segregation and Independent Assortment",
+                      "code": "SUB-S10-08-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Chromosomal Sex Determination in Humans (XX and XY)",
+                      "name": "Chromosomal Sex Determination in Humans (XX and XY)",
+                      "code": "SUB-S10-08-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Predict phenotypic and genotypic ratios using Punnett squares for monohybrid (3:1) and dihybrid (9:3:3:1) crosses.",
+                      "code": "TOP-S10-08-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Diagram how father's sperm (X or Y) determines the sex of the human child.",
+                      "code": "TOP-S10-08-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "What is the phenotypic ratio in the F2 generation of a Mendelian dihybrid cross?",
+                      "options": [
+                        "9:3:3:1",
+                        "3:1",
+                        "1:2:1",
+                        "9:7"
+                      ],
+                      "correct_answer": "9:3:3:1",
+                      "explanation": "In a dihybrid cross of heterozygous parents, the law of independent assortment produces a classic phenotypic ratio of 9:3:3:1."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "What is the phenotypic ratio in the F2 generation of a Mendelian dihybrid cross?",
+                      "options": [
+                        "9:3:3:1",
+                        "3:1",
+                        "1:2:1",
+                        "9:7"
+                      ],
+                      "correct_answer": "9:3:3:1",
+                      "explanation": "In a dihybrid cross of heterozygous parents, the law of independent assortment produces a classic phenotypic ratio of 9:3:3:1."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 13,
+              "number": 13,
+              "title": "Our Environment",
+              "name": "Our Environment",
+              "code": "CH-S10-13",
+              "domain": "Biology",
+              "description": "Eco-system, environmental problems, ozone depletion, waste production and their solutions. Biodegradable and non-biodegradable substances.",
+              "order_index": 13,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Ecosystem Dynamics and Environmental Issues",
+                  "name": "Ecosystem Dynamics and Environmental Issues",
+                  "code": "TOP-S10-13-01",
+                  "domain": "Biology",
+                  "description": "Ecosystem Dynamics and Environmental Issues",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Trophic Levels, Food Chains and Food Webs",
+                      "name": "Trophic Levels, Food Chains and Food Webs",
+                      "code": "SUB-S10-13-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "10 Percent Law of Energy Flow and Biological Magnification",
+                      "name": "10 Percent Law of Energy Flow and Biological Magnification",
+                      "code": "SUB-S10-13-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Ozone Layer Depletion (CFCs) and Waste Management",
+                      "name": "Ozone Layer Depletion (CFCs) and Waste Management",
+                      "code": "SUB-S10-13-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate energy transfer along successive trophic levels using Lindeman's 10% law.",
+                      "code": "TOP-S10-13-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Analyze biological magnification of non-biodegradable pesticides and formulate waste reduction methods.",
+                      "code": "TOP-S10-13-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "If 10,000 J of energy is available at the producer level, how much energy will be transferred to secondary consumers?",
+                      "options": [
+                        "100 J",
+                        "1,000 J",
+                        "10 J",
+                        "1 J"
+                      ],
+                      "correct_answer": "100 J",
+                      "explanation": "Producers (10,000 J) -> Primary consumers (1,000 J) -> Secondary consumers (100 J) according to the 10 percent law."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "If 10,000 J of energy is available at the producer level, how much energy will be transferred to secondary consumers?",
+                      "options": [
+                        "100 J",
+                        "1,000 J",
+                        "10 J",
+                        "1 J"
+                      ],
+                      "correct_answer": "100 J",
+                      "explanation": "Producers (10,000 J) -> Primary consumers (1,000 J) -> Secondary consumers (100 J) according to the 10 percent law."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "Natural Phenomena and Effects of Current",
+          "name": "Natural Phenomena and Effects of Current",
+          "code": "U-S10-03",
+          "domain": "Physics",
+          "weightage_marks": 20,
+          "order_index": 3,
+          "chapters": [
+            {
+              "chapter_number": 9,
+              "number": 9,
+              "title": "Light \u2013 Reflection and Refraction",
+              "name": "Light \u2013 Reflection and Refraction",
+              "code": "CH-S10-09",
+              "domain": "Physics",
+              "description": "Reflection of light by curved surfaces, images formed by spherical mirrors, centre of curvature, principal axis, principal focus, focal length, mirror formula, magnification. Refraction, laws of refraction, refractive index. Refraction of light by spherical lens, image formed by spherical lenses, lens formula, magnification, power of a lens.",
+              "order_index": 9,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Spherical Mirrors, Lenses and Power",
+                  "name": "Spherical Mirrors, Lenses and Power",
+                  "code": "TOP-S10-09-01",
+                  "domain": "Physics",
+                  "description": "Spherical Mirrors, Lenses and Power",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Mirror Formula 1/f = 1/v + 1/u and Sign Convention",
+                      "name": "Mirror Formula 1/f = 1/v + 1/u and Sign Convention",
+                      "code": "SUB-S10-09-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Refraction, Snell's Law and Absolute Refractive Index",
+                      "name": "Refraction, Snell's Law and Absolute Refractive Index",
+                      "code": "SUB-S10-09-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Lens Formula 1/f = 1/v - 1/u and Lens Power P = 1/f(m)",
+                      "name": "Lens Formula 1/f = 1/v - 1/u and Lens Power P = 1/f(m)",
+                      "code": "SUB-S10-09-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Draw ray diagrams for concave and convex mirrors and convex and concave lenses across all object positions.",
+                      "code": "TOP-S10-09-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Calculate image position, nature, and size using mirror and lens formulas and compute lens power in dioptres.",
+                      "code": "TOP-S10-09-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "A convex lens has a focal length of 50 cm. What is its optical power in dioptres?",
+                      "options": [
+                        "+2.0 D",
+                        "-2.0 D",
+                        "+0.5 D",
+                        "+5.0 D"
+                      ],
+                      "correct_answer": "+2.0 D",
+                      "explanation": "Power P = 1 / f(in metres) = 1 / (+0.5 m) = +2.0 Dioptres."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "A convex lens has a focal length of 50 cm. What is its optical power in dioptres?",
+                      "options": [
+                        "+2.0 D",
+                        "-2.0 D",
+                        "+0.5 D",
+                        "+5.0 D"
+                      ],
+                      "correct_answer": "+2.0 D",
+                      "explanation": "Power P = 1 / f(in metres) = 1 / (+0.5 m) = +2.0 Dioptres."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 10,
+              "number": 10,
+              "title": "The Human Eye and the Colourful World",
+              "name": "The Human Eye and the Colourful World",
+              "code": "CH-S10-10",
+              "domain": "Physics",
+              "description": "Functioning of a lens in human eye, defects of vision and their corrections, refraction of light through a prism, dispersion of light, scattering of light, applications in daily life.",
+              "order_index": 10,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Vision Defects, Dispersion and Atmospheric Scattering",
+                  "name": "Vision Defects, Dispersion and Atmospheric Scattering",
+                  "code": "TOP-S10-10-01",
+                  "domain": "Physics",
+                  "description": "Vision Defects, Dispersion and Atmospheric Scattering",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Accommodation and Vision Defects (Myopia, Hypermetropia, Presbyopia) and Corrections",
+                      "name": "Accommodation and Vision Defects (Myopia, Hypermetropia, Presbyopia) and Corrections",
+                      "code": "SUB-S10-10-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Prism Refraction and Dispersion into Spectrum",
+                      "name": "Prism Refraction and Dispersion into Spectrum",
+                      "code": "SUB-S10-10-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Atmospheric Refraction (Twinkling of Stars) and Rayleigh Scattering (Blue Sky, Red Sunset)",
+                      "name": "Atmospheric Refraction (Twinkling of Stars) and Rayleigh Scattering (Blue Sky, Red Sunset)",
+                      "code": "SUB-S10-10-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Design corrective spectacle lens prescriptions using concave and convex lenses for myopia and hypermetropia.",
+                      "code": "TOP-S10-10-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Explain rainbow formation and Rayleigh scattering causing blue sky and reddish sun at sunrise/sunset.",
+                      "code": "TOP-S10-10-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "A person cannot see distant objects clearly beyond 2 metres. Which lens should be prescribed to correct this defect?",
+                      "options": [
+                        "Concave lens of power -0.5 D",
+                        "Convex lens of power +0.5 D",
+                        "Concave lens of power -2.0 D",
+                        "Convex lens of power +2.0 D"
+                      ],
+                      "correct_answer": "Concave lens of power -0.5 D",
+                      "explanation": "Far point is at 2 m. To bring an object at infinity to 2 m: 1/f = 1/v - 1/u => 1/f = 1/(-2) - 1/(-inf) = -1/2. Thus f = -2 m, Power P = 1/f = -0.5 D (concave lens)."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "A person cannot see distant objects clearly beyond 2 metres. Which lens should be prescribed to correct this defect?",
+                      "options": [
+                        "Concave lens of power -0.5 D",
+                        "Convex lens of power +0.5 D",
+                        "Concave lens of power -2.0 D",
+                        "Convex lens of power +2.0 D"
+                      ],
+                      "correct_answer": "Concave lens of power -0.5 D",
+                      "explanation": "Far point is at 2 m. To bring an object at infinity to 2 m: 1/f = 1/v - 1/u => 1/f = 1/(-2) - 1/(-inf) = -1/2. Thus f = -2 m, Power P = 1/f = -0.5 D (concave lens)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 11,
+              "number": 11,
+              "title": "Electricity",
+              "name": "Electricity",
+              "code": "CH-S10-11",
+              "domain": "Physics",
+              "description": "Electric current, potential difference and electric current. Ohm's law; Resistance, Resistivity, Factors on which the resistance of a conductor depends. Series combination of resistors, parallel combination of resistors and its applications in daily life. Heating effect of electric current and its applications in daily life. Electric power, Interrelation between P, V, I and R.",
+              "order_index": 11,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Ohm's Law, Circuits and Joule's Heating",
+                  "name": "Ohm's Law, Circuits and Joule's Heating",
+                  "code": "TOP-S10-11-01",
+                  "domain": "Physics",
+                  "description": "Ohm's Law, Circuits and Joule's Heating",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Potential Difference, Current and Ohm's Law V = IR",
+                      "name": "Potential Difference, Current and Ohm's Law V = IR",
+                      "code": "SUB-S10-11-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Resistivity and Resistance in Series and Parallel Combinations",
+                      "name": "Resistivity and Resistance in Series and Parallel Combinations",
+                      "code": "SUB-S10-11-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Joule's Law of Heating H = I^2 R t and Electric Power P = VI",
+                      "name": "Joule's Law of Heating H = I^2 R t and Electric Power P = VI",
+                      "code": "SUB-S10-11-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate equivalent resistance of series and parallel networks and branching currents.",
+                      "code": "TOP-S10-11-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Compute electrical energy consumption in kilowatt-hours and cost of electricity.",
+                      "code": "TOP-S10-11-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "Three resistors of 2 ohm, 3 ohm and 6 ohm are connected in parallel. What is their equivalent resistance?",
+                      "options": [
+                        "1 ohm",
+                        "11 ohm",
+                        "0.5 ohm",
+                        "2 ohm"
+                      ],
+                      "correct_answer": "1 ohm",
+                      "explanation": "1/Req = 1/2 + 1/3 + 1/6 = (3 + 2 + 1)/6 = 6/6 = 1. Req = 1 ohm."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "Three resistors of 2 ohm, 3 ohm and 6 ohm are connected in parallel. What is their equivalent resistance?",
+                      "options": [
+                        "1 ohm",
+                        "11 ohm",
+                        "0.5 ohm",
+                        "2 ohm"
+                      ],
+                      "correct_answer": "1 ohm",
+                      "explanation": "1/Req = 1/2 + 1/3 + 1/6 = (3 + 2 + 1)/6 = 6/6 = 1. Req = 1 ohm."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "chapter_number": 12,
+              "number": 12,
+              "title": "Magnetic Effects of Electric Current",
+              "name": "Magnetic Effects of Electric Current",
+              "code": "CH-S10-12",
+              "domain": "Physics",
+              "description": "Magnetic field, field lines, field due to a current carrying conductor, field due to current carrying coil or solenoid; Force on current carrying conductor, Fleming's Left Hand Rule, Direct current. Alternating current: frequency of AC. Advantage of AC over DC. Domestic electric circuits.",
+              "order_index": 12,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Magnetic Fields and Electromagnetic Forces",
+                  "name": "Magnetic Fields and Electromagnetic Forces",
+                  "code": "TOP-S10-12-01",
+                  "domain": "Physics",
+                  "description": "Magnetic Fields and Electromagnetic Forces",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Right Hand Thumb Rule and Solenoid Field Patterns",
+                      "name": "Right Hand Thumb Rule and Solenoid Field Patterns",
+                      "code": "SUB-S10-12-01-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Force on Current Conductor and Fleming's Left-Hand Rule",
+                      "name": "Force on Current Conductor and Fleming's Left-Hand Rule",
+                      "code": "SUB-S10-12-01-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Domestic Circuits, Live-Neutral-Earth Wiring and Fuse/MCB Safety",
+                      "name": "Domestic Circuits, Live-Neutral-Earth Wiring and Fuse/MCB Safety",
+                      "code": "SUB-S10-12-01-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Map magnetic field lines around straight conductors and circular solenoids.",
+                      "code": "TOP-S10-12-01-LO-01",
+                      "bloom_level": "APPLY"
+                    },
+                    {
+                      "statement": "Apply Fleming's Left-Hand Rule to determine magnetic force direction and explain domestic earthing safety.",
+                      "code": "TOP-S10-12-01-LO-02",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "The direction of magnetic force on a current-carrying conductor placed in a magnetic field is determined by:",
+                      "options": [
+                        "Fleming's Left-Hand Rule",
+                        "Right Hand Thumb Rule",
+                        "Fleming's Right-Hand Rule",
+                        "Faraday's Law"
+                      ],
+                      "correct_answer": "Fleming's Left-Hand Rule",
+                      "explanation": "Fleming's Left-Hand Rule gives the direction of motion/force: Forefinger = Field, Middle finger = Current, Thumb = Force/Motion."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "The direction of magnetic force on a current-carrying conductor placed in a magnetic field is determined by:",
+                      "options": [
+                        "Fleming's Left-Hand Rule",
+                        "Right Hand Thumb Rule",
+                        "Fleming's Right-Hand Rule",
+                        "Faraday's Law"
+                      ],
+                      "correct_answer": "Fleming's Left-Hand Rule",
+                      "explanation": "Fleming's Left-Hand Rule gives the direction of motion/force: Forefinger = Field, Middle finger = Current, Thumb = Force/Motion."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

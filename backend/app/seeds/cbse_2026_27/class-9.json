@@ -1,0 +1,1590 @@
+{
+  "class_number": 9,
+  "class_level": "Class 9",
+  "title": "Class 9",
+  "code": "CLASS-09",
+  "class_code": "CLASS-09",
+  "academic_year": "2026-27",
+  "board": "CBSE",
+  "description": "CBSE Class 9 Official NCERT Rationalized Curriculum 2026-27",
+  "order_index": 9,
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "title": "Mathematics",
+      "code": "CBSE-09-MATH",
+      "is_integrated_science": false,
+      "description": "CBSE Class 9 Mathematics NCERT Rationalized Syllabus 2026-27",
+      "order_index": 1,
+      "units": [
+        {
+          "unit_number": 1,
+          "title": "Unit I: Number Systems",
+          "name": "Unit I: Number Systems",
+          "code": "CBSE-09-MATH-U01",
+          "domain": "Mathematics",
+          "weightage_marks": 10,
+          "order_index": 1,
+          "chapters": [
+            {
+              "chapter_number": 1,
+              "number": 1,
+              "title": "Number Systems",
+              "name": "Number Systems",
+              "code": "CBSE-09-MATH-CH01",
+              "domain": "Mathematics",
+              "description": "Real numbers, irrational numbers, decimal expansions (terminating, non-terminating recurring), representing real numbers on number line, laws of rational exponents.",
+              "order_index": 1,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Real Numbers and Laws of Exponents",
+                  "name": "Real Numbers and Laws of Exponents",
+                  "code": "CBSE-09-MATH-CH01-T01",
+                  "domain": "Mathematics",
+                  "description": "Real Numbers and Laws of Exponents",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Irrational numbers proofs and square roots on number line",
+                      "name": "Irrational numbers proofs and square roots on number line",
+                      "code": "CBSE-09-MATH-CH01-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Decimal expansions and p/q rational conversion",
+                      "name": "Decimal expansions and p/q rational conversion",
+                      "code": "CBSE-09-MATH-CH01-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Operations on real numbers and rationalisation of denominator",
+                      "name": "Operations on real numbers and rationalisation of denominator",
+                      "code": "CBSE-09-MATH-CH01-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Laws of exponents for real numbers with positive integral bases",
+                      "name": "Laws of exponents for real numbers with positive integral bases",
+                      "code": "CBSE-09-MATH-CH01-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Rationalise radical denominators and represent square root values geometrically on a number line.",
+                      "code": "CBSE-09-MATH-CH01-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "Unit II: Algebra",
+          "name": "Unit II: Algebra",
+          "code": "CBSE-09-MATH-U02",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 2,
+          "chapters": [
+            {
+              "chapter_number": 2,
+              "number": 2,
+              "title": "Polynomials",
+              "name": "Polynomials",
+              "code": "CBSE-09-MATH-CH02",
+              "domain": "Mathematics",
+              "description": "Polynomials in one variable, zeros, Remainder Theorem, Factor Theorem, factorisation of quadratic and cubic polynomials, algebraic identities.",
+              "order_index": 2,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Polynomial Factorisation and Factor Theorem",
+                  "name": "Polynomial Factorisation and Factor Theorem",
+                  "code": "CBSE-09-MATH-CH02-T01",
+                  "domain": "Mathematics",
+                  "description": "Polynomial Factorisation and Factor Theorem",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Zeros of a polynomial in one variable",
+                      "name": "Zeros of a polynomial in one variable",
+                      "code": "CBSE-09-MATH-CH02-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Factor Theorem and remainder evaluations",
+                      "name": "Factor Theorem and remainder evaluations",
+                      "code": "CBSE-09-MATH-CH02-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Factorising quadratic trinomials by splitting the middle term",
+                      "name": "Factorising quadratic trinomials by splitting the middle term",
+                      "code": "CBSE-09-MATH-CH02-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Factorising cubic polynomials via factor theorem and long division",
+                      "name": "Factorising cubic polynomials via factor theorem and long division",
+                      "code": "CBSE-09-MATH-CH02-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Identities including (x+y+z)^2 and x^3+y^3+z^3-3xyz",
+                      "name": "Identities including (x+y+z)^2 and x^3+y^3+z^3-3xyz",
+                      "code": "CBSE-09-MATH-CH02-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Apply the Factor Theorem to factorise cubic polynomials and expand multi-variable algebraic identities.",
+                      "code": "CBSE-09-MATH-CH02-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 4,
+              "number": 4,
+              "title": "Linear Equations in Two Variables",
+              "name": "Linear Equations in Two Variables",
+              "code": "CBSE-09-MATH-CH04",
+              "domain": "Mathematics",
+              "description": "Linear equation ax + by + c = 0, infinitely many solutions, graphical representation on Cartesian coordinates, equations of lines parallel to axes.",
+              "order_index": 3,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Two-Variable Linear Equations and Graphical Solutions",
+                  "name": "Two-Variable Linear Equations and Graphical Solutions",
+                  "code": "CBSE-09-MATH-CH04-T01",
+                  "domain": "Mathematics",
+                  "description": "Two-Variable Linear Equations and Graphical Solutions",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Standard form ax + by + c = 0",
+                      "name": "Standard form ax + by + c = 0",
+                      "code": "CBSE-09-MATH-CH04-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Deriving ordered pair solutions (x, y)",
+                      "name": "Deriving ordered pair solutions (x, y)",
+                      "code": "CBSE-09-MATH-CH04-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Plotting 2D straight-line solution graphs",
+                      "name": "Plotting 2D straight-line solution graphs",
+                      "code": "CBSE-09-MATH-CH04-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Equations of lines parallel to x-axis and y-axis",
+                      "name": "Equations of lines parallel to x-axis and y-axis",
+                      "code": "CBSE-09-MATH-CH04-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Model constraint scenarios into two-variable linear equations and construct their Cartesian graphs.",
+                      "code": "CBSE-09-MATH-CH04-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "Unit III: Coordinate Geometry",
+          "name": "Unit III: Coordinate Geometry",
+          "code": "CBSE-09-MATH-U03",
+          "domain": "Mathematics",
+          "weightage_marks": 4,
+          "order_index": 3,
+          "chapters": [
+            {
+              "chapter_number": 3,
+              "number": 3,
+              "title": "Coordinate Geometry",
+              "name": "Coordinate Geometry",
+              "code": "CBSE-09-MATH-CH03",
+              "domain": "Mathematics",
+              "description": "Cartesian plane, coordinate axes, quadrants, plotting points, abscissa and ordinate coordinates.",
+              "order_index": 4,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Cartesian System and Quadrant Plotting",
+                  "name": "Cartesian System and Quadrant Plotting",
+                  "code": "CBSE-09-MATH-CH03-T01",
+                  "domain": "Mathematics",
+                  "description": "Cartesian System and Quadrant Plotting",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Cartesian axes and quadrants I, II, III, IV",
+                      "name": "Cartesian axes and quadrants I, II, III, IV",
+                      "code": "CBSE-09-MATH-CH03-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Abscissa (x) and Ordinate (y)",
+                      "name": "Abscissa (x) and Ordinate (y)",
+                      "code": "CBSE-09-MATH-CH03-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Plotting geometric figures from coordinate points",
+                      "name": "Plotting geometric figures from coordinate points",
+                      "code": "CBSE-09-MATH-CH03-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Identify coordinates and plot positions of objects on a two-dimensional Cartesian plane.",
+                      "code": "CBSE-09-MATH-CH03-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 4,
+          "title": "Unit IV: Geometry",
+          "name": "Unit IV: Geometry",
+          "code": "CBSE-09-MATH-U04",
+          "domain": "Mathematics",
+          "weightage_marks": 27,
+          "order_index": 4,
+          "chapters": [
+            {
+              "chapter_number": 5,
+              "number": 5,
+              "title": "Introduction to Euclid's Geometry",
+              "name": "Introduction to Euclid's Geometry",
+              "code": "CBSE-09-MATH-CH05",
+              "domain": "Mathematics",
+              "description": "Axioms and postulates, Euclid's five postulates, equivalent versions of the fifth postulate, deductive geometric system.",
+              "order_index": 5,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Euclidean Axiomatic Foundations",
+                  "name": "Euclidean Axiomatic Foundations",
+                  "code": "CBSE-09-MATH-CH05-T01",
+                  "domain": "Mathematics",
+                  "description": "Euclidean Axiomatic Foundations",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Definitions of point, line, surface",
+                      "name": "Definitions of point, line, surface",
+                      "code": "CBSE-09-MATH-CH05-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Euclid's common notions and axioms",
+                      "name": "Euclid's common notions and axioms",
+                      "code": "CBSE-09-MATH-CH05-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "The Five Postulates and Playfair's axiom for parallel lines",
+                      "name": "The Five Postulates and Playfair's axiom for parallel lines",
+                      "code": "CBSE-09-MATH-CH05-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Distinguish between axioms and postulates and apply Euclidean deductive logic to geometric proofs.",
+                      "code": "CBSE-09-MATH-CH05-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 6,
+              "number": 6,
+              "title": "Lines and Angles",
+              "name": "Lines and Angles",
+              "code": "CBSE-09-MATH-CH06",
+              "domain": "Mathematics",
+              "description": "Intersecting and parallel lines, transversal, vertically opposite angles, alternate interior angles, corresponding angles, consecutive interior angles.",
+              "order_index": 6,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Transversal Theorems and Parallel Lines",
+                  "name": "Transversal Theorems and Parallel Lines",
+                  "code": "CBSE-09-MATH-CH06-T01",
+                  "domain": "Mathematics",
+                  "description": "Transversal Theorems and Parallel Lines",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Linear pair axiom and vertically opposite angles",
+                      "name": "Linear pair axiom and vertically opposite angles",
+                      "code": "CBSE-09-MATH-CH06-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Transversal intersecting two parallel lines",
+                      "name": "Transversal intersecting two parallel lines",
+                      "code": "CBSE-09-MATH-CH06-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Corresponding and alternate interior angle axioms",
+                      "name": "Corresponding and alternate interior angle axioms",
+                      "code": "CBSE-09-MATH-CH06-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Lines parallel to the same line",
+                      "name": "Lines parallel to the same line",
+                      "code": "CBSE-09-MATH-CH06-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Prove angle relationships formed by transversals intersecting parallel lines.",
+                      "code": "CBSE-09-MATH-CH06-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 7,
+              "number": 7,
+              "title": "Triangles",
+              "name": "Triangles",
+              "code": "CBSE-09-MATH-CH07",
+              "domain": "Mathematics",
+              "description": "Congruence of triangles, criteria (SAS, ASA, AAS, SSS, RHS), properties of isosceles triangles, angles opposite to equal sides.",
+              "order_index": 7,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Triangle Congruence Criteria and Proofs",
+                  "name": "Triangle Congruence Criteria and Proofs",
+                  "code": "CBSE-09-MATH-CH07-T01",
+                  "domain": "Mathematics",
+                  "description": "Triangle Congruence Criteria and Proofs",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "SAS and ASA congruence criteria",
+                      "name": "SAS and ASA congruence criteria",
+                      "code": "CBSE-09-MATH-CH07-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "SSS and RHS congruence criteria",
+                      "name": "SSS and RHS congruence criteria",
+                      "code": "CBSE-09-MATH-CH07-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Isosceles triangle theorems: Equal angles opposite to equal sides",
+                      "name": "Isosceles triangle theorems: Equal angles opposite to equal sides",
+                      "code": "CBSE-09-MATH-CH07-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Construct formal geometric proofs establishing triangle congruence using SAS, ASA, SSS, and RHS theorems.",
+                      "code": "CBSE-09-MATH-CH07-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 8,
+              "number": 8,
+              "title": "Quadrilaterals",
+              "name": "Quadrilaterals",
+              "code": "CBSE-09-MATH-CH08",
+              "domain": "Mathematics",
+              "description": "Properties of parallelograms, diagonal divides into two congruent triangles, opposite sides/angles equal, diagonals bisect each other, Mid-Point Theorem.",
+              "order_index": 8,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Parallelogram Theorems and the Mid-Point Theorem",
+                  "name": "Parallelogram Theorems and the Mid-Point Theorem",
+                  "code": "CBSE-09-MATH-CH08-T01",
+                  "domain": "Mathematics",
+                  "description": "Parallelogram Theorems and the Mid-Point Theorem",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "A diagonal of a parallelogram divides it into two congruent triangles",
+                      "name": "A diagonal of a parallelogram divides it into two congruent triangles",
+                      "code": "CBSE-09-MATH-CH08-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Opposite sides and opposite angles are equal",
+                      "name": "Opposite sides and opposite angles are equal",
+                      "code": "CBSE-09-MATH-CH08-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Diagonals of a parallelogram bisect each other",
+                      "name": "Diagonals of a parallelogram bisect each other",
+                      "code": "CBSE-09-MATH-CH08-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "The Mid-Point Theorem and its converse",
+                      "name": "The Mid-Point Theorem and its converse",
+                      "code": "CBSE-09-MATH-CH08-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Prove and apply the Mid-Point Theorem in composite polygons and quadrilateral proofs.",
+                      "code": "CBSE-09-MATH-CH08-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 9,
+              "number": 9,
+              "title": "Circles",
+              "name": "Circles",
+              "code": "CBSE-09-MATH-CH09",
+              "domain": "Mathematics",
+              "description": "Chords and properties, perpendicular from centre to chord, equal chords and distance from centre, angle subtended by an arc at centre vs circle, cyclic quadrilaterals.",
+              "order_index": 9,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Circle Chords, Arc Subtended Angles and Cyclic Quadrilaterals",
+                  "name": "Circle Chords, Arc Subtended Angles and Cyclic Quadrilaterals",
+                  "code": "CBSE-09-MATH-CH09-T01",
+                  "domain": "Mathematics",
+                  "description": "Circle Chords, Arc Subtended Angles and Cyclic Quadrilaterals",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Equal chords subtend equal angles at the centre",
+                      "name": "Equal chords subtend equal angles at the centre",
+                      "code": "CBSE-09-MATH-CH09-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Perpendicular from centre to chord bisects the chord",
+                      "name": "Perpendicular from centre to chord bisects the chord",
+                      "code": "CBSE-09-MATH-CH09-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Angle subtended by an arc at the centre is double the angle at the remaining circle",
+                      "name": "Angle subtended by an arc at the centre is double the angle at the remaining circle",
+                      "code": "CBSE-09-MATH-CH09-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Angles in the same segment of a circle are equal",
+                      "name": "Angles in the same segment of a circle are equal",
+                      "code": "CBSE-09-MATH-CH09-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Sum of opposite angles of a cyclic quadrilateral is 180 degrees",
+                      "name": "Sum of opposite angles of a cyclic quadrilateral is 180 degrees",
+                      "code": "CBSE-09-MATH-CH09-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Derive arc theorems and evaluate angles inside cyclic quadrilaterals.",
+                      "code": "CBSE-09-MATH-CH09-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 5,
+          "title": "Unit V: Mensuration",
+          "name": "Unit V: Mensuration",
+          "code": "CBSE-09-MATH-U05",
+          "domain": "Mathematics",
+          "weightage_marks": 13,
+          "order_index": 5,
+          "chapters": [
+            {
+              "chapter_number": 10,
+              "number": 10,
+              "title": "Heron's Formula",
+              "name": "Heron's Formula",
+              "code": "CBSE-09-MATH-CH10",
+              "domain": "Mathematics",
+              "description": "Area of triangle using Heron's formula sqrt(s(s-a)(s-b)(s-c)), semi-perimeter, and practical triangular plots applications.",
+              "order_index": 10,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Area of Triangles via Heron's Semi-Perimeter Formula",
+                  "name": "Area of Triangles via Heron's Semi-Perimeter Formula",
+                  "code": "CBSE-09-MATH-CH10-T01",
+                  "domain": "Mathematics",
+                  "description": "Area of Triangles via Heron's Semi-Perimeter Formula",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Semi-perimeter definition s = (a + b + c) / 2",
+                      "name": "Semi-perimeter definition s = (a + b + c) / 2",
+                      "code": "CBSE-09-MATH-CH10-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Heron's radical formula area = sqrt(s(s-a)(s-b)(s-c))",
+                      "name": "Heron's radical formula area = sqrt(s(s-a)(s-b)(s-c))",
+                      "code": "CBSE-09-MATH-CH10-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Area of scalene and isosceles triangles without perpendicular heights",
+                      "name": "Area of scalene and isosceles triangles without perpendicular heights",
+                      "code": "CBSE-09-MATH-CH10-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Compute triangle surface areas from three side lengths using Heron's formula.",
+                      "code": "CBSE-09-MATH-CH10-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 11,
+              "number": 11,
+              "title": "Surface Areas and Volumes",
+              "name": "Surface Areas and Volumes",
+              "code": "CBSE-09-MATH-CH11",
+              "domain": "Mathematics",
+              "description": "Surface areas and volumes of right circular cones, spheres, and hemispheres.",
+              "order_index": 11,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Cones, Spheres and Hemispheres",
+                  "name": "Cones, Spheres and Hemispheres",
+                  "code": "CBSE-09-MATH-CH11-T01",
+                  "domain": "Mathematics",
+                  "description": "Cones, Spheres and Hemispheres",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Slant height l = sqrt(r^2 + h^2) and curved surface area of right circular cone pi*r*l",
+                      "name": "Slant height l = sqrt(r^2 + h^2) and curved surface area of right circular cone pi*r*l",
+                      "code": "CBSE-09-MATH-CH11-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Total surface area of cone pi*r*(l + r)",
+                      "name": "Total surface area of cone pi*r*(l + r)",
+                      "code": "CBSE-09-MATH-CH11-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Surface area of sphere 4*pi*r^2 and hemisphere 3*pi*r^2",
+                      "name": "Surface area of sphere 4*pi*r^2 and hemisphere 3*pi*r^2",
+                      "code": "CBSE-09-MATH-CH11-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Volume of cone (1/3)*pi*r^2*h and sphere (4/3)*pi*r^3",
+                      "name": "Volume of cone (1/3)*pi*r^2*h and sphere (4/3)*pi*r^3",
+                      "code": "CBSE-09-MATH-CH11-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Evaluate curved/total surface areas and volumes of circular conical and spherical solids.",
+                      "code": "CBSE-09-MATH-CH11-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 6,
+          "title": "Unit VI: Statistics",
+          "name": "Unit VI: Statistics",
+          "code": "CBSE-09-MATH-U06",
+          "domain": "Mathematics",
+          "weightage_marks": 6,
+          "order_index": 6,
+          "chapters": [
+            {
+              "chapter_number": 12,
+              "number": 12,
+              "title": "Statistics",
+              "name": "Statistics",
+              "code": "CBSE-09-MATH-CH12",
+              "domain": "Mathematics",
+              "description": "Bar graphs, histograms of varying and uniform base widths, frequency polygons for grouped statistical data.",
+              "order_index": 12,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Histograms and Frequency Polygons",
+                  "name": "Histograms and Frequency Polygons",
+                  "code": "CBSE-09-MATH-CH12-T01",
+                  "domain": "Mathematics",
+                  "description": "Histograms and Frequency Polygons",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Histograms with uniform and varying class intervals",
+                      "name": "Histograms with uniform and varying class intervals",
+                      "code": "CBSE-09-MATH-CH12-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Adjusted frequency calculations for varying widths",
+                      "name": "Adjusted frequency calculations for varying widths",
+                      "code": "CBSE-09-MATH-CH12-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Constructing and interpreting frequency polygons",
+                      "name": "Constructing and interpreting frequency polygons",
+                      "code": "CBSE-09-MATH-CH12-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Construct histograms with varying base widths and graph frequency polygons.",
+                      "code": "CBSE-09-MATH-CH12-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "title": "Science",
+      "code": "CBSE-09-SCI",
+      "is_integrated_science": true,
+      "description": "CBSE Class 9 Integrated Science NCERT Rationalized Syllabus 2026-27",
+      "order_index": 2,
+      "units": [
+        {
+          "unit_number": 1,
+          "title": "Unit I: Matter - Its Nature and Behaviour",
+          "name": "Unit I: Matter - Its Nature and Behaviour",
+          "code": "CBSE-09-SCI-U01",
+          "domain": "Science",
+          "weightage_marks": 25,
+          "order_index": 1,
+          "chapters": [
+            {
+              "chapter_number": 1,
+              "number": 1,
+              "title": "Matter in Our Surroundings",
+              "name": "Matter in Our Surroundings",
+              "code": "CBSE-09-SCI-CH01",
+              "domain": "Chemistry",
+              "description": "Particulate nature of matter, states (solid, liquid, gas), kinetic energy, temperature effects, sublimation, latent heat of fusion and vaporization, evaporation and cooling.",
+              "order_index": 1,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Kinetic Theory, Phase Transitions and Latent Heat",
+                  "name": "Kinetic Theory, Phase Transitions and Latent Heat",
+                  "code": "CBSE-09-SCI-CH01-T01",
+                  "domain": "Chemistry",
+                  "description": "Kinetic Theory, Phase Transitions and Latent Heat",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Characteristics of particles of matter and diffusion",
+                      "name": "Characteristics of particles of matter and diffusion",
+                      "code": "CBSE-09-SCI-CH01-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Solid, liquid, and gaseous states comparison",
+                      "name": "Solid, liquid, and gaseous states comparison",
+                      "code": "CBSE-09-SCI-CH01-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Interconversion of states: Melting, boiling, sublimation, deposition",
+                      "name": "Interconversion of states: Melting, boiling, sublimation, deposition",
+                      "code": "CBSE-09-SCI-CH01-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Latent heat of fusion and latent heat of vaporisation",
+                      "name": "Latent heat of fusion and latent heat of vaporisation",
+                      "code": "CBSE-09-SCI-CH01-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Evaporation factors and evaporative cooling mechanism",
+                      "name": "Evaporation factors and evaporative cooling mechanism",
+                      "code": "CBSE-09-SCI-CH01-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Explain phase changes in terms of latent heat and particle kinetic energy.",
+                      "code": "CBSE-09-SCI-CH01-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 2,
+              "number": 2,
+              "title": "Is Matter Around Us Pure",
+              "name": "Is Matter Around Us Pure",
+              "code": "CBSE-09-SCI-CH02",
+              "domain": "Chemistry",
+              "description": "Elements, compounds, mixtures (homogeneous, heterogeneous), solutions, concentration, suspension, colloidal solution, Tyndall effect, physical and chemical changes.",
+              "order_index": 2,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Solutions, Colloids, Suspensions and Tyndall Effect",
+                  "name": "Solutions, Colloids, Suspensions and Tyndall Effect",
+                  "code": "CBSE-09-SCI-CH02-T01",
+                  "domain": "Chemistry",
+                  "description": "Solutions, Colloids, Suspensions and Tyndall Effect",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Pure substances: Elements vs Compounds",
+                      "name": "Pure substances: Elements vs Compounds",
+                      "code": "CBSE-09-SCI-CH02-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Homogeneous vs Heterogeneous mixtures",
+                      "name": "Homogeneous vs Heterogeneous mixtures",
+                      "code": "CBSE-09-SCI-CH02-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "True solution concentration (mass by mass %, mass by volume %)",
+                      "name": "True solution concentration (mass by mass %, mass by volume %)",
+                      "code": "CBSE-09-SCI-CH02-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Colloids, dispersed phase/medium and the Tyndall effect",
+                      "name": "Colloids, dispersed phase/medium and the Tyndall effect",
+                      "code": "CBSE-09-SCI-CH02-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Suspensions vs Colloids vs Solutions",
+                      "name": "Suspensions vs Colloids vs Solutions",
+                      "code": "CBSE-09-SCI-CH02-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Differentiate mixtures by particle dimensions and compute percentage concentrations of solutions.",
+                      "code": "CBSE-09-SCI-CH02-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 3,
+              "number": 3,
+              "title": "Atoms and Molecules",
+              "name": "Atoms and Molecules",
+              "code": "CBSE-09-SCI-CH03",
+              "domain": "Chemistry",
+              "description": "Laws of chemical combination (conservation of mass, constant proportions), Dalton's atomic theory, atomic mass, molecules, polyatomic ions, writing chemical formulae, molecular mass.",
+              "order_index": 3,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Laws of Chemical Combination and Chemical Formula Formulation",
+                  "name": "Laws of Chemical Combination and Chemical Formula Formulation",
+                  "code": "CBSE-09-SCI-CH03-T01",
+                  "domain": "Chemistry",
+                  "description": "Laws of Chemical Combination and Chemical Formula Formulation",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Law of Conservation of Mass and Law of Constant Proportions",
+                      "name": "Law of Conservation of Mass and Law of Constant Proportions",
+                      "code": "CBSE-09-SCI-CH03-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Daltons atomic theory postulates",
+                      "name": "Daltons atomic theory postulates",
+                      "code": "CBSE-09-SCI-CH03-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Atomic mass unit (u) and relative atomic mass",
+                      "name": "Atomic mass unit (u) and relative atomic mass",
+                      "code": "CBSE-09-SCI-CH03-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Valency and criss-cross method for writing chemical formulae",
+                      "name": "Valency and criss-cross method for writing chemical formulae",
+                      "code": "CBSE-09-SCI-CH03-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Molecular mass and formula unit mass",
+                      "name": "Molecular mass and formula unit mass",
+                      "code": "CBSE-09-SCI-CH03-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Formulate chemical formulas of ionic and covalent compounds using valency rules and compute molecular masses.",
+                      "code": "CBSE-09-SCI-CH03-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 4,
+              "number": 4,
+              "title": "Structure of the Atom",
+              "name": "Structure of the Atom",
+              "code": "CBSE-09-SCI-CH04",
+              "domain": "Chemistry",
+              "description": "Subatomic particles (electrons, protons, neutrons), Thomson's model, Rutherford's alpha-scattering experiment, Bohr's model, electron distribution (Bohr-Bury rules), atomic number, mass number, isotopes, isobars.",
+              "order_index": 4,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Subatomic Particles, Bohr-Bury Shells, Isotopes and Isobars",
+                  "name": "Subatomic Particles, Bohr-Bury Shells, Isotopes and Isobars",
+                  "code": "CBSE-09-SCI-CH04-T01",
+                  "domain": "Chemistry",
+                  "description": "Subatomic Particles, Bohr-Bury Shells, Isotopes and Isobars",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Cathode rays, canal rays, and subatomic discovery",
+                      "name": "Cathode rays, canal rays, and subatomic discovery",
+                      "code": "CBSE-09-SCI-CH04-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Rutherfords gold foil scattering experiment and nuclear model",
+                      "name": "Rutherfords gold foil scattering experiment and nuclear model",
+                      "code": "CBSE-09-SCI-CH04-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Bohrs model of atom with discrete energy orbits",
+                      "name": "Bohrs model of atom with discrete energy orbits",
+                      "code": "CBSE-09-SCI-CH04-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Bohr-Bury electronic distribution (2n^2 rule)",
+                      "name": "Bohr-Bury electronic distribution (2n^2 rule)",
+                      "code": "CBSE-09-SCI-CH04-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Valency determination and valence electrons",
+                      "name": "Valency determination and valence electrons",
+                      "code": "CBSE-09-SCI-CH04-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Atomic number Z, Mass number A, isotopes and isobars",
+                      "name": "Atomic number Z, Mass number A, isotopes and isobars",
+                      "code": "CBSE-09-SCI-CH04-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Deduce electronic configurations of elements (Z=1 to 20) and calculate fractional atomic masses from isotopic abundance.",
+                      "code": "CBSE-09-SCI-CH04-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "Unit II: Organization in the Living World",
+          "name": "Unit II: Organization in the Living World",
+          "code": "CBSE-09-SCI-U02",
+          "domain": "Science",
+          "weightage_marks": 22,
+          "order_index": 2,
+          "chapters": [
+            {
+              "chapter_number": 5,
+              "number": 5,
+              "title": "The Fundamental Unit of Life",
+              "name": "The Fundamental Unit of Life",
+              "code": "CBSE-09-SCI-CH05",
+              "domain": "Biology",
+              "description": "Cell as basic unit of life, prokaryotic and eukaryotic cells, cell membrane (osmosis, diffusion), cell wall, nucleus, cytoplasm, organelles (ER, Golgi apparatus, lysosomes, mitochondria, plastids, vacuoles).",
+              "order_index": 5,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Cellular Ultra-Structure and Organelle Cytology",
+                  "name": "Cellular Ultra-Structure and Organelle Cytology",
+                  "code": "CBSE-09-SCI-CH05-T01",
+                  "domain": "Biology",
+                  "description": "Cellular Ultra-Structure and Organelle Cytology",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Prokaryotic vs Eukaryotic cell comparison",
+                      "name": "Prokaryotic vs Eukaryotic cell comparison",
+                      "code": "CBSE-09-SCI-CH05-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Plasma membrane fluidity, diffusion, and osmosis in hypotonic/hypertonic media",
+                      "name": "Plasma membrane fluidity, diffusion, and osmosis in hypotonic/hypertonic media",
+                      "code": "CBSE-09-SCI-CH05-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Endoplasmic reticulum (RER & SER) and Golgi apparatus",
+                      "name": "Endoplasmic reticulum (RER & SER) and Golgi apparatus",
+                      "code": "CBSE-09-SCI-CH05-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Mitochondria as powerhouse of the cell (ATP generation)",
+                      "name": "Mitochondria as powerhouse of the cell (ATP generation)",
+                      "code": "CBSE-09-SCI-CH05-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Plastids (chloroplasts) and central plant vacuoles",
+                      "name": "Plastids (chloroplasts) and central plant vacuoles",
+                      "code": "CBSE-09-SCI-CH05-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Lysosomes as suicide bags and cellular cleaning",
+                      "name": "Lysosomes as suicide bags and cellular cleaning",
+                      "code": "CBSE-09-SCI-CH05-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Correlate cell organelle structures with their biochemical physiological functions in plant and animal cells.",
+                      "code": "CBSE-09-SCI-CH05-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 6,
+              "number": 6,
+              "title": "Tissues",
+              "name": "Tissues",
+              "code": "CBSE-09-SCI-CH06",
+              "domain": "Biology",
+              "description": "Plant tissues (meristematic: apical, lateral, intercalary; permanent: parenchyma, collenchyma, sclerenchyma; complex: xylem, phloem), animal tissues (epithelial, connective: bone, cartilage, blood; muscular: striated, smooth, cardiac; nervous: neuron).",
+              "order_index": 6,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Plant and Animal Histology",
+                  "name": "Plant and Animal Histology",
+                  "code": "CBSE-09-SCI-CH06-T01",
+                  "domain": "Biology",
+                  "description": "Plant and Animal Histology",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Meristematic plant tissues: Apical, intercalary, and lateral cambium",
+                      "name": "Meristematic plant tissues: Apical, intercalary, and lateral cambium",
+                      "code": "CBSE-09-SCI-CH06-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Simple permanent tissues: Parenchyma, collenchyma, sclerenchyma",
+                      "name": "Simple permanent tissues: Parenchyma, collenchyma, sclerenchyma",
+                      "code": "CBSE-09-SCI-CH06-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Complex vascular tissues: Xylem tracheids/vessels and Phloem sieve tubes",
+                      "name": "Complex vascular tissues: Xylem tracheids/vessels and Phloem sieve tubes",
+                      "code": "CBSE-09-SCI-CH06-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Animal epithelial tissues (squamous, cuboidal, columnar, ciliated)",
+                      "name": "Animal epithelial tissues (squamous, cuboidal, columnar, ciliated)",
+                      "code": "CBSE-09-SCI-CH06-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Connective tissues: Blood matrix, bone, cartilage, areolar, adipose",
+                      "name": "Connective tissues: Blood matrix, bone, cartilage, areolar, adipose",
+                      "code": "CBSE-09-SCI-CH06-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Muscular tissues (striated, unstriated, cardiac) and neuron nervous structure",
+                      "name": "Muscular tissues (striated, unstriated, cardiac) and neuron nervous structure",
+                      "code": "CBSE-09-SCI-CH06-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Identify histologic tissue specimens and relate cell structural specializations to physiological transport and mechanical support.",
+                      "code": "CBSE-09-SCI-CH06-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 12,
+              "number": 12,
+              "title": "Improvement in Food Resources",
+              "name": "Improvement in Food Resources",
+              "code": "CBSE-09-SCI-CH12",
+              "domain": "Biology",
+              "description": "Plant and animal breeding, fertilizers and manures, pest and disease protection, organic farming, animal husbandry (cattle, poultry, fisheries, beekeeping).",
+              "order_index": 7,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Agronomic Practices and Animal Husbandry",
+                  "name": "Agronomic Practices and Animal Husbandry",
+                  "code": "CBSE-09-SCI-CH12-T01",
+                  "domain": "Biology",
+                  "description": "Agronomic Practices and Animal Husbandry",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Crop variety improvement through hybridization",
+                      "name": "Crop variety improvement through hybridization",
+                      "code": "CBSE-09-SCI-CH12-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Nutrient management: Manures and chemical fertilizers",
+                      "name": "Nutrient management: Manures and chemical fertilizers",
+                      "code": "CBSE-09-SCI-CH12-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Biological pest control and storage of food grains",
+                      "name": "Biological pest control and storage of food grains",
+                      "code": "CBSE-09-SCI-CH12-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Cattle farming (milch vs draught breeds)",
+                      "name": "Cattle farming (milch vs draught breeds)",
+                      "code": "CBSE-09-SCI-CH12-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Poultry production and fish culture (composite fish culture)",
+                      "name": "Poultry production and fish culture (composite fish culture)",
+                      "code": "CBSE-09-SCI-CH12-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Apiculture and honey production",
+                      "name": "Apiculture and honey production",
+                      "code": "CBSE-09-SCI-CH12-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Evaluate sustainable agricultural practices and animal husbandry systems to optimize harvest yields.",
+                      "code": "CBSE-09-SCI-CH12-LO01",
+                      "bloom_level": "EVALUATE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "Unit III: Motion, Force and Work",
+          "name": "Unit III: Motion, Force and Work",
+          "code": "CBSE-09-SCI-U03",
+          "domain": "Science",
+          "weightage_marks": 27,
+          "order_index": 3,
+          "chapters": [
+            {
+              "chapter_number": 7,
+              "number": 7,
+              "title": "Motion",
+              "name": "Motion",
+              "code": "CBSE-09-SCI-CH07",
+              "domain": "Physics",
+              "description": "Distance and displacement, speed and velocity, uniform and non-uniform motion, acceleration, distance-time and velocity-time graphs, equations of motion by graphical method (v = u + at, s = ut + 1/2 at^2, v^2 = u^2 + 2as), uniform circular motion.",
+              "order_index": 8,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Kinematic Equations and Graphical Analysis",
+                  "name": "Kinematic Equations and Graphical Analysis",
+                  "code": "CBSE-09-SCI-CH07-T01",
+                  "domain": "Physics",
+                  "description": "Kinematic Equations and Graphical Analysis",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Scalar distance vs Vector displacement",
+                      "name": "Scalar distance vs Vector displacement",
+                      "code": "CBSE-09-SCI-CH07-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Uniform acceleration and velocity-time graphs",
+                      "name": "Uniform acceleration and velocity-time graphs",
+                      "code": "CBSE-09-SCI-CH07-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Graphical derivation of v = u + at",
+                      "name": "Graphical derivation of v = u + at",
+                      "code": "CBSE-09-SCI-CH07-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Graphical derivation of s = ut + 0.5 a t^2",
+                      "name": "Graphical derivation of s = ut + 0.5 a t^2",
+                      "code": "CBSE-09-SCI-CH07-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Graphical derivation of v^2 - u^2 = 2as",
+                      "name": "Graphical derivation of v^2 - u^2 = 2as",
+                      "code": "CBSE-09-SCI-CH07-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Uniform circular motion and centripetal acceleration v = 2*pi*r / t",
+                      "name": "Uniform circular motion and centripetal acceleration v = 2*pi*r / t",
+                      "code": "CBSE-09-SCI-CH07-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Derive kinematic motion equations graphically and solve multi-stage acceleration trajectories.",
+                      "code": "CBSE-09-SCI-CH07-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 8,
+              "number": 8,
+              "title": "Force and Laws of Motion",
+              "name": "Force and Laws of Motion",
+              "code": "CBSE-09-SCI-CH08",
+              "domain": "Physics",
+              "description": "Balanced and unbalanced forces, First Law of Motion, inertia and mass, momentum, Second Law of Motion (F = ma), Third Law of Motion, action and reaction.",
+              "order_index": 9,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Newtonian Dynamics and Conservation of Momentum",
+                  "name": "Newtonian Dynamics and Conservation of Momentum",
+                  "code": "CBSE-09-SCI-CH08-T01",
+                  "domain": "Physics",
+                  "description": "Newtonian Dynamics and Conservation of Momentum",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Balanced vs Unbalanced forces",
+                      "name": "Balanced vs Unbalanced forces",
+                      "code": "CBSE-09-SCI-CH08-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "First Law of Motion and qualitative inertia",
+                      "name": "First Law of Motion and qualitative inertia",
+                      "code": "CBSE-09-SCI-CH08-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Linear momentum p = m*v",
+                      "name": "Linear momentum p = m*v",
+                      "code": "CBSE-09-SCI-CH08-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Second Law of Motion mathematical derivation F = k*m*a = m*a",
+                      "name": "Second Law of Motion mathematical derivation F = k*m*a = m*a",
+                      "code": "CBSE-09-SCI-CH08-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Third Law of Motion: Action and reaction forces across interacting bodies",
+                      "name": "Third Law of Motion: Action and reaction forces across interacting bodies",
+                      "code": "CBSE-09-SCI-CH08-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Apply Newton's three laws of motion to compute acceleration, force, and recoil velocities.",
+                      "code": "CBSE-09-SCI-CH08-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 9,
+              "number": 9,
+              "title": "Gravitation",
+              "name": "Gravitation",
+              "code": "CBSE-09-SCI-CH09",
+              "domain": "Physics",
+              "description": "Universal Law of Gravitation (F = G M m / d^2), gravitational acceleration (g), mass vs weight, free fall, thrust and pressure, Archimedes' Principle, buoyancy, relative density.",
+              "order_index": 10,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Universal Gravitation, Free Fall and Archimedes' Principle",
+                  "name": "Universal Gravitation, Free Fall and Archimedes' Principle",
+                  "code": "CBSE-09-SCI-CH09-T01",
+                  "domain": "Physics",
+                  "description": "Universal Gravitation, Free Fall and Archimedes' Principle",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Universal Law of Gravitation and value of G = 6.67 x 10^-11 N m^2 / kg^2",
+                      "name": "Universal Law of Gravitation and value of G = 6.67 x 10^-11 N m^2 / kg^2",
+                      "code": "CBSE-09-SCI-CH09-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Acceleration due to gravity g = G*M / R^2 and free fall motion",
+                      "name": "Acceleration due to gravity g = G*M / R^2 and free fall motion",
+                      "code": "CBSE-09-SCI-CH09-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Distinction between mass (kg) and weight (N) on Earth and Moon",
+                      "name": "Distinction between mass (kg) and weight (N) on Earth and Moon",
+                      "code": "CBSE-09-SCI-CH09-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Buoyant force and Archimedes principle",
+                      "name": "Buoyant force and Archimedes principle",
+                      "code": "CBSE-09-SCI-CH09-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Relative density of substances",
+                      "name": "Relative density of substances",
+                      "code": "CBSE-09-SCI-CH09-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Compute gravitational forces, free fall kinematics, and buoyant forces using Archimedes' principle.",
+                      "code": "CBSE-09-SCI-CH09-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 10,
+              "number": 10,
+              "title": "Work and Energy",
+              "name": "Work and Energy",
+              "code": "CBSE-09-SCI-CH10",
+              "domain": "Physics",
+              "description": "Work done by a constant force (W = F s cos theta), kinetic energy (1/2 m v^2), potential energy (m g h), Law of Conservation of Energy, power (P = W/t), commercial unit of electrical energy (kWh).",
+              "order_index": 11,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Work Done, Mechanical Energy and Energy Conservation",
+                  "name": "Work Done, Mechanical Energy and Energy Conservation",
+                  "code": "CBSE-09-SCI-CH10-T01",
+                  "domain": "Physics",
+                  "description": "Work Done, Mechanical Energy and Energy Conservation",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Scientific concept of work and conditions W = F*s",
+                      "name": "Scientific concept of work and conditions W = F*s",
+                      "code": "CBSE-09-SCI-CH10-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Kinetic energy derivation E_k = 0.5 * m * v^2",
+                      "name": "Kinetic energy derivation E_k = 0.5 * m * v^2",
+                      "code": "CBSE-09-SCI-CH10-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Gravitational potential energy E_p = m*g*h",
+                      "name": "Gravitational potential energy E_p = m*g*h",
+                      "code": "CBSE-09-SCI-CH10-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Law of Conservation of Mechanical Energy in free fall",
+                      "name": "Law of Conservation of Mechanical Energy in free fall",
+                      "code": "CBSE-09-SCI-CH10-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Power P = W / t in Watts and commercial electrical unit 1 kWh = 3.6 x 10^6 J",
+                      "name": "Power P = W / t in Watts and commercial electrical unit 1 kWh = 3.6 x 10^6 J",
+                      "code": "CBSE-09-SCI-CH10-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate mechanical work, kinetic and potential energies, and verify energy conservation during free fall.",
+                      "code": "CBSE-09-SCI-CH10-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 11,
+              "number": 11,
+              "title": "Sound",
+              "name": "Sound",
+              "code": "CBSE-09-SCI-CH11",
+              "domain": "Physics",
+              "description": "Production and propagation of sound, longitudinal waves, compressions and rarefactions, speed of sound, reflection of sound, echo, reverberation, applications of ultrasound (SONAR), structure of human ear.",
+              "order_index": 12,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Wave Propagation, Reflection, Ultrasound and SONAR",
+                  "name": "Wave Propagation, Reflection, Ultrasound and SONAR",
+                  "code": "CBSE-09-SCI-CH11-T01",
+                  "domain": "Physics",
+                  "description": "Wave Propagation, Reflection, Ultrasound and SONAR",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Longitudinal mechanical sound waves and density variations",
+                      "name": "Longitudinal mechanical sound waves and density variations",
+                      "code": "CBSE-09-SCI-CH11-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Wavelength, frequency, speed formula v = lambda * nu",
+                      "name": "Wavelength, frequency, speed formula v = lambda * nu",
+                      "code": "CBSE-09-SCI-CH11-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Echo formation and minimum reflection distance (17.2 m)",
+                      "name": "Echo formation and minimum reflection distance (17.2 m)",
+                      "code": "CBSE-09-SCI-CH11-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Reverberation reduction in auditoriums",
+                      "name": "Reverberation reduction in auditoriums",
+                      "code": "CBSE-09-SCI-CH11-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Ultrasound applications: Echocardiography and SONAR ranging",
+                      "name": "Ultrasound applications: Echocardiography and SONAR ranging",
+                      "code": "CBSE-09-SCI-CH11-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Anatomy and acoustic function of the human auditory ear",
+                      "name": "Anatomy and acoustic function of the human auditory ear",
+                      "code": "CBSE-09-SCI-CH11-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Apply wave relationship v = lambda * nu to calculate echo timings, SONAR ocean depths, and ultrasound frequencies.",
+                      "code": "CBSE-09-SCI-CH11-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1699 @@
+{
+  "class_number": 8,
+  "class_level": "Class 8",
+  "title": "Class 8",
+  "code": "CLASS-08",
+  "class_code": "CLASS-08",
+  "academic_year": "2026-27",
+  "board": "CBSE",
+  "description": "CBSE Class 8 Official NCERT Curriculum 2026-27",
+  "order_index": 8,
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "title": "Mathematics",
+      "code": "CBSE-08-MATH",
+      "is_integrated_science": false,
+      "description": "CBSE Class 8 Mathematics NCERT Rationalized Syllabus 2026-27",
+      "order_index": 1,
+      "units": [
+        {
+          "unit_number": 1,
+          "title": "Unit I: Number Systems",
+          "name": "Unit I: Number Systems",
+          "code": "CBSE-08-MATH-U01",
+          "domain": "Mathematics",
+          "weightage_marks": 15,
+          "order_index": 1,
+          "chapters": [
+            {
+              "chapter_number": 1,
+              "number": 1,
+              "title": "Rational Numbers",
+              "name": "Rational Numbers",
+              "code": "CBSE-08-MATH-CH01",
+              "domain": "Mathematics",
+              "description": "Closure, commutativity, associativity, distributive law, additive & multiplicative identity, inverse, and representation on number line.",
+              "order_index": 1,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Properties and Representation of Rational Numbers",
+                  "name": "Properties and Representation of Rational Numbers",
+                  "code": "CBSE-08-MATH-CH01-T01",
+                  "domain": "Mathematics",
+                  "description": "Properties and Representation of Rational Numbers",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Closure, Commutative & Associative properties",
+                      "name": "Closure, Commutative & Associative properties",
+                      "code": "CBSE-08-MATH-CH01-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Distributive property of multiplication over addition",
+                      "name": "Distributive property of multiplication over addition",
+                      "code": "CBSE-08-MATH-CH01-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Representation on the number line",
+                      "name": "Representation on the number line",
+                      "code": "CBSE-08-MATH-CH01-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Finding rational numbers between two rational numbers",
+                      "name": "Finding rational numbers between two rational numbers",
+                      "code": "CBSE-08-MATH-CH01-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Apply arithmetic properties to simplify complex rational number expressions and place them accurately on the real number line.",
+                      "code": "CBSE-08-MATH-CH01-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [
+                    {
+                      "question": "",
+                      "options": [
+                        {
+                          "id": "A",
+                          "text": "2"
+                        },
+                        {
+                          "id": "B",
+                          "text": "-2"
+                        },
+                        {
+                          "id": "C",
+                          "text": "5/2"
+                        },
+                        {
+                          "id": "D",
+                          "text": "1/2"
+                        }
+                      ],
+                      "correct_answer": "A",
+                      "explanation": "Group terms with common factor (3/5): (3/5) * [-2/3 - 1/6] + 5/2 = (3/5) * [-5/6] + 5/2 = -1/2 + 5/2 = 4/2 = 2."
+                    }
+                  ],
+                  "practice_questions": [
+                    {
+                      "question": "",
+                      "options": [
+                        {
+                          "id": "A",
+                          "text": "2"
+                        },
+                        {
+                          "id": "B",
+                          "text": "-2"
+                        },
+                        {
+                          "id": "C",
+                          "text": "5/2"
+                        },
+                        {
+                          "id": "D",
+                          "text": "1/2"
+                        }
+                      ],
+                      "correct_answer": "A",
+                      "explanation": "Group terms with common factor (3/5): (3/5) * [-2/3 - 1/6] + 5/2 = (3/5) * [-5/6] + 5/2 = -1/2 + 5/2 = 4/2 = 2."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "Unit II: Algebra & Equations",
+          "name": "Unit II: Algebra & Equations",
+          "code": "CBSE-08-MATH-U02",
+          "domain": "Mathematics",
+          "weightage_marks": 25,
+          "order_index": 2,
+          "chapters": [
+            {
+              "chapter_number": 2,
+              "number": 2,
+              "title": "Linear Equations in One Variable",
+              "name": "Linear Equations in One Variable",
+              "code": "CBSE-08-MATH-CH02",
+              "domain": "Mathematics",
+              "description": "Solving linear equations with variables on one side and both sides, cross multiplication, word applications on numbers, age, and geometry.",
+              "order_index": 2,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Solving Linear Equations and Modeling Word Problems",
+                  "name": "Solving Linear Equations and Modeling Word Problems",
+                  "code": "CBSE-08-MATH-CH02-T01",
+                  "domain": "Mathematics",
+                  "description": "Solving Linear Equations and Modeling Word Problems",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Equations with linear expressions on one side",
+                      "name": "Equations with linear expressions on one side",
+                      "code": "CBSE-08-MATH-CH02-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Equations with variables on both sides",
+                      "name": "Equations with variables on both sides",
+                      "code": "CBSE-08-MATH-CH02-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Reducing equations to simpler form by cross-multiplication",
+                      "name": "Reducing equations to simpler form by cross-multiplication",
+                      "code": "CBSE-08-MATH-CH02-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Age, perimeter, and currency denomination word problems",
+                      "name": "Age, perimeter, and currency denomination word problems",
+                      "code": "CBSE-08-MATH-CH02-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Formulate and solve single-variable linear equations originating from realistic word problems.",
+                      "code": "CBSE-08-MATH-CH02-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 8,
+              "number": 8,
+              "title": "Algebraic Expressions and Identities",
+              "name": "Algebraic Expressions and Identities",
+              "code": "CBSE-08-MATH-CH08",
+              "domain": "Mathematics",
+              "description": "Terms, coefficients, addition, subtraction, multiplication of monomials, binomials, polynomials, and standard algebraic identities.",
+              "order_index": 3,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Polynomial Operations and Standard Algebraic Identities",
+                  "name": "Polynomial Operations and Standard Algebraic Identities",
+                  "code": "CBSE-08-MATH-CH08-T01",
+                  "domain": "Mathematics",
+                  "description": "Polynomial Operations and Standard Algebraic Identities",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Multiplication of binomial by binomial",
+                      "name": "Multiplication of binomial by binomial",
+                      "code": "CBSE-08-MATH-CH08-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Identity (a + b)^2 = a^2 + 2ab + b^2",
+                      "name": "Identity (a + b)^2 = a^2 + 2ab + b^2",
+                      "code": "CBSE-08-MATH-CH08-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Identity (a - b)^2 = a^2 - 2ab + b^2",
+                      "name": "Identity (a - b)^2 = a^2 - 2ab + b^2",
+                      "code": "CBSE-08-MATH-CH08-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Identity (a + b)(a - b) = a^2 - b^2",
+                      "name": "Identity (a + b)(a - b) = a^2 - b^2",
+                      "code": "CBSE-08-MATH-CH08-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Identity (x + a)(x + b) = x^2 + (a + b)x + ab",
+                      "name": "Identity (x + a)(x + b) = x^2 + (a + b)x + ab",
+                      "code": "CBSE-08-MATH-CH08-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Expand and evaluate algebraic products using standard identities.",
+                      "code": "CBSE-08-MATH-CH08-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 14,
+              "number": 14,
+              "title": "Factorisation",
+              "name": "Factorisation",
+              "code": "CBSE-08-MATH-CH14",
+              "domain": "Mathematics",
+              "description": "Method of common factors, factorisation by regrouping terms, using identities, and division of algebraic expressions.",
+              "order_index": 4,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Factorisation Techniques and Polynomial Division",
+                  "name": "Factorisation Techniques and Polynomial Division",
+                  "code": "CBSE-08-MATH-CH14-T01",
+                  "domain": "Mathematics",
+                  "description": "Factorisation Techniques and Polynomial Division",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Common factors and regrouping",
+                      "name": "Common factors and regrouping",
+                      "code": "CBSE-08-MATH-CH14-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Factorisation using algebraic identities",
+                      "name": "Factorisation using algebraic identities",
+                      "code": "CBSE-08-MATH-CH14-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Splitting middle term for trinomials",
+                      "name": "Splitting middle term for trinomials",
+                      "code": "CBSE-08-MATH-CH14-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Division of polynomial by monomial and polynomial",
+                      "name": "Division of polynomial by monomial and polynomial",
+                      "code": "CBSE-08-MATH-CH14-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Factorise polynomials completely using grouping, identities, and middle-term splitting.",
+                      "code": "CBSE-08-MATH-CH14-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "Unit III: Geometry",
+          "name": "Unit III: Geometry",
+          "code": "CBSE-08-MATH-U03",
+          "domain": "Mathematics",
+          "weightage_marks": 15,
+          "order_index": 3,
+          "chapters": [
+            {
+              "chapter_number": 3,
+              "number": 3,
+              "title": "Understanding Quadrilaterals",
+              "name": "Understanding Quadrilaterals",
+              "code": "CBSE-08-MATH-CH03",
+              "domain": "Mathematics",
+              "description": "Polygons, convex/concave, regular/irregular, angle sum property, exterior angles theorem, parallelogram, rhombus, rectangle, square, kite.",
+              "order_index": 5,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Polygons and Properties of Special Parallelograms",
+                  "name": "Polygons and Properties of Special Parallelograms",
+                  "code": "CBSE-08-MATH-CH03-T01",
+                  "domain": "Mathematics",
+                  "description": "Polygons and Properties of Special Parallelograms",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Classification of polygons and angle sum property",
+                      "name": "Classification of polygons and angle sum property",
+                      "code": "CBSE-08-MATH-CH03-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Sum of the measures of the exterior angles of a polygon",
+                      "name": "Sum of the measures of the exterior angles of a polygon",
+                      "code": "CBSE-08-MATH-CH03-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Trapezium, kite, and parallelogram properties",
+                      "name": "Trapezium, kite, and parallelogram properties",
+                      "code": "CBSE-08-MATH-CH03-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Special parallelograms: Rhombus, rectangle, square",
+                      "name": "Special parallelograms: Rhombus, rectangle, square",
+                      "code": "CBSE-08-MATH-CH03-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate missing interior and exterior angles of polygons and deduce properties of special quadrilaterals.",
+                      "code": "CBSE-08-MATH-CH03-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 4,
+          "title": "Unit IV: Arithmetic & Commercial Mathematics",
+          "name": "Unit IV: Arithmetic & Commercial Mathematics",
+          "code": "CBSE-08-MATH-U04",
+          "domain": "Mathematics",
+          "weightage_marks": 20,
+          "order_index": 4,
+          "chapters": [
+            {
+              "chapter_number": 4,
+              "number": 4,
+              "title": "Data Handling",
+              "name": "Data Handling",
+              "code": "CBSE-08-MATH-CH04",
+              "domain": "Mathematics",
+              "description": "Organising data, frequency distribution table, grouped data, histogram, circle graph (pie chart), and basic experimental probability.",
+              "order_index": 6,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Data Organization, Pie Charts and Probability",
+                  "name": "Data Organization, Pie Charts and Probability",
+                  "code": "CBSE-08-MATH-CH04-T01",
+                  "domain": "Mathematics",
+                  "description": "Data Organization, Pie Charts and Probability",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Grouped frequency distribution and histograms",
+                      "name": "Grouped frequency distribution and histograms",
+                      "code": "CBSE-08-MATH-CH04-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Drawing and interpreting circle graphs (pie charts)",
+                      "name": "Drawing and interpreting circle graphs (pie charts)",
+                      "code": "CBSE-08-MATH-CH04-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Equally likely outcomes and chance probability",
+                      "name": "Equally likely outcomes and chance probability",
+                      "code": "CBSE-08-MATH-CH04-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Construct pie charts from statistical frequency data and compute elementary probabilities.",
+                      "code": "CBSE-08-MATH-CH04-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 5,
+              "number": 5,
+              "title": "Squares and Square Roots",
+              "name": "Squares and Square Roots",
+              "code": "CBSE-08-MATH-CH05",
+              "domain": "Mathematics",
+              "description": "Properties of square numbers, Pythagorean triplets, finding square root through prime factorisation and long division method.",
+              "order_index": 7,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Square Properties, Prime Factorisation and Long Division",
+                  "name": "Square Properties, Prime Factorisation and Long Division",
+                  "code": "CBSE-08-MATH-CH05-T01",
+                  "domain": "Mathematics",
+                  "description": "Square Properties, Prime Factorisation and Long Division",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Properties of square numbers and unit digit patterns",
+                      "name": "Properties of square numbers and unit digit patterns",
+                      "code": "CBSE-08-MATH-CH05-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Pythagorean triplets",
+                      "name": "Pythagorean triplets",
+                      "code": "CBSE-08-MATH-CH05-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Square roots via prime factorisation",
+                      "name": "Square roots via prime factorisation",
+                      "code": "CBSE-08-MATH-CH05-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Square roots of integers and decimals via long division",
+                      "name": "Square roots of integers and decimals via long division",
+                      "code": "CBSE-08-MATH-CH05-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Determine square roots of whole numbers and decimals using prime factorisation and long division.",
+                      "code": "CBSE-08-MATH-CH05-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 6,
+              "number": 6,
+              "title": "Cubes and Cube Roots",
+              "name": "Cubes and Cube Roots",
+              "code": "CBSE-08-MATH-CH06",
+              "domain": "Mathematics",
+              "description": "Hardy-Ramanujan numbers, cubes of numbers, cube roots via prime factorisation method and estimation method.",
+              "order_index": 8,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Cubic Patterns and Prime Factorisation Cube Roots",
+                  "name": "Cubic Patterns and Prime Factorisation Cube Roots",
+                  "code": "CBSE-08-MATH-CH06-T01",
+                  "domain": "Mathematics",
+                  "description": "Cubic Patterns and Prime Factorisation Cube Roots",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Hardy-Ramanujan numbers and patterns in cube numbers",
+                      "name": "Hardy-Ramanujan numbers and patterns in cube numbers",
+                      "code": "CBSE-08-MATH-CH06-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Cube root through prime factorisation",
+                      "name": "Cube root through prime factorisation",
+                      "code": "CBSE-08-MATH-CH06-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Cube root of perfect cubes by estimation",
+                      "name": "Cube root of perfect cubes by estimation",
+                      "code": "CBSE-08-MATH-CH06-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Evaluate cube roots of perfect cubes through prime factor decomposition.",
+                      "code": "CBSE-08-MATH-CH06-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 7,
+              "number": 7,
+              "title": "Comparing Quantities",
+              "name": "Comparing Quantities",
+              "code": "CBSE-08-MATH-CH07",
+              "domain": "Mathematics",
+              "description": "Ratios, percentages, discount, profit and loss, GST, compound interest formula compounded annually and semi-annually.",
+              "order_index": 9,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Percentages, Profit/Loss, GST and Compound Interest",
+                  "name": "Percentages, Profit/Loss, GST and Compound Interest",
+                  "code": "CBSE-08-MATH-CH07-T01",
+                  "domain": "Mathematics",
+                  "description": "Percentages, Profit/Loss, GST and Compound Interest",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Discount and Goods and Services Tax (GST)",
+                      "name": "Discount and Goods and Services Tax (GST)",
+                      "code": "CBSE-08-MATH-CH07-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Profit, loss, and overhead expenses",
+                      "name": "Profit, loss, and overhead expenses",
+                      "code": "CBSE-08-MATH-CH07-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Deducing compound interest formula A = P(1 + R/100)^n",
+                      "name": "Deducing compound interest formula A = P(1 + R/100)^n",
+                      "code": "CBSE-08-MATH-CH07-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Compounded annually vs half-yearly calculations",
+                      "name": "Compounded annually vs half-yearly calculations",
+                      "code": "CBSE-08-MATH-CH07-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Compute financial interest, sales discounts, and tax liabilities using compound growth formulas.",
+                      "code": "CBSE-08-MATH-CH07-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 5,
+          "title": "Unit V: Mensuration & Graphs",
+          "name": "Unit V: Mensuration & Graphs",
+          "code": "CBSE-08-MATH-U05",
+          "domain": "Mathematics",
+          "weightage_marks": 15,
+          "order_index": 5,
+          "chapters": [
+            {
+              "chapter_number": 9,
+              "number": 9,
+              "title": "Mensuration",
+              "name": "Mensuration",
+              "code": "CBSE-08-MATH-CH09",
+              "domain": "Mathematics",
+              "description": "Area of trapezium, general quadrilateral, rhombus, polygon; surface area and volume of cuboid, cube, and right circular cylinder.",
+              "order_index": 10,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Surface Areas and Volumes of 3D Geometric Solids",
+                  "name": "Surface Areas and Volumes of 3D Geometric Solids",
+                  "code": "CBSE-08-MATH-CH09-T01",
+                  "domain": "Mathematics",
+                  "description": "Surface Areas and Volumes of 3D Geometric Solids",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Area of trapezium, general quadrilateral, and rhombus",
+                      "name": "Area of trapezium, general quadrilateral, and rhombus",
+                      "code": "CBSE-08-MATH-CH09-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Total and lateral surface area of cuboid, cube, cylinder",
+                      "name": "Total and lateral surface area of cuboid, cube, cylinder",
+                      "code": "CBSE-08-MATH-CH09-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Volume and capacity of cuboids, cubes, and cylinders",
+                      "name": "Volume and capacity of cuboids, cubes, and cylinders",
+                      "code": "CBSE-08-MATH-CH09-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate surface areas, capacities, and volumes of regular three-dimensional geometric containers.",
+                      "code": "CBSE-08-MATH-CH09-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 10,
+              "number": 10,
+              "title": "Exponents and Powers",
+              "name": "Exponents and Powers",
+              "code": "CBSE-08-MATH-CH10",
+              "domain": "Mathematics",
+              "description": "Powers with negative exponents, laws of exponents, expressing very large and very small numbers in standard scientific form.",
+              "order_index": 11,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Laws of Exponents and Scientific Standard Form",
+                  "name": "Laws of Exponents and Scientific Standard Form",
+                  "code": "CBSE-08-MATH-CH10-T01",
+                  "domain": "Mathematics",
+                  "description": "Laws of Exponents and Scientific Standard Form",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Powers with negative integral exponents",
+                      "name": "Powers with negative integral exponents",
+                      "code": "CBSE-08-MATH-CH10-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Laws of exponents: a^m * a^n = a^(m+n), a^m / a^n = a^(m-n)",
+                      "name": "Laws of exponents: a^m * a^n = a^(m+n), a^m / a^n = a^(m-n)",
+                      "code": "CBSE-08-MATH-CH10-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Standard scientific notation for micro and astronomical scale",
+                      "name": "Standard scientific notation for micro and astronomical scale",
+                      "code": "CBSE-08-MATH-CH10-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Simplify expressions with integer exponents and represent scientific measurements in standard form.",
+                      "code": "CBSE-08-MATH-CH10-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 11,
+              "number": 11,
+              "title": "Direct and Inverse Proportions",
+              "name": "Direct and Inverse Proportions",
+              "code": "CBSE-08-MATH-CH11",
+              "domain": "Mathematics",
+              "description": "Direct proportion (x/y = k), inverse proportion (xy = k), and practical applications to speed, time, work, and unit costs.",
+              "order_index": 12,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Direct and Inverse Variation Modeling",
+                  "name": "Direct and Inverse Variation Modeling",
+                  "code": "CBSE-08-MATH-CH11-T01",
+                  "domain": "Mathematics",
+                  "description": "Direct and Inverse Variation Modeling",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Concept and algebraic condition of direct proportion",
+                      "name": "Concept and algebraic condition of direct proportion",
+                      "code": "CBSE-08-MATH-CH11-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Concept and algebraic condition of inverse proportion",
+                      "name": "Concept and algebraic condition of inverse proportion",
+                      "code": "CBSE-08-MATH-CH11-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Work-time and speed-distance applications",
+                      "name": "Work-time and speed-distance applications",
+                      "code": "CBSE-08-MATH-CH11-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Identify proportional relationships and compute missing values in direct and inverse variations.",
+                      "code": "CBSE-08-MATH-CH11-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 12,
+              "number": 12,
+              "title": "Introduction to Graphs",
+              "name": "Introduction to Graphs",
+              "code": "CBSE-08-MATH-CH12",
+              "domain": "Mathematics",
+              "description": "Bar graphs, double bar graphs, pie graphs, histograms, line graphs, linear graphs, coordinates, and real-life independent/dependent variable graphs.",
+              "order_index": 13,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Cartesian Coordinates and Linear Graph Interpretation",
+                  "name": "Cartesian Coordinates and Linear Graph Interpretation",
+                  "code": "CBSE-08-MATH-CH12-T01",
+                  "domain": "Mathematics",
+                  "description": "Cartesian Coordinates and Linear Graph Interpretation",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Cartesian coordinates (x, y) on a plane",
+                      "name": "Cartesian coordinates (x, y) on a plane",
+                      "code": "CBSE-08-MATH-CH12-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Plotting points and constructing line graphs",
+                      "name": "Plotting points and constructing line graphs",
+                      "code": "CBSE-08-MATH-CH12-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Linear graphs representing real-world rate situations",
+                      "name": "Linear graphs representing real-world rate situations",
+                      "code": "CBSE-08-MATH-CH12-T01-SUB-03",
+                      "order_index": 3
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Plot coordinates on a Cartesian plane and interpret relationships in linear graphs.",
+                      "code": "CBSE-08-MATH-CH12-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "title": "Science",
+      "code": "CBSE-08-SCI",
+      "is_integrated_science": true,
+      "description": "CBSE Class 8 Integrated Science NCERT Rationalized Syllabus 2026-27",
+      "order_index": 2,
+      "units": [
+        {
+          "unit_number": 1,
+          "title": "Unit I: Food & Living World",
+          "name": "Unit I: Food & Living World",
+          "code": "CBSE-08-SCI-U01",
+          "domain": "Science",
+          "weightage_marks": 25,
+          "order_index": 1,
+          "chapters": [
+            {
+              "chapter_number": 1,
+              "number": 1,
+              "title": "Crop Production and Management",
+              "name": "Crop Production and Management",
+              "code": "CBSE-08-SCI-CH01",
+              "domain": "Biology",
+              "description": "Agricultural practices, soil preparation, sowing, manures and fertilisers, irrigation methods, weed protection, harvesting and storage.",
+              "order_index": 1,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Agricultural Practices and Modern Irrigation",
+                  "name": "Agricultural Practices and Modern Irrigation",
+                  "code": "CBSE-08-SCI-CH01-T01",
+                  "domain": "Biology",
+                  "description": "Agricultural Practices and Modern Irrigation",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Kharif vs Rabi crops",
+                      "name": "Kharif vs Rabi crops",
+                      "code": "CBSE-08-SCI-CH01-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Preparation of soil and agricultural implements",
+                      "name": "Preparation of soil and agricultural implements",
+                      "code": "CBSE-08-SCI-CH01-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Sowing and quality seed selection",
+                      "name": "Sowing and quality seed selection",
+                      "code": "CBSE-08-SCI-CH01-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Organic manures vs Chemical fertilizers",
+                      "name": "Organic manures vs Chemical fertilizers",
+                      "code": "CBSE-08-SCI-CH01-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Drip and sprinkler modern irrigation systems",
+                      "name": "Drip and sprinkler modern irrigation systems",
+                      "code": "CBSE-08-SCI-CH01-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Differentiate seasonal crop cycles and describe scientific soil preparation and water-saving irrigation methods.",
+                      "code": "CBSE-08-SCI-CH01-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 2,
+              "number": 2,
+              "title": "Microorganisms: Friend and Foe",
+              "name": "Microorganisms: Friend and Foe",
+              "code": "CBSE-08-SCI-CH02",
+              "domain": "Biology",
+              "description": "Bacteria, fungi, protozoa, algae, viruses, commercial & medicinal uses, vaccine, antibiotics, nitrogen fixation, food preservation.",
+              "order_index": 2,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Classification, Uses and Pathogenicity of Microorganisms",
+                  "name": "Classification, Uses and Pathogenicity of Microorganisms",
+                  "code": "CBSE-08-SCI-CH02-T01",
+                  "domain": "Biology",
+                  "description": "Classification, Uses and Pathogenicity of Microorganisms",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Four major groups of microorganisms and viruses",
+                      "name": "Four major groups of microorganisms and viruses",
+                      "code": "CBSE-08-SCI-CH02-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Fermentation and commercial antibiotic production",
+                      "name": "Fermentation and commercial antibiotic production",
+                      "code": "CBSE-08-SCI-CH02-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Vaccines and immunity development",
+                      "name": "Vaccines and immunity development",
+                      "code": "CBSE-08-SCI-CH02-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Disease-causing pathogens in humans, animals, plants",
+                      "name": "Disease-causing pathogens in humans, animals, plants",
+                      "code": "CBSE-08-SCI-CH02-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Food preservation techniques and the Nitrogen cycle",
+                      "name": "Food preservation techniques and the Nitrogen cycle",
+                      "code": "CBSE-08-SCI-CH02-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Categorize microorganisms and evaluate their dual roles in human ecology, industry, and disease transmission.",
+                      "code": "CBSE-08-SCI-CH02-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 5,
+              "number": 5,
+              "title": "Conservation of Plants and Animals",
+              "name": "Conservation of Plants and Animals",
+              "code": "CBSE-08-SCI-CH05",
+              "domain": "Biology",
+              "description": "Deforestation and consequences, biosphere reserves, flora and fauna, endemic species, wildlife sanctuaries, national parks, Red Data Book, reforestation.",
+              "order_index": 3,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Biodiversity Preservation and Protected Habitats",
+                  "name": "Biodiversity Preservation and Protected Habitats",
+                  "code": "CBSE-08-SCI-CH05-T01",
+                  "domain": "Biology",
+                  "description": "Biodiversity Preservation and Protected Habitats",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Consequences of deforestation and desertification",
+                      "name": "Consequences of deforestation and desertification",
+                      "code": "CBSE-08-SCI-CH05-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Biosphere reserves, flora, and endemic fauna",
+                      "name": "Biosphere reserves, flora, and endemic fauna",
+                      "code": "CBSE-08-SCI-CH05-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "National parks vs Wildlife sanctuaries",
+                      "name": "National parks vs Wildlife sanctuaries",
+                      "code": "CBSE-08-SCI-CH05-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Red Data Book and migration patterns",
+                      "name": "Red Data Book and migration patterns",
+                      "code": "CBSE-08-SCI-CH05-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Assess the ecological impact of habitat destruction and identify institutional biodiversity conservation strategies.",
+                      "code": "CBSE-08-SCI-CH05-LO01",
+                      "bloom_level": "EVALUATE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 6,
+              "number": 6,
+              "title": "Reproduction in Animals",
+              "name": "Reproduction in Animals",
+              "code": "CBSE-08-SCI-CH06",
+              "domain": "Biology",
+              "description": "Sexual reproduction, male and female reproductive organs, fertilization (internal and external), embryo development, viviparous/oviparous, asexual reproduction (budding and binary fission).",
+              "order_index": 4,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Modes of Reproduction and Embryonic Development",
+                  "name": "Modes of Reproduction and Embryonic Development",
+                  "code": "CBSE-08-SCI-CH06-T01",
+                  "domain": "Biology",
+                  "description": "Modes of Reproduction and Embryonic Development",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Male and female human reproductive systems",
+                      "name": "Male and female human reproductive systems",
+                      "code": "CBSE-08-SCI-CH06-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Internal vs External fertilisation",
+                      "name": "Internal vs External fertilisation",
+                      "code": "CBSE-08-SCI-CH06-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Zygote formation and embryonic implantation",
+                      "name": "Zygote formation and embryonic implantation",
+                      "code": "CBSE-08-SCI-CH06-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Viviparous and oviparous animals",
+                      "name": "Viviparous and oviparous animals",
+                      "code": "CBSE-08-SCI-CH06-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Asexual budding in Hydra and binary fission in Amoeba",
+                      "name": "Asexual budding in Hydra and binary fission in Amoeba",
+                      "code": "CBSE-08-SCI-CH06-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Compare sexual and asexual reproductive strategies across animal species.",
+                      "code": "CBSE-08-SCI-CH06-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 7,
+              "number": 7,
+              "title": "Reaching the Age of Adolescence",
+              "name": "Reaching the Age of Adolescence",
+              "code": "CBSE-08-SCI-CH07",
+              "domain": "Biology",
+              "description": "Puberty, physical and emotional changes, secondary sexual characteristics, endocrine glands, hormones (testosterone, estrogen), menstrual cycle, sex determination.",
+              "order_index": 5,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Endocrine Regulation and Pubertal Metamorphosis",
+                  "name": "Endocrine Regulation and Pubertal Metamorphosis",
+                  "code": "CBSE-08-SCI-CH07-T01",
+                  "domain": "Biology",
+                  "description": "Endocrine Regulation and Pubertal Metamorphosis",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Physical changes during puberty and growth spurt",
+                      "name": "Physical changes during puberty and growth spurt",
+                      "code": "CBSE-08-SCI-CH07-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Secondary sexual characteristics and Adams apple",
+                      "name": "Secondary sexual characteristics and Adams apple",
+                      "code": "CBSE-08-SCI-CH07-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Endocrine glands, hormones, and pituitary master regulation",
+                      "name": "Endocrine glands, hormones, and pituitary master regulation",
+                      "code": "CBSE-08-SCI-CH07-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Menstrual cycle and reproductive health",
+                      "name": "Menstrual cycle and reproductive health",
+                      "code": "CBSE-08-SCI-CH07-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Chromosomal basis of human sex determination (XX vs XY)",
+                      "name": "Chromosomal basis of human sex determination (XX vs XY)",
+                      "code": "CBSE-08-SCI-CH07-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Explain the role of hormones in human development and illustrate the genetic mechanism of sex determination.",
+                      "code": "CBSE-08-SCI-CH07-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "Unit II: Materials & Chemical Substances",
+          "name": "Unit II: Materials & Chemical Substances",
+          "code": "CBSE-08-SCI-U02",
+          "domain": "Science",
+          "weightage_marks": 25,
+          "order_index": 2,
+          "chapters": [
+            {
+              "chapter_number": 3,
+              "number": 3,
+              "title": "Coal and Petroleum",
+              "name": "Coal and Petroleum",
+              "code": "CBSE-08-SCI-CH03",
+              "domain": "Chemistry",
+              "description": "Exhaustible and inexhaustible resources, carbonisation, coal gas, coal tar, coke, refining of petroleum, petrochemicals, natural gas, conservation.",
+              "order_index": 6,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Fossil Fuels and Petroleum Refining Fractions",
+                  "name": "Fossil Fuels and Petroleum Refining Fractions",
+                  "code": "CBSE-08-SCI-CH03-T01",
+                  "domain": "Chemistry",
+                  "description": "Fossil Fuels and Petroleum Refining Fractions",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Exhaustible natural resources and formation of coal",
+                      "name": "Exhaustible natural resources and formation of coal",
+                      "code": "CBSE-08-SCI-CH03-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Coke, coal tar, and coal gas byproducts",
+                      "name": "Coke, coal tar, and coal gas byproducts",
+                      "code": "CBSE-08-SCI-CH03-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Petroleum refining and fractional distillation",
+                      "name": "Petroleum refining and fractional distillation",
+                      "code": "CBSE-08-SCI-CH03-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "CNG, LPG, and petrochemical applications",
+                      "name": "CNG, LPG, and petrochemical applications",
+                      "code": "CBSE-08-SCI-CH03-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Conservation guidelines from PCRA",
+                      "name": "Conservation guidelines from PCRA",
+                      "code": "CBSE-08-SCI-CH03-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Describe fractional distillation fractions of petroleum and evaluate environmental impacts of fossil fuel depletion.",
+                      "code": "CBSE-08-SCI-CH03-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 4,
+              "number": 4,
+              "title": "Combustion and Flame",
+              "name": "Combustion and Flame",
+              "code": "CBSE-08-SCI-CH04",
+              "domain": "Chemistry",
+              "description": "Conditions for combustion, ignition temperature, inflammable substances, fire control, types of combustion, zones of candle flame, calorific value, harmful products.",
+              "order_index": 7,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Combustion Principles, Flame Anatomy and Fuel Efficiency",
+                  "name": "Combustion Principles, Flame Anatomy and Fuel Efficiency",
+                  "code": "CBSE-08-SCI-CH04-T01",
+                  "domain": "Chemistry",
+                  "description": "Combustion Principles, Flame Anatomy and Fuel Efficiency",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Essential conditions for combustion: fuel, oxygen, ignition temperature",
+                      "name": "Essential conditions for combustion: fuel, oxygen, ignition temperature",
+                      "code": "CBSE-08-SCI-CH04-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Rapid, spontaneous, and explosive combustion",
+                      "name": "Rapid, spontaneous, and explosive combustion",
+                      "code": "CBSE-08-SCI-CH04-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Three structural zones of a candle flame (luminous, non-luminous, dark)",
+                      "name": "Three structural zones of a candle flame (luminous, non-luminous, dark)",
+                      "code": "CBSE-08-SCI-CH04-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Calorific values of fuels in kJ/kg",
+                      "name": "Calorific values of fuels in kJ/kg",
+                      "code": "CBSE-08-SCI-CH04-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Harmful emissions: CO, CO2, SO2, and acid rain formation",
+                      "name": "Harmful emissions: CO, CO2, SO2, and acid rain formation",
+                      "code": "CBSE-08-SCI-CH04-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Analyze flame structure and compute fuel heating efficiencies based on calorific values.",
+                      "code": "CBSE-08-SCI-CH04-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 11,
+              "number": 11,
+              "title": "Chemical Effects of Electric Current",
+              "name": "Chemical Effects of Electric Current",
+              "code": "CBSE-08-SCI-CH11",
+              "domain": "Chemistry",
+              "description": "Electrical conductivity of liquids, electrolysis of water, chemical reactions under current, electroplating principles and industrial applications.",
+              "order_index": 8,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Electrolyte Conduction and Electroplating",
+                  "name": "Electrolyte Conduction and Electroplating",
+                  "code": "CBSE-08-SCI-CH11-T01",
+                  "domain": "Chemistry",
+                  "description": "Electrolyte Conduction and Electroplating",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Good and poor liquid conductors (acids, bases, salts)",
+                      "name": "Good and poor liquid conductors (acids, bases, salts)",
+                      "code": "CBSE-08-SCI-CH11-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Electrolysis of water and gas evolution at electrodes",
+                      "name": "Electrolysis of water and gas evolution at electrodes",
+                      "code": "CBSE-08-SCI-CH11-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Electroplating mechanism: copper and chromium deposition",
+                      "name": "Electroplating mechanism: copper and chromium deposition",
+                      "code": "CBSE-08-SCI-CH11-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Corrosion resistance and aesthetic electroplating uses",
+                      "name": "Corrosion resistance and aesthetic electroplating uses",
+                      "code": "CBSE-08-SCI-CH11-T01-SUB-04",
+                      "order_index": 4
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Demonstrate electrolyte conduction and explain chromium electroplating for corrosion resistance.",
+                      "code": "CBSE-08-SCI-CH11-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "Unit III: Motion, Force, Pressure & Waves",
+          "name": "Unit III: Motion, Force, Pressure & Waves",
+          "code": "CBSE-08-SCI-U03",
+          "domain": "Science",
+          "weightage_marks": 30,
+          "order_index": 3,
+          "chapters": [
+            {
+              "chapter_number": 8,
+              "number": 8,
+              "title": "Force and Pressure",
+              "name": "Force and Pressure",
+              "code": "CBSE-08-SCI-CH08",
+              "domain": "Physics",
+              "description": "Contact forces (muscular, friction) and non-contact forces (magnetic, electrostatic, gravitational), pressure = force/area, liquid pressure, atmospheric pressure.",
+              "order_index": 9,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Forces Interaction, Hydrostatic and Atmospheric Pressure",
+                  "name": "Forces Interaction, Hydrostatic and Atmospheric Pressure",
+                  "code": "CBSE-08-SCI-CH08-T01",
+                  "domain": "Physics",
+                  "description": "Forces Interaction, Hydrostatic and Atmospheric Pressure",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Contact forces: Muscular and friction",
+                      "name": "Contact forces: Muscular and friction",
+                      "code": "CBSE-08-SCI-CH08-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Non-contact forces: Magnetic, electrostatic, gravity",
+                      "name": "Non-contact forces: Magnetic, electrostatic, gravity",
+                      "code": "CBSE-08-SCI-CH08-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Pressure definition P = F / A and SI unit Pascal",
+                      "name": "Pressure definition P = F / A and SI unit Pascal",
+                      "code": "CBSE-08-SCI-CH08-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Liquid pressure dependence on depth and side walls",
+                      "name": "Liquid pressure dependence on depth and side walls",
+                      "code": "CBSE-08-SCI-CH08-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Atmospheric pressure and barometer principles",
+                      "name": "Atmospheric pressure and barometer principles",
+                      "code": "CBSE-08-SCI-CH08-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Calculate mechanical and hydrostatic pressures across contact areas and depth levels.",
+                      "code": "CBSE-08-SCI-CH08-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 9,
+              "number": 9,
+              "title": "Friction",
+              "name": "Friction",
+              "code": "CBSE-08-SCI-CH09",
+              "domain": "Physics",
+              "description": "Factors affecting friction, irregularities of surfaces, static, sliding, rolling friction, friction as necessary evil, methods of increasing and reducing friction, fluid friction.",
+              "order_index": 10,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Types of Friction and Tribological Control",
+                  "name": "Types of Friction and Tribological Control",
+                  "code": "CBSE-08-SCI-CH09-T01",
+                  "domain": "Physics",
+                  "description": "Types of Friction and Tribological Control",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Microscopic origin of friction: Surface irregularities",
+                      "name": "Microscopic origin of friction: Surface irregularities",
+                      "code": "CBSE-08-SCI-CH09-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Comparative magnitudes: Static > Sliding > Rolling friction",
+                      "name": "Comparative magnitudes: Static > Sliding > Rolling friction",
+                      "code": "CBSE-08-SCI-CH09-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Friction as a necessary evil in walking, brakes, writing",
+                      "name": "Friction as a necessary evil in walking, brakes, writing",
+                      "code": "CBSE-08-SCI-CH09-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Methods to reduce friction: Lubricants, ball bearings",
+                      "name": "Methods to reduce friction: Lubricants, ball bearings",
+                      "code": "CBSE-08-SCI-CH09-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Fluid friction (drag) and aerodynamic streamlining",
+                      "name": "Fluid friction (drag) and aerodynamic streamlining",
+                      "code": "CBSE-08-SCI-CH09-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Compare static, sliding, and rolling friction, and explain aerodynamic streamlining to minimize fluid drag.",
+                      "code": "CBSE-08-SCI-CH09-LO01",
+                      "bloom_level": "ANALYZE"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 10,
+              "number": 10,
+              "title": "Sound",
+              "name": "Sound",
+              "code": "CBSE-08-SCI-CH10",
+              "domain": "Physics",
+              "description": "Production of sound by vibrating objects, sound propagation through media, human ear structure (eardrum, cochlea), amplitude, time period, frequency, loudness, pitch, audible range, noise pollution.",
+              "order_index": 11,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Acoustic Waves, Human Hearing and Noise Pollution",
+                  "name": "Acoustic Waves, Human Hearing and Noise Pollution",
+                  "code": "CBSE-08-SCI-CH10-T01",
+                  "domain": "Physics",
+                  "description": "Acoustic Waves, Human Hearing and Noise Pollution",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Vibrations as source of sound",
+                      "name": "Vibrations as source of sound",
+                      "code": "CBSE-08-SCI-CH10-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Sound requires a material medium to propagate (vacuum bell jar)",
+                      "name": "Sound requires a material medium to propagate (vacuum bell jar)",
+                      "code": "CBSE-08-SCI-CH10-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Anatomy of the human ear: Tympanic membrane to auditory nerve",
+                      "name": "Anatomy of the human ear: Tympanic membrane to auditory nerve",
+                      "code": "CBSE-08-SCI-CH10-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Wave parameters: Amplitude, frequency, time period",
+                      "name": "Wave parameters: Amplitude, frequency, time period",
+                      "code": "CBSE-08-SCI-CH10-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Loudness (proportional to amplitude^2) and pitch (frequency)",
+                      "name": "Loudness (proportional to amplitude^2) and pitch (frequency)",
+                      "code": "CBSE-08-SCI-CH10-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Audible human frequency range (20 Hz to 20,000 Hz)",
+                      "name": "Audible human frequency range (20 Hz to 20,000 Hz)",
+                      "code": "CBSE-08-SCI-CH10-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Relate wave amplitude to loudness and frequency to pitch, and describe the auditory transduction path.",
+                      "code": "CBSE-08-SCI-CH10-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 12,
+              "number": 12,
+              "title": "Some Natural Phenomena",
+              "name": "Some Natural Phenomena",
+              "code": "CBSE-08-SCI-CH12",
+              "domain": "Physics",
+              "description": "Charging by rubbing, types of charges, electroscope, lightning, lightning conductor, earthquakes, tectonic plates, Richter scale, seismograph, safety measures.",
+              "order_index": 12,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Electrostatic Discharge, Lightning and Seismic Waves",
+                  "name": "Electrostatic Discharge, Lightning and Seismic Waves",
+                  "code": "CBSE-08-SCI-CH12-T01",
+                  "domain": "Physics",
+                  "description": "Electrostatic Discharge, Lightning and Seismic Waves",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Transfer of static charges by friction and induction",
+                      "name": "Transfer of static charges by friction and induction",
+                      "code": "CBSE-08-SCI-CH12-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Gold leaf electroscope working mechanism",
+                      "name": "Gold leaf electroscope working mechanism",
+                      "code": "CBSE-08-SCI-CH12-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Lightning mechanism in cumulonimbus storm clouds",
+                      "name": "Lightning mechanism in cumulonimbus storm clouds",
+                      "code": "CBSE-08-SCI-CH12-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Lightning conductor installation and protective earthing",
+                      "name": "Lightning conductor installation and protective earthing",
+                      "code": "CBSE-08-SCI-CH12-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Tectonic plate fault lines, Richter scale, and seismograph",
+                      "name": "Tectonic plate fault lines, Richter scale, and seismograph",
+                      "code": "CBSE-08-SCI-CH12-T01-SUB-05",
+                      "order_index": 5
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Explain cloud electrostatic discharge mechanisms and seismic shock wave propagation.",
+                      "code": "CBSE-08-SCI-CH12-LO01",
+                      "bloom_level": "UNDERSTAND"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            },
+            {
+              "chapter_number": 13,
+              "number": 13,
+              "title": "Light",
+              "name": "Light",
+              "code": "CBSE-08-SCI-CH13",
+              "domain": "Physics",
+              "description": "Laws of reflection, regular and diffused reflection, multiple reflections, kaleidoscope, periscope, sunlight dispersion, anatomy of human eye, vision defects, braille system.",
+              "order_index": 13,
+              "topics": [
+                {
+                  "topic_number": 1,
+                  "title": "Reflection Laws, Optical Systems and Human Eye Anatomy",
+                  "name": "Reflection Laws, Optical Systems and Human Eye Anatomy",
+                  "code": "CBSE-08-SCI-CH13-T01",
+                  "domain": "Physics",
+                  "description": "Reflection Laws, Optical Systems and Human Eye Anatomy",
+                  "prerequisites": [],
+                  "order_index": 1,
+                  "subtopics": [
+                    {
+                      "title": "Laws of reflection: Angle of incidence equals angle of reflection",
+                      "name": "Laws of reflection: Angle of incidence equals angle of reflection",
+                      "code": "CBSE-08-SCI-CH13-T01-SUB-01",
+                      "order_index": 1
+                    },
+                    {
+                      "title": "Regular specular reflection vs Diffused irregular reflection",
+                      "name": "Regular specular reflection vs Diffused irregular reflection",
+                      "code": "CBSE-08-SCI-CH13-T01-SUB-02",
+                      "order_index": 2
+                    },
+                    {
+                      "title": "Multiple reflection formula: n = (360/theta) - 1",
+                      "name": "Multiple reflection formula: n = (360/theta) - 1",
+                      "code": "CBSE-08-SCI-CH13-T01-SUB-03",
+                      "order_index": 3
+                    },
+                    {
+                      "title": "Kaleidoscope and periscope construction",
+                      "name": "Kaleidoscope and periscope construction",
+                      "code": "CBSE-08-SCI-CH13-T01-SUB-04",
+                      "order_index": 4
+                    },
+                    {
+                      "title": "Human eye: Cornea, iris, pupil, crystalline lens, retina, rods & cones",
+                      "name": "Human eye: Cornea, iris, pupil, crystalline lens, retina, rods & cones",
+                      "code": "CBSE-08-SCI-CH13-T01-SUB-05",
+                      "order_index": 5
+                    },
+                    {
+                      "title": "Myopia, hypermetropia, cataract, and the Braille tactile system",
+                      "name": "Myopia, hypermetropia, cataract, and the Braille tactile system",
+                      "code": "CBSE-08-SCI-CH13-T01-SUB-06",
+                      "order_index": 6
+                    }
+                  ],
+                  "learning_outcomes": [
+                    {
+                      "statement": "Apply reflection laws, compute multiple image counts, and trace light rays through the optical structures of the human eye.",
+                      "code": "CBSE-08-SCI-CH13-LO01",
+                      "bloom_level": "APPLY"
+                    }
+                  ],
+                  "questions": [],
+                  "practice_questions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
