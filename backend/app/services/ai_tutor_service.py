@@ -137,14 +137,58 @@ class AITutorService:
             .all()
         )
 
-        topic_node = db.query(CurriculumNode).filter(CurriculumNode.id == topic_id).first() if topic_id else None
-        topic_title = topic_node.title if topic_node else "General Academic Studies"
+        # Resolve syllabus grounding (CBSE 2026-27 Syllabus Database)
+        from app.models.syllabus_hierarchy import (
+            AcademicClass, Subject, Unit, Chapter, Topic as HierarchyTopic, LearningOutcome
+        )
+
+        syllabus_grounding: Dict[str, Any] = {}
+        if question_context:
+            if question_context.get("class_name"): syllabus_grounding["class_name"] = question_context["class_name"]
+            if question_context.get("subject_name"): syllabus_grounding["subject_name"] = question_context["subject_name"]
+            if question_context.get("unit_name"): syllabus_grounding["unit_name"] = question_context["unit_name"]
+            if question_context.get("chapter_name"): syllabus_grounding["chapter_name"] = question_context["chapter_name"]
+            if question_context.get("domain"): syllabus_grounding["domain"] = question_context["domain"]
+            if question_context.get("topic_name"): syllabus_grounding["topic_name"] = question_context["topic_name"]
+            if question_context.get("learning_outcome"): syllabus_grounding["learning_outcome"] = question_context["learning_outcome"]
+
+        topic_title = "General Academic Studies"
+        if topic_id:
+            h_top = db.query(HierarchyTopic).filter(HierarchyTopic.id == topic_id).first()
+            if h_top:
+                topic_title = h_top.title
+                syllabus_grounding["topic_name"] = h_top.title
+                h_chap = db.query(Chapter).filter(Chapter.id == h_top.chapter_id).first()
+                if h_chap:
+                    syllabus_grounding["chapter_name"] = h_chap.title
+                    syllabus_grounding["domain"] = h_chap.domain
+                    h_unit = db.query(Unit).filter(Unit.id == h_chap.unit_id).first()
+                    if h_unit:
+                        syllabus_grounding["unit_name"] = h_unit.title
+                        h_subj = db.query(Subject).filter(Subject.id == h_unit.subject_id).first()
+                        if h_subj:
+                            syllabus_grounding["subject_name"] = h_subj.name
+                            h_cls = db.query(AcademicClass).filter(AcademicClass.id == h_subj.class_id).first()
+                            if h_cls:
+                                syllabus_grounding["class_name"] = h_cls.title
+                los = db.query(LearningOutcome).filter(LearningOutcome.topic_id == h_top.id).all()
+                if los:
+                    syllabus_grounding["learning_outcome"] = "; ".join(lo.statement for lo in los)
+            else:
+                topic_node = db.query(CurriculumNode).filter(CurriculumNode.id == topic_id).first()
+                if topic_node:
+                    topic_title = topic_node.title
+                    syllabus_grounding["topic_name"] = topic_node.title
 
         mastery = None
         if topic_id:
+            from sqlalchemy import or_
             mastery = db.query(StudentTopicMastery).filter(
                 StudentTopicMastery.student_id == student_id,
-                StudentTopicMastery.topic_id == topic_id
+                or_(
+                    StudentTopicMastery.topic_id == topic_id,
+                    StudentTopicMastery.hierarchy_topic_id == topic_id
+                )
             ).first()
         mastery_score = mastery.mastery_score if mastery else 50.0
 
@@ -215,7 +259,8 @@ class AITutorService:
                     image_base64=image_base64,
                     twin_context=twin_context,
                     conversation_history=conversation_history,
-                    question_context=question_context
+                    question_context=question_context,
+                    syllabus_grounding=syllabus_grounding
                 )
             except Exception as e:
                 logger.warning(f"External AI call failed, falling back to Universal Reasoning Engine: {e}")
@@ -233,7 +278,8 @@ class AITutorService:
                 question_context=question_context,
                 twin=twin,
                 db=db,
-                student_id=student_id
+                student_id=student_id,
+                syllabus_grounding=syllabus_grounding
             )
 
         # Ensure zero asterisks and zero hashes
@@ -445,7 +491,8 @@ class AITutorService:
         image_base64: Optional[str],
         twin_context: Optional[Dict[str, Any]],
         conversation_history: List[Dict[str, str]],
-        question_context: Optional[Dict[str, Any]]
+        question_context: Optional[Dict[str, Any]],
+        syllabus_grounding: Optional[Dict[str, Any]] = None
     ) -> Optional[str]:
         system_prompt = (
             "You are the LearnWise AI Multimodal Tutor. "
@@ -460,6 +507,25 @@ class AITutorService:
             "If the current question changes topic, switch to the new topic immediately. "
             "STRICT FORMATTING RULE: Do NOT use any asterisks (*) or markdown hashes (#) anywhere in your response."
         )
+
+        if syllabus_grounding:
+            c_name = syllabus_grounding.get("class_name", "")
+            s_name = syllabus_grounding.get("subject_name", "")
+            ch_name = syllabus_grounding.get("chapter_name", "")
+            t_name = syllabus_grounding.get("topic_name", "")
+            lo_name = syllabus_grounding.get("learning_outcome", "")
+            system_prompt += (
+                f"\nOFFICIAL CBSE/NCERT 2026-27 SYLLABUS GROUNDING CONSTRAINT:\n"
+                f"Grade Level: {c_name}\n"
+                f"Subject: {s_name}\n"
+                f"Chapter: {ch_name}\n"
+                f"Topic: {t_name}\n"
+                f"Target Learning Outcome: {lo_name}\n"
+                "STRICT GROUNDING RULE: You are strictly an academic tutor grounded in the official CBSE/NCERT curriculum. "
+                "Keep your answers rigorously aligned with this syllabus scope. "
+                "Do NOT introduce out-of-syllabus topics (for instance, do not introduce advanced Class 11/12 calculus to Class 10 or below, and do not mix Physics concepts into Chemistry). "
+                "Never invent non-existent syllabus chapters."
+            )
 
         if question_context and question_context.get("prompt"):
             system_prompt += (
@@ -701,7 +767,8 @@ class AITutorService:
         question_context: Optional[Dict[str, Any]],
         twin: Optional[StudentLearningTwin],
         db: Session,
-        student_id: int
+        student_id: int,
+        syllabus_grounding: Optional[Dict[str, Any]] = None
     ) -> str:
         msg = message.strip()
         msg_lower = msg.lower()
@@ -1038,12 +1105,30 @@ class AITutorService:
                 "I am here to guide you step-by-step. What topic would you like to explore today?"
             )
 
-        # M. REAL-TIME LIVE KNOWLEDGE SEARCH FALLBACK
+        # M. SYLLABUS GROUNDED CURRICULAR SYNTHESIS (CBSE 2026-27)
+        if syllabus_grounding and (syllabus_grounding.get("chapter_name") or syllabus_grounding.get("topic_name")):
+            cls = syllabus_grounding.get("class_name", "CBSE")
+            subj = syllabus_grounding.get("subject_name", "")
+            chap = syllabus_grounding.get("chapter_name", "")
+            top = syllabus_grounding.get("topic_name", "")
+            lo = syllabus_grounding.get("learning_outcome", "")
+            domain = syllabus_grounding.get("domain")
+
+            sub_desc = f"{subj} ({domain})" if domain else subj
+            lo_text = f" This directly aligns with the official NCERT learning outcome: {lo}." if lo else ""
+
+            return (
+                f"In {cls} {sub_desc}, the study of {top or chap} is a core curricular milestone in Chapter '{chap}'.\n\n"
+                f"To address your question on '{msg}': this concept builds upon verified foundational principles and systematic problem-solving methods defined for this syllabus level.{lo_text}\n\n"
+                f"Would you like us to work through a step-by-step NCERT practice problem or explore a conceptual derivation from this chapter?"
+            )
+
+        # N. REAL-TIME LIVE KNOWLEDGE SEARCH FALLBACK
         live_result = await AITutorService._fetch_live_knowledge(msg)
         if live_result:
             return live_result
 
-        # N. GENERAL SYNTHESIS
+        # O. GENERAL SYNTHESIS
         return (
             f"Regarding {msg}, this question relates to fundamental academic principles and core relationships in your study.\n\n"
             f"To evaluate this concept effectively, we examine the governing definitions, the primary laws or mechanisms involved, "

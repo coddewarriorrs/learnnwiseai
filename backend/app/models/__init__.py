@@ -10,4 +10,7 @@ from app.models.assignment import Assignment, AssignmentSubmission, SubmissionSt
 from app.models.ai_chat import AIConversation, AIMessage
 from app.models.notification import Notification, AuditLog
 from app.models.learning_twin import StudentLearningTwin
-
+from app.models.syllabus_hierarchy import (
+    Board, AcademicYear, AcademicClass, Subject, Unit, 
+    Chapter, Topic, SubTopic, LearningOutcome
+)

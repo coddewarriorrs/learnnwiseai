@@ -267,16 +267,29 @@ class SmartPracticeEngine:
         )
         db.add(answer_rec)
 
-        # Log LearningActivity
-        topic_node = db.query(CurriculumNode).filter(CurriculumNode.id == question.topic_id).first()
-        topic_title = topic_node.title if topic_node else "Topic Practice"
+        # Resolve topic title and node
+        from app.models.syllabus_hierarchy import Topic as HierarchyTopic, Chapter as HierarchyChapter
+        topic_title = "Topic Practice"
+        if question.hierarchy_topic_id:
+            ht = db.query(HierarchyTopic).filter(HierarchyTopic.id == question.hierarchy_topic_id).first()
+            if ht:
+                topic_title = ht.title
+        if topic_title == "Topic Practice" and question.topic_id:
+            topic_node = db.query(CurriculumNode).filter(CurriculumNode.id == question.topic_id).first()
+            if topic_node:
+                topic_title = topic_node.title
+
         activity = LearningActivity(
             student_id=student_id,
             activity_type="PRACTICE",
             title=f"Practice: {question.title or topic_title}",
             details={
-                "topic_id": question.topic_id,
+                "topic_id": question.hierarchy_topic_id or question.topic_id,
                 "topic_title": topic_title,
+                "class_id": question.class_id,
+                "subject_id": question.subject_id,
+                "chapter_id": question.chapter_id,
+                "learning_outcome": question.learning_outcome,
                 "correct": is_correct,
                 "mistake_type": mistake_type,
                 "points": question.points if is_correct else 0
@@ -287,21 +300,27 @@ class SmartPracticeEngine:
         db.add(activity)
         db.commit()
 
-        # Update Mastery via MasteryEngine
-        updated_mastery = MasteryEngine.calculate_topic_mastery(student_id, question.topic_id, db)
+        # Update Mastery via MasteryEngine (CBSE 2026-27 Syllabus scoped)
+        active_tid = question.hierarchy_topic_id or question.topic_id
+        updated_mastery = MasteryEngine.calculate_topic_mastery(
+            student_id, 
+            active_tid, 
+            db, 
+            question=question
+        )
         current_mastery_score = updated_mastery.mastery_score
 
         # Check Prerequisite Root Cause
         root_cause_info = None
         if not is_correct:
-            root_cause_info = PrerequisiteGraphService.diagnose_root_cause(student_id, question.topic_id, db)
+            root_cause_info = PrerequisiteGraphService.diagnose_root_cause(student_id, question.topic_id or question.hierarchy_topic_id, db)
 
         # Update Personal Learning Twin State
         twin = SmartPracticeEngine.get_or_create_twin(student_id, db)
         
         # Track same-topic counters
-        if twin.last_active_topic_id != question.topic_id:
-            twin.last_active_topic_id = question.topic_id
+        if twin.last_active_topic_id != active_tid:
+            twin.last_active_topic_id = active_tid
             twin.consecutive_topic_successes = 1 if is_correct else 0
             twin.consecutive_topic_failures = 0 if is_correct else 1
         else:
@@ -328,13 +347,25 @@ class SmartPracticeEngine:
         else:
             stay_on_topic = False
             stay_reason = f"Excellent! You've achieved {current_mastery_score}% mastery with {twin.consecutive_topic_successes} consecutive correct answers. Ready to advance."
-            # Find next topic in curriculum
-            next_topic = db.query(CurriculumNode).filter(
-                CurriculumNode.parent_id == topic_node.parent_id,
-                CurriculumNode.id > topic_node.id
-            ).order_by(CurriculumNode.id.asc()).first()
-            if next_topic:
-                next_topic_id = next_topic.id
+            # Find next topic in syllabus hierarchy or legacy tree
+            if question.hierarchy_topic_id:
+                ht = db.query(HierarchyTopic).filter(HierarchyTopic.id == question.hierarchy_topic_id).first()
+                if ht:
+                    next_ht = db.query(HierarchyTopic).filter(
+                        HierarchyTopic.chapter_id == ht.chapter_id,
+                        HierarchyTopic.order_index > ht.order_index
+                    ).order_by(HierarchyTopic.order_index.asc()).first()
+                    if next_ht:
+                        next_topic_id = next_ht.id
+            elif question.topic_id:
+                topic_node = db.query(CurriculumNode).filter(CurriculumNode.id == question.topic_id).first()
+                if topic_node:
+                    next_topic = db.query(CurriculumNode).filter(
+                        CurriculumNode.parent_id == topic_node.parent_id,
+                        CurriculumNode.id > topic_node.id
+                    ).order_by(CurriculumNode.id.asc()).first()
+                    if next_topic:
+                        next_topic_id = next_topic.id
 
         # Update Misconception Fingerprint
         misconception_alert = None

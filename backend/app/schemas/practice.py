@@ -8,7 +8,7 @@ class QuestionOption(BaseModel):
 
 class QuestionResponse(BaseModel):
     id: int
-    topic_id: int
+    topic_id: Optional[int] = None
     topic_name: Optional[str] = None
     subject_name: Optional[str] = None
     chapter_name: Optional[str] = None
@@ -18,16 +18,32 @@ class QuestionResponse(BaseModel):
     difficulty: DifficultyLevel
     points: int
 
+    # CBSE 2026-27 Syllabus Hierarchy fields
+    class_id: Optional[int] = None
+    class_name: Optional[str] = None
+    subject_id: Optional[int] = None
+    unit_id: Optional[int] = None
+    unit_name: Optional[str] = None
+    chapter_id: Optional[int] = None
+    domain: Optional[str] = None
+    hierarchy_topic_id: Optional[int] = None
+    learning_outcome: Optional[str] = None
+    learning_outcome_id: Optional[int] = None
+
     class Config:
         from_attributes = True
 
 class StartPracticeRequest(BaseModel):
     class_id: Optional[int] = None
+    academic_class_id: Optional[int] = None
+    class_number: Optional[int] = None
     subject: Optional[str] = None
     subject_id: Optional[int] = None
+    unit_id: Optional[int] = None
     chapter: Optional[str] = None
     chapter_id: Optional[int] = None
     topic_id: Optional[int] = None
+    hierarchy_topic_id: Optional[int] = None
     difficulty: Optional[DifficultyLevel] = None
     num_questions: int = Field(default=5, ge=1, le=50)
     exclude_ids: Optional[List[int]] = None

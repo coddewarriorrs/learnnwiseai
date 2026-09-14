@@ -13,7 +13,14 @@ class StudentTopicMastery(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     student_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
-    topic_id = Column(Integer, ForeignKey("curriculum_nodes.id", ondelete="CASCADE"), nullable=False, index=True)
+    topic_id = Column(Integer, ForeignKey("curriculum_nodes.id", ondelete="CASCADE"), nullable=True, index=True)
+    
+    # CBSE 2026-27 Structured Scoping
+    class_id = Column(Integer, ForeignKey("academic_classes.id", ondelete="SET NULL"), nullable=True, index=True)
+    subject_id = Column(Integer, ForeignKey("subjects.id", ondelete="SET NULL"), nullable=True, index=True)
+    chapter_id = Column(Integer, ForeignKey("chapters.id", ondelete="SET NULL"), nullable=True, index=True)
+    hierarchy_topic_id = Column(Integer, ForeignKey("topics.id", ondelete="SET NULL"), nullable=True, index=True)
+
     mastery_score = Column(Float, default=0.0, nullable=False)
     status = Column(SQLEnum(MasteryStatus), default=MasteryStatus.NEEDS_PRACTICE, nullable=False)
     total_attempts = Column(Integer, default=0)

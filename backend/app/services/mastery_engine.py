@@ -1,10 +1,10 @@
-﻿from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session
 from app.models.mastery import StudentTopicMastery, MasteryStatus, LearningActivity
 from app.models.question import Question, DifficultyLevel
 from app.models.assessment import AnswerRecord
 from app.services.prerequisite_graph import PrerequisiteGraphService
 from datetime import datetime, timezone
-from typing import Dict, Any
+from typing import Dict, Any, Optional, List, Tuple
 
 class MasteryEngine:
     DIFFICULTY_WEIGHTS = {
@@ -14,30 +14,76 @@ class MasteryEngine:
     }
 
     @staticmethod
-    def calculate_topic_mastery(student_id: int, topic_id: int, db: Session) -> StudentTopicMastery:
-        records = (
+    def calculate_topic_mastery(
+        student_id: int, 
+        topic_id: Optional[int], 
+        db: Session,
+        question: Optional[Question] = None
+    ) -> StudentTopicMastery:
+        from sqlalchemy import or_
+
+        h_tid = question.hierarchy_topic_id if question else topic_id
+        l_tid = question.topic_id if question else topic_id
+
+        # Query records matching either hierarchy topic or legacy topic
+        query = (
             db.query(AnswerRecord, Question)
             .join(Question, Question.id == AnswerRecord.question_id)
-            .filter(AnswerRecord.student_id == student_id, Question.topic_id == topic_id)
-            .order_by(AnswerRecord.created_at.desc())
-            .all()
+            .filter(AnswerRecord.student_id == student_id)
         )
 
-        mastery_record = db.query(StudentTopicMastery).filter(
-            StudentTopicMastery.student_id == student_id,
-            StudentTopicMastery.topic_id == topic_id
-        ).first()
+        filter_conds = []
+        if h_tid is not None:
+            filter_conds.append(Question.hierarchy_topic_id == h_tid)
+        if l_tid is not None:
+            filter_conds.append(Question.topic_id == l_tid)
+
+        if filter_conds:
+            query = query.filter(or_(*filter_conds))
+
+        records = query.order_by(AnswerRecord.created_at.desc()).all()
+
+        # Find or create mastery record
+        mastery_query = db.query(StudentTopicMastery).filter(StudentTopicMastery.student_id == student_id)
+        if h_tid is not None and l_tid is not None:
+            mastery_record = mastery_query.filter(
+                or_(StudentTopicMastery.hierarchy_topic_id == h_tid, StudentTopicMastery.topic_id == l_tid)
+            ).first()
+        elif h_tid is not None:
+            mastery_record = mastery_query.filter(
+                or_(StudentTopicMastery.hierarchy_topic_id == h_tid, StudentTopicMastery.topic_id == h_tid)
+            ).first()
+        elif l_tid is not None:
+            mastery_record = mastery_query.filter(
+                or_(StudentTopicMastery.topic_id == l_tid, StudentTopicMastery.hierarchy_topic_id == l_tid)
+            ).first()
+        else:
+            mastery_record = None
 
         if not mastery_record:
             mastery_record = StudentTopicMastery(
                 student_id=student_id,
-                topic_id=topic_id,
+                topic_id=l_tid,
+                hierarchy_topic_id=h_tid,
+                class_id=question.class_id if question else None,
+                subject_id=question.subject_id if question else None,
+                chapter_id=question.chapter_id if question else None,
                 mastery_score=0.0,
                 status=MasteryStatus.CRITICAL,
                 total_attempts=0,
                 correct_attempts=0
             )
             db.add(mastery_record)
+        else:
+            if question:
+                if question.class_id and not mastery_record.class_id:
+                    mastery_record.class_id = question.class_id
+                if question.subject_id and not mastery_record.subject_id:
+                    mastery_record.subject_id = question.subject_id
+                if question.chapter_id and not mastery_record.chapter_id:
+                    mastery_record.chapter_id = question.chapter_id
+                if question.hierarchy_topic_id and not mastery_record.hierarchy_topic_id:
+                    mastery_record.hierarchy_topic_id = question.hierarchy_topic_id
 
         if not records:
             db.commit()

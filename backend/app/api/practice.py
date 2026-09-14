@@ -24,53 +24,107 @@ def start_practice(
     current_user: User = Depends(require_role([UserRole.STUDENT])),
     db: Session = Depends(get_db)
 ):
+    from app.models.syllabus_hierarchy import (
+        Board, AcademicYear, AcademicClass, Subject, Unit, 
+        Chapter, Topic, SubTopic, LearningOutcome
+    )
+    from sqlalchemy import or_
+
     all_nodes = {n.id: n for n in db.query(CurriculumNode).all()}
 
-    # 1. Resolve target topic IDs based on hierarchical scope
-    target_topic_ids = set()
+    # 1. Resolve target entity in CBSE 2026-27 hierarchy
+    selected_class = None
+    selected_subject = None
+    selected_chapter = None
+    selected_topic = None
 
-    if req.topic_id:
-        target_topic_ids.add(req.topic_id)
-    elif req.chapter_id:
-        for n in all_nodes.values():
-            if n.type == NodeType.TOPIC and n.parent_id == req.chapter_id:
-                target_topic_ids.add(n.id)
-    elif req.class_id:
-        cls = db.query(Class).filter(Class.id == req.class_id).first()
-        if cls:
-            # Find subject node matching class subject name or class code
-            subj_node_ids = set()
+    # Check Class
+    class_id_candidate = req.academic_class_id or req.class_id or req.class_number
+    if class_id_candidate is not None:
+        selected_class = db.query(AcademicClass).filter(
+            or_(
+                AcademicClass.id == class_id_candidate,
+                AcademicClass.class_number == class_id_candidate
+            )
+        ).first()
+
+    # Check Subject
+    if req.subject_id:
+        selected_subject = db.query(Subject).filter(Subject.id == req.subject_id).first()
+    elif req.subject:
+        subj_q = db.query(Subject)
+        if selected_class:
+            subj_q = subj_q.filter(Subject.class_id == selected_class.id)
+        selected_subject = subj_q.filter(Subject.name.ilike(f"%{req.subject.strip()}%")).first()
+
+    # Check Chapter
+    if req.chapter_id:
+        selected_chapter = db.query(Chapter).filter(Chapter.id == req.chapter_id).first()
+    elif req.chapter:
+        chap_q = db.query(Chapter)
+        if selected_subject:
+            chap_q = chap_q.join(Unit, Unit.id == Chapter.unit_id).filter(Unit.subject_id == selected_subject.id)
+        selected_chapter = chap_q.filter(Chapter.title.ilike(f"%{req.chapter.strip()}%")).first()
+
+    # Check Topic
+    topic_id_candidate = req.hierarchy_topic_id or req.topic_id
+    if topic_id_candidate:
+        selected_topic = db.query(Topic).filter(Topic.id == topic_id_candidate).first()
+
+    # 2. Build Query strictly isolating the scope
+    query = db.query(Question)
+    is_hierarchy_scoped = False
+
+    if selected_topic:
+        query = query.filter(or_(Question.hierarchy_topic_id == selected_topic.id, Question.topic_id == selected_topic.id))
+        is_hierarchy_scoped = True
+    elif selected_chapter:
+        query = query.filter(Question.chapter_id == selected_chapter.id)
+        is_hierarchy_scoped = True
+    elif selected_subject:
+        query = query.filter(Question.subject_id == selected_subject.id)
+        is_hierarchy_scoped = True
+    elif selected_class:
+        query = query.filter(Question.class_id == selected_class.id)
+        is_hierarchy_scoped = True
+    else:
+        # Fallback to legacy CurriculumNode resolution
+        target_topic_ids = set()
+        if req.topic_id:
+            target_topic_ids.add(req.topic_id)
+        elif req.chapter_id:
             for n in all_nodes.values():
-                if n.type == NodeType.SUBJECT:
-                    if cls.subject and cls.subject.lower() in n.title.lower():
+                if n.type == NodeType.TOPIC and n.parent_id == req.chapter_id:
+                    target_topic_ids.add(n.id)
+        elif req.class_id:
+            cls = db.query(Class).filter(Class.id == req.class_id).first()
+            if cls:
+                subj_node_ids = set()
+                for n in all_nodes.values():
+                    if n.type == NodeType.SUBJECT:
+                        if cls.subject and cls.subject.lower() in n.title.lower():
+                            subj_node_ids.add(n.id)
+                        elif cls.class_code and cls.class_code.upper() in n.code.upper():
+                            subj_node_ids.add(n.id)
+                chap_node_ids = {n.id for n in all_nodes.values() if n.type == NodeType.CHAPTER and n.parent_id in subj_node_ids}
+                for n in all_nodes.values():
+                    if n.type == NodeType.TOPIC and n.parent_id in chap_node_ids:
+                        target_topic_ids.add(n.id)
+        elif req.subject or req.subject_id:
+            subj_node_ids = set()
+            if req.subject_id:
+                subj_node_ids.add(req.subject_id)
+            if req.subject:
+                for n in all_nodes.values():
+                    if n.type == NodeType.SUBJECT and req.subject.lower() in n.title.lower():
                         subj_node_ids.add(n.id)
-                    elif cls.class_code and cls.class_code.upper() in n.code.upper():
-                        subj_node_ids.add(n.id)
-            
-            # Find all chapters under these subjects
             chap_node_ids = {n.id for n in all_nodes.values() if n.type == NodeType.CHAPTER and n.parent_id in subj_node_ids}
-            # Find all topics under these chapters
             for n in all_nodes.values():
                 if n.type == NodeType.TOPIC and n.parent_id in chap_node_ids:
                     target_topic_ids.add(n.id)
-    elif req.subject or req.subject_id:
-        subj_node_ids = set()
-        if req.subject_id:
-            subj_node_ids.add(req.subject_id)
-        if req.subject:
-            for n in all_nodes.values():
-                if n.type == NodeType.SUBJECT and req.subject.lower() in n.title.lower():
-                    subj_node_ids.add(n.id)
-        
-        chap_node_ids = {n.id for n in all_nodes.values() if n.type == NodeType.CHAPTER and n.parent_id in subj_node_ids}
-        for n in all_nodes.values():
-            if n.type == NodeType.TOPIC and n.parent_id in chap_node_ids:
-                target_topic_ids.add(n.id)
+        if target_topic_ids:
+            query = query.filter(Question.topic_id.in_(list(target_topic_ids)))
 
-    # 2. Query candidate questions strictly within target scope
-    query = db.query(Question)
-    if target_topic_ids:
-        query = query.filter(Question.topic_id.in_(list(target_topic_ids)))
     if req.difficulty:
         query = query.filter(Question.difficulty == req.difficulty)
     if req.exclude_ids:
@@ -78,33 +132,48 @@ def start_practice(
 
     candidates = query.all()
 
-    # Step A: If difficulty was too strict, relax difficulty within target topics
-    if not candidates and req.difficulty and target_topic_ids:
-        candidates = db.query(Question).filter(
-            Question.topic_id.in_(list(target_topic_ids)),
-            ~Question.id.in_(req.exclude_ids or [])
-        ).all()
+    # Step A: If strict difficulty had 0 candidates, relax difficulty within the SAME isolated scope
+    if not candidates and req.difficulty:
+        relax_query = db.query(Question)
+        if selected_topic:
+            relax_query = relax_query.filter(or_(Question.hierarchy_topic_id == selected_topic.id, Question.topic_id == selected_topic.id))
+        elif selected_chapter:
+            relax_query = relax_query.filter(Question.chapter_id == selected_chapter.id)
+        elif selected_subject:
+            relax_query = relax_query.filter(Question.subject_id == selected_subject.id)
+        elif selected_class:
+            relax_query = relax_query.filter(Question.class_id == selected_class.id)
+        if req.exclude_ids:
+            relax_query = relax_query.filter(~Question.id.in_(req.exclude_ids))
+        candidates = relax_query.all()
 
-    # Step B: If student completed all questions in target topics, reuse questions from target topics (spaced repetition)
-    # NEVER jump to another chapter or subject!
-    if not candidates and target_topic_ids:
-        candidates = db.query(Question).filter(Question.topic_id.in_(list(target_topic_ids))).all()
+    # Step B: If student completed all questions in scope, reuse questions from the EXACT same scope (spaced repetition)
+    # NEVER jump to another class, subject, or chapter!
+    if not candidates:
+        reuse_query = db.query(Question)
+        if selected_topic:
+            reuse_query = reuse_query.filter(or_(Question.hierarchy_topic_id == selected_topic.id, Question.topic_id == selected_topic.id))
+        elif selected_chapter:
+            reuse_query = reuse_query.filter(Question.chapter_id == selected_chapter.id)
+        elif selected_subject:
+            reuse_query = reuse_query.filter(Question.subject_id == selected_subject.id)
+        elif selected_class:
+            reuse_query = reuse_query.filter(Question.class_id == selected_class.id)
+        candidates = reuse_query.all()
 
-    # Step C: Only if NO target topics were specified at all, allow fallback to general pool
-    if not candidates and not target_topic_ids:
-        candidates = db.query(Question).all()
+    # Step C: Only if NO scope was provided at all, fallback to general pool
+    if not candidates and not is_hierarchy_scoped:
+        candidates = db.query(Question).limit(30).all()
 
     if not candidates:
-        raise HTTPException(status_code=404, detail="No questions found for the selected topic.")
+        raise HTTPException(status_code=404, detail="No questions found for the selected syllabus scope.")
 
     # If student didn't specify difficulty, adjust based on student risk
     if not req.difficulty:
         risk_record = db.query(RiskPrediction).filter(RiskPrediction.student_id == current_user.id).first()
         if risk_record and risk_record.risk_level == RiskLevel.HIGH:
-            # Prioritize EASY questions for high risk students
             candidates.sort(key=lambda q: (0 if q.difficulty == DifficultyLevel.EASY else (1 if q.difficulty == DifficultyLevel.MEDIUM else 2)))
         elif risk_record and risk_record.risk_level == RiskLevel.LOW:
-            # Prioritize HARD questions for low risk students
             candidates.sort(key=lambda q: (0 if q.difficulty == DifficultyLevel.HARD else (1 if q.difficulty == DifficultyLevel.MEDIUM else 2)))
 
     # 3. Anti-repetition & spaced learning prioritization
@@ -114,17 +183,13 @@ def start_practice(
         .order_by(AnswerRecord.created_at.desc())
         .all()
     )
-    # Map each question to student's latest record
     latest_record_map = {}
     for r in student_records:
         if r.question_id not in latest_record_map:
             latest_record_map[r.question_id] = r
 
-    # Pool 1: Unattempted by student (guaranteed fresh questions)
     unattempted = [q for q in candidates if q.id not in latest_record_map]
-    # Pool 2: Previously answered incorrectly (remedial reinforcement)
     incorrect = [q for q in candidates if q.id in latest_record_map and not latest_record_map[q.id].is_correct]
-    # Pool 3: Previously answered correctly (spaced repetition, oldest first)
     correct = [q for q in candidates if q.id in latest_record_map and latest_record_map[q.id].is_correct]
     random.shuffle(unattempted)
     random.shuffle(incorrect)
@@ -133,27 +198,23 @@ def start_practice(
     selected = []
     seen_ids = set()
 
-    # Pass 1: Pick unattempted first (fresh questions)
     for q in unattempted:
         if q.id not in seen_ids and len(selected) < req.num_questions:
             selected.append(q)
             seen_ids.add(q.id)
 
-    # Pass 2: Pick previously incorrect (remedial reinforcement)
     if len(selected) < req.num_questions:
         for q in incorrect:
             if q.id not in seen_ids and len(selected) < req.num_questions:
                 selected.append(q)
                 seen_ids.add(q.id)
 
-    # Pass 3: Pick from previous correct (spaced repetition)
     if len(selected) < req.num_questions:
         for q in correct:
             if q.id not in seen_ids and len(selected) < req.num_questions:
                 selected.append(q)
                 seen_ids.add(q.id)
 
-    # Pass 4: If still under requested count, draw uniquely from any remaining candidates
     if len(selected) < req.num_questions:
         remaining = [q for q in candidates if q.id not in seen_ids]
         random.shuffle(remaining)
@@ -162,22 +223,74 @@ def start_practice(
                 selected.append(q)
                 seen_ids.add(q.id)
 
-    # Shuffle selected set so each practice round feels dynamic and diverse
     random.shuffle(selected)
 
     # 4. Assemble response with complete syllabus breadcrumbs
     results = []
     for q in selected:
-        topic = all_nodes.get(q.topic_id)
-        chapter = all_nodes.get(topic.parent_id) if topic else None
-        subject = all_nodes.get(chapter.parent_id) if chapter else None
+        c_id = q.class_id
+        c_name = None
+        s_id = q.subject_id
+        s_name = None
+        u_id = q.unit_id
+        u_name = None
+        ch_id = q.chapter_id
+        ch_name = None
+        domain = None
+        t_id = q.hierarchy_topic_id or q.topic_id
+        t_name = None
+        lo_stmt = q.learning_outcome
+
+        if q.class_id:
+            ac = db.query(AcademicClass).filter(AcademicClass.id == q.class_id).first()
+            if ac:
+                c_name = ac.title
+        if q.subject_id:
+            s = db.query(Subject).filter(Subject.id == q.subject_id).first()
+            if s:
+                s_name = s.name
+        if q.unit_id:
+            u = db.query(Unit).filter(Unit.id == q.unit_id).first()
+            if u:
+                u_name = u.title
+        if q.chapter_id:
+            ch = db.query(Chapter).filter(Chapter.id == q.chapter_id).first()
+            if ch:
+                ch_name = ch.title
+                domain = ch.domain
+        if q.hierarchy_topic_id:
+            top = db.query(Topic).filter(Topic.id == q.hierarchy_topic_id).first()
+            if top:
+                t_name = top.title
+        elif q.topic_id:
+            legacy_node = all_nodes.get(q.topic_id)
+            if legacy_node:
+                t_name = legacy_node.title
+                if not ch_name and legacy_node.parent_id:
+                    ch_node = all_nodes.get(legacy_node.parent_id)
+                    if ch_node:
+                        ch_name = ch_node.title
+                        if not s_name and ch_node.parent_id:
+                            s_node = all_nodes.get(ch_node.parent_id)
+                            if s_node:
+                                s_name = s_node.title
 
         results.append(QuestionResponse(
             id=q.id,
-            topic_id=q.topic_id,
-            topic_name=topic.title if topic else "General",
-            chapter_name=chapter.title if chapter else None,
-            subject_name=subject.title if subject else "General",
+            class_id=c_id,
+            class_name=c_name or "CBSE",
+            subject_id=s_id,
+            subject_name=s_name or "General",
+            unit_id=u_id,
+            unit_name=u_name,
+            chapter_id=ch_id,
+            chapter_name=ch_name,
+            domain=domain,
+            topic_id=t_id,
+            hierarchy_topic_id=q.hierarchy_topic_id,
+            topic_name=t_name or "Topic Practice",
+            learning_outcome=lo_stmt,
+            learning_outcome_id=q.learning_outcome_id,
             title=q.title,
             prompt=q.prompt,
             options=q.options,
