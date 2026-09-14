@@ -8,7 +8,16 @@ export function useTeacherWebSocket(teacherId: number | undefined, onEvent: (eve
   useEffect(() => {
     if (!teacherId) return;
 
-    const wsUrl = process.env.NEXT_PUBLIC_WS_URL || `ws://localhost:8000/api/ws/teacher/${teacherId}`;
+    let wsUrl: string;
+    if (process.env.NEXT_PUBLIC_WS_URL && !process.env.NEXT_PUBLIC_WS_URL.includes('localhost')) {
+      wsUrl = `${process.env.NEXT_PUBLIC_WS_URL}/${teacherId}`;
+    } else if (typeof window !== 'undefined') {
+      const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      const hostname = window.location.hostname;
+      wsUrl = `${wsProtocol}//${hostname}:8000/api/ws/teacher/${teacherId}`;
+    } else {
+      wsUrl = `ws://localhost:8000/api/ws/teacher/${teacherId}`;
+    }
     let ws: WebSocket;
 
     try {

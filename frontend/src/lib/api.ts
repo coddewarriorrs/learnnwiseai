@@ -1,13 +1,16 @@
 function getApiBase(): string {
   if (typeof window !== 'undefined') {
-    const envUrl = process.env.NEXT_PUBLIC_API_URL;
-    if (envUrl && !envUrl.includes('localhost') && !envUrl.includes('127.0.0.1')) {
-      return envUrl;
-    }
-    const { protocol, hostname } = window.location;
-    return `${protocol}//${hostname}:8000/api`;
+    // In browser context:
+    // Always use relative '/api' so all requests stay on the same origin (port 3000)
+    // and are proxied by Next.js rewrites to the backend.
+    // This completely eliminates phone / mobile "Failed to fetch" network errors,
+    // cross-origin port 8000 blocks, and Windows Defender Firewall restrictions.
+    return '/api';
   }
-  return process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+  // Server-side rendering / Node context:
+  return process.env.INTERNAL_BACKEND_URL
+    ? `${process.env.INTERNAL_BACKEND_URL}/api`
+    : (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api');
 }
 
 export async function apiRequest(endpoint: string, options: RequestInit = {}) {
@@ -30,18 +33,26 @@ export async function apiRequest(endpoint: string, options: RequestInit = {}) {
       headers,
     });
   } catch {
-    // If current hostname failed and wasn't localhost, attempt fallback
-    if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
+    // Fallback: If relative /api failed in browser, attempt direct backend connection
+    if (typeof window !== 'undefined') {
+      const { protocol, hostname } = window.location;
       try {
-        res = await fetch(`http://localhost:8000/api${endpoint}`, {
+        res = await fetch(`${protocol}//${hostname}:8000/api${endpoint}`, {
           ...options,
           headers,
         });
       } catch {
-        throw new Error(`Failed to connect to backend server at ${apiBase}. Please verify the server is running on port 8000.`);
+        try {
+          res = await fetch(`http://localhost:8000/api${endpoint}`, {
+            ...options,
+            headers,
+          });
+        } catch {
+          throw new Error('Failed to connect to backend server. Please verify the server is running.');
+        }
       }
     } else {
-      throw new Error(`Failed to connect to backend server at ${apiBase}. Please verify the server is running on port 8000.`);
+      throw new Error('Failed to connect to backend server. Please verify the server is running.');
     }
   }
 
