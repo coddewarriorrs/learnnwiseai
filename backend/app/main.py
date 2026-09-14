@@ -4,8 +4,18 @@ from app.config import settings
 from app.database import engine, Base
 from app.api.router import api_router
 
+from sqlalchemy import text
+
 # Auto-create tables if not existing
 Base.metadata.create_all(bind=engine)
+
+# Auto-migrate constraints
+with engine.connect() as conn:
+    conn.execute(text("""
+        ALTER TABLE student_learning_twins DROP CONSTRAINT IF EXISTS student_learning_twins_last_active_topic_id_fkey;
+        ALTER TABLE student_learning_twins DROP CONSTRAINT IF EXISTS student_learning_twins_recovery_mode_topic_id_fkey;
+    """))
+    conn.commit()
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -15,7 +25,15 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000",
+        "http://localhost:3001",
+        "http://127.0.0.1:3001",
+    ],
+    allow_origin_regex=r".*",
     allow_credentials=True,
     allow_methods=['*'],
     allow_headers=['*'],

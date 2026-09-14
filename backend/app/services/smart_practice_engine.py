@@ -10,6 +10,7 @@ from app.models.mastery import StudentTopicMastery, MasteryStatus, LearningActiv
 from app.models.assessment import AnswerRecord
 from app.models.learning_twin import StudentLearningTwin
 from app.models.risk import RiskPrediction, RiskLevel
+from app.models.syllabus_hierarchy import Topic as HierarchyTopic, Chapter as HierarchyChapter
 from app.services.mastery_engine import MasteryEngine
 from app.services.prerequisite_graph import PrerequisiteGraphService
 from app.services.risk_engine import RiskEngine

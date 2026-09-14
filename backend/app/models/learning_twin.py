@@ -14,7 +14,7 @@ class StudentLearningTwin(Base):
     # Learning Recovery Mode
     recovery_mode_active = Column(Boolean, default=False)
     recovery_mode_step = Column(Integer, default=0) # 1: Identify, 2: Explain differently, 3: Simple Example, 4: Guided, 5: Easy, 6: Medium, 7: Reassess
-    recovery_mode_topic_id = Column(Integer, ForeignKey("curriculum_nodes.id", ondelete="SET NULL"), nullable=True)
+    recovery_mode_topic_id = Column(Integer, nullable=True)
     
     # Possible Struggle / Disengagement Signal
     struggle_signal_detected = Column(Boolean, default=False)
@@ -26,7 +26,7 @@ class StudentLearningTwin(Base):
     decayed_topics = Column(JSON, default=list) # Topics with detected memory decay
     
     # Same-Topic Persistence Counters
-    last_active_topic_id = Column(Integer, ForeignKey("curriculum_nodes.id", ondelete="SET NULL"), nullable=True)
+    last_active_topic_id = Column(Integer, nullable=True)
     consecutive_topic_successes = Column(Integer, default=0)
     consecutive_topic_failures = Column(Integer, default=0)
     
