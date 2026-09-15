@@ -147,7 +147,23 @@ def start_practice(
             relax_query = relax_query.filter(~Question.id.in_(req.exclude_ids))
         candidates = relax_query.all()
 
-    # Step B: If student completed all questions in scope, reuse questions from the EXACT same scope (spaced repetition)
+    # Step B: If all existing questions in scope were completed / excluded, dynamically generate fresh questions!
+    if not candidates and (selected_chapter or selected_topic or selected_subject or selected_class):
+        try:
+            from app.services.question_generator_service import QuestionGeneratorService
+            candidates = QuestionGeneratorService.generate_questions_for_scope(
+                db=db,
+                class_id=selected_class.id if selected_class else None,
+                subject_id=selected_subject.id if selected_subject else None,
+                chapter_id=selected_chapter.id if selected_chapter else None,
+                topic_id=selected_topic.id if selected_topic else None,
+                difficulty=req.difficulty,
+                count=req.num_questions
+            )
+        except Exception:
+            candidates = []
+
+    # Step C: Only if dynamic generation yielded nothing, fall back to spaced repetition reuse
     # NEVER jump to another class, subject, or chapter!
     if not candidates:
         reuse_query = db.query(Question)
@@ -177,6 +193,7 @@ def start_practice(
             candidates.sort(key=lambda q: (0 if q.difficulty == DifficultyLevel.HARD else (1 if q.difficulty == DifficultyLevel.MEDIUM else 2)))
 
     # 3. Anti-repetition & spaced learning prioritization
+    # 3. Anti-repetition & dynamic generation mechanism
     student_records = (
         db.query(AnswerRecord)
         .filter(AnswerRecord.student_id == current_user.id)
@@ -188,9 +205,32 @@ def start_practice(
         if r.question_id not in latest_record_map:
             latest_record_map[r.question_id] = r
 
-    unattempted = [q for q in candidates if q.id not in latest_record_map]
-    incorrect = [q for q in candidates if q.id in latest_record_map and not latest_record_map[q.id].is_correct]
-    correct = [q for q in candidates if q.id in latest_record_map and latest_record_map[q.id].is_correct]
+    exclude_set = set(req.exclude_ids or [])
+    unattempted = [q for q in candidates if q.id not in latest_record_map and q.id not in exclude_set]
+
+    # If unattempted questions in scope are fewer than needed, dynamically generate fresh questions!
+    needed = req.num_questions - len(unattempted)
+    if needed > 0 and (selected_chapter or selected_topic or selected_subject or selected_class):
+        try:
+            from app.services.question_generator_service import QuestionGeneratorService
+            fresh_qs = QuestionGeneratorService.generate_questions_for_scope(
+                db=db,
+                class_id=selected_class.id if selected_class else None,
+                subject_id=selected_subject.id if selected_subject else None,
+                chapter_id=selected_chapter.id if selected_chapter else None,
+                topic_id=selected_topic.id if selected_topic else None,
+                difficulty=req.difficulty,
+                count=max(needed, 5)
+            )
+            for fq in fresh_qs:
+                if fq.id not in exclude_set and fq.id not in latest_record_map:
+                    unattempted.append(fq)
+        except Exception:
+            pass  # Fallback to existing candidate pool if generation fails
+
+    incorrect = [q for q in candidates if q.id in latest_record_map and not latest_record_map[q.id].is_correct and q.id not in exclude_set]
+    correct = [q for q in candidates if q.id in latest_record_map and latest_record_map[q.id].is_correct and q.id not in exclude_set]
+
     random.shuffle(unattempted)
     random.shuffle(incorrect)
     random.shuffle(correct)

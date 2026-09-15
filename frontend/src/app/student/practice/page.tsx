@@ -101,7 +101,17 @@ export default function PracticePage() {
 
   // Practice session state
   const [questions, setQuestions] = useState<any[]>([]);
-  const [completedQuestionIds, setCompletedQuestionIds] = useState<number[]>([]);
+  const [completedQuestionIds, setCompletedQuestionIds] = useState<number[]>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const stored = sessionStorage.getItem('learnwise_completed_q_ids');
+        return stored ? JSON.parse(stored) : [];
+      } catch {
+        return [];
+      }
+    }
+    return [];
+  });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string>('');
   const [sessionStarted, setSessionStarted] = useState(false);
@@ -112,6 +122,14 @@ export default function PracticePage() {
   const [score, setScore] = useState(0);
   const [sessionFinished, setSessionFinished] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && completedQuestionIds.length > 0) {
+      try {
+        sessionStorage.setItem('learnwise_completed_q_ids', JSON.stringify(completedQuestionIds));
+      } catch {}
+    }
+  }, [completedQuestionIds]);
 
   // 1. Fetch official CBSE classes on mount
   useEffect(() => {
@@ -236,7 +254,7 @@ export default function PracticePage() {
         academic_class_id: selectedClass.id,
         class_number: selectedClass.class_number,
         num_questions: numQuestions,
-        exclude_ids: isFollowup ? completedQuestionIds : []
+        exclude_ids: completedQuestionIds
       };
 
       if (selectedSubject) {
